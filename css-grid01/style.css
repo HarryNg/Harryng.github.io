@@ -1,0 +1,99 @@
+body{
+  background-color:azure;
+}
+#contents{
+	margin:10% 0% 10% 5%;
+	float:left;
+	width:66%;
+	
+}
+#review-05{
+	margin:10% 5% 10% 24.5px;
+	background-color:white;
+	color:black;
+	overflow:auto;
+	padding:25px;
+	width:18%;
+	height:610px;
+	float:right;
+	border-radius: 8px;
+}
+#review-01{
+  background-color:blueviolet;
+  color:white;
+  padding:25px;
+  width:54%;
+  height:290px;
+  overflow:auto;
+  float:left;
+  border-radius: 8px;
+}
+#review-02{
+  background-color:rgb(80, 80, 126);
+  color:white;
+  overflow:auto;
+  padding:25px;
+  margin-left:25px;
+  width:30%;
+  height:290px;
+  float:right;
+  border-radius: 8px;
+}
+#review-03{
+  background-color:white;
+  color:black;
+  overflow:auto;
+  padding:25px;
+  margin-top:25px;
+  width:30%;
+  height:245px;
+  float:left;
+  border-radius: 8px;
+  
+}
+#review-04{
+  background-color:black;
+  color:white;
+  overflow:auto;
+  padding:25px;
+  margin-left:25px;
+  margin-top:25px;
+  width:54%;
+  height:245px;
+  float:right;
+  border-radius: 8px;
+}
+
+.reviewers{
+  font-weight:normal;
+  font-size: 0.8em;
+  font-family:"Helvetica",sans-serif;
+  line-height:5%;
+}
+.verified{
+  font-weight:lighter;
+  font-size:0.7em;
+  font-family:"Helvetica",sans-serif;
+  line-height:7%;
+  opacity: 0.5;
+}
+.review-head{
+  font-weight:610;
+  font-family:"Helvetica",sans-serif;
+  line-height:20px;
+}
+.review-body{
+  font-weight:lighter;
+  opacity:0.5;
+}
+.profile-img{
+	float:left;
+	border-image:none;
+	border-radius: 50% 50% 50% 50%;
+	border-style:solid;
+	overflow:hidden;
+	width:30px;
+	height:30px;
+	margin-bottom:6px;
+	margin-right:6px;
+}
