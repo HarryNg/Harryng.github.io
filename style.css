@@ -1,0 +1,118 @@
+body{
+  background-color:hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#center{
+  margin:auto;
+  width: 80%;
+  border: 5px solid #FFFF00;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 20% 21% 22% 21%;
+    grid-template-rows: 52% 52%;
+    gap: 33px;
+	padding :120px;
+	
+    top: 50%; 
+    left: 50%; 
+    margin-top: -100px; 
+    margin-left: -100px; 
+}
+.review-01{
+	grid-column: 1/3;
+	grid-row: 1/1;
+	border-radius: 8px;
+	background-color:hsl(263, 55%, 52%);
+	color:white;
+	position:relative;
+}
+.review-02{
+	grid-column: 3/4;
+	grid-row: 1/1;
+	border-radius: 8px;
+	background-color: hsl(217, 19%, 35%);
+	color:white;
+	position:relative;
+}
+.review-03{
+	grid-column: 1/2;
+	grid-row: 2/2;
+	border-radius: 8px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 8px;
+	color:black;
+	position:relative;
+}
+.review-04{
+	grid-column: 2/4;
+	grid-row: 2/2;
+	border-radius: 8px;
+	background-color: hsl(219, 29%, 14%);
+	color:white;
+	position:relative;
+}
+.review-05{
+	grid-column: 4/5;
+	grid-row: 1/3;
+	border-radius: 8px;
+	background-color:white;
+	color:black;
+	position:relative;
+}
+.gridpad{
+	padding:20px;
+}
+
+.profile-img{
+	float:left;
+	border-image:none;
+	border-radius: 50% 50% 50% 50%;
+	border-style:none;
+	width:30px;
+	height:30px;
+	margin-right: 13px;
+	margin-top: 4px;
+	vertical-align: bottom;
+}
+
+.reviewers{
+  font-weight:normal;
+  font-size: 13px;
+  font-family:'Barlow Semi Condensed',sans-serif;
+  opacity: 0.9;
+  line-height:0%;
+}
+.verified{
+  font-weight:normal;
+  font-size: 12px;
+  font-family:'Barlow Semi Condensed',sans-serif;
+  opacity: 0.5;
+}
+.review-head{
+  font-weight:520;
+  font-family:'Barlow Semi Condensed',sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+.review-body{
+  font-weight:lighter;
+  opacity:0.5;
+  font-size: 13.5px;
+}
+.r3{
+	position:absolute;
+	bottom:27px;
+	padding:0px 17px 0px 0px;
+}
+.r4{
+	position:absolute;
+	bottom:27px;
+	padding:0px 15px 0px 0px;
+}
+.r5{
+	position:absolute;
+	bottom:27px;
+	padding:0px 30px 0px 5px;
+	
+}
