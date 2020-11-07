@@ -5,11 +5,10 @@ body{
 #center{
   margin:auto;
   width: 80%;
-  border: 5px solid #FFFF00;
 }
 .grid-container{
 	display: grid;
-	grid-template-columns: 20% 21% 22% 24%;
+	grid-template-columns: 20% 22% 23% 24%;
     grid-template-rows: 53% 53%;
     gap: 33px;
 	padding :120px;
