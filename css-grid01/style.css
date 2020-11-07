@@ -9,7 +9,7 @@ body{
 }
 .grid-container{
 	display: grid;
-	grid-template-columns: 20% 21% 22% 25%;
+	grid-template-columns: 20% 21% 22% 27%;
     grid-template-rows: 54% 54%;
     gap: 33px;
 	padding :120px;
@@ -102,17 +102,17 @@ body{
 }
 .r3{
 	position:absolute;
-	bottom:27px;
+	bottom:24px;
 	padding:0px 17px 0px 0px;
 }
 .r4{
 	position:absolute;
-	bottom:27px;
+	bottom:24px;
 	padding:0px 15px 0px 0px;
 }
 .r5{
 	position:absolute;
-	bottom:27px;
+	bottom:24px;
 	padding:0px 30px 0px 5px;
 	
 }
