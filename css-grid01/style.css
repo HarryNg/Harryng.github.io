@@ -8,7 +8,7 @@ body{
 }
 .grid-container{
 	display: grid;
-	grid-template-columns: 20% 22% 23% 24%;
+	grid-template-columns: 22% 22% 23% 24%;
     grid-template-rows: 54% 54%;
     gap: 33px;
 	padding :120px;
