@@ -8,8 +8,8 @@ body{
 }
 .grid-container{
 	display: grid;
-	grid-template-columns: 23% 23% 24% 25%;
-    grid-template-rows: 55% 55%;
+	grid-template-columns: 23% 25% 24% 25%;
+    grid-template-rows: 57% 55%;
     gap: 33px;
 	padding :120px;
 	
