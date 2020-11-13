@@ -123,8 +123,8 @@ body{
 }
 
 /*Media queries*/
-@media screen and (min-width: 900px){
+@media screen and (max-width: 480px){
 	section{
-		padding: 1.9rem;
+		padding: .4rem;
 	}
 }
