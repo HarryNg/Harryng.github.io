@@ -12,15 +12,13 @@ body{
 }
 .grid-container{
 	display: grid;
-	grid-template-columns: 23% 25% 24% 25%;
-    grid-template-rows: 57% 57%;
+	grid-template-columns: 13rem 15rem 14rem 15rem;
+    grid-template-rows: 17rem 17rem;
     gap: 33px;
-	padding :120px;
+	padding :1rem;
 	
     top: 50%; 
     left: 50%; 
-    margin-top: -100px; 
-    margin-left: -100px; 
 }
 .review-01{
 	grid-column: 1/3;
