@@ -13,8 +13,8 @@ body{
 .grid-container{
 	display: grid;
 	grid-template-columns: 13rem 15rem 14rem 15rem;
-    grid-template-rows: 17rem 17rem;
-    gap: 33px;
+    grid-template-rows: 18rem 18rem;
+    gap: 3rem;
 	padding :1rem;
 	
     top: 50%; 
