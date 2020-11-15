@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.carousel-item{
+    height: 100vh;
+}
+
+@keyframes ani{
+    from{
+        opacity: 100;
+        transform: translateY(0px)
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-1500px)
+    }
+}
+
+@keyframes ani2{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    50%{
+        top: 250px;
+        left: 250px;
+    }
+    75%{
+        top: 0px;
+        left: 250px;
+    }
+}
+
+@keyframes flyLeftIn{
+    from{
+        opacity: 0;
+        transform: translateX(-2000px)
+    }
+    to{
+        opacity: 100;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes flyRightIn{
+    from{
+        opacity: 0;
+        transform: translateX(2000px)
+    }
+    to{
+        opacity: 100;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes flyUp{
+    from{
+        opacity: 0;
+        transform: translateY(2000px)
+    }
+    to{
+        opacity: 100;
+        transform: translateY(0px)
+    }
+}
+
+
+@keyframes zoomIn{
+    0%{
+        opacity: 0%;
+        width:10%;
+    }
+    50%{
+        opacity: 0%;
+        width:30%;
+    }
+    85%{
+        opacity: 100%;
+        width:100%;
+    }
+}
+
+@keyframes zoomOut{
+    0%{
+        opacity: 0%;
+        width:10%;
+        height:10%;
+    }
+    55%{
+        opacity: 0%;
+        width:30%;
+        height:30%;
+    }
+    100%{
+        opacity: 100%;
+        width:100%;
+        height:100%;
+    }
+}
+
+@keyframes bounce{
+    from{
+        transform: translateX(335px);
+        transform: translateY(335px);
+    } 
+    to{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+
+/*Animation ends*/
+
+.img-box{
+    width: 550px;
+    position: relative;
+    
+
+}
+
+.img-box-1{
+    animation-name: zoomIn, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    margin-top: -2rem;
+}
+
+.img-box-2{
+    animation-name: zoomOut, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+}
+
+.img-box-3{
+    animation-name: zoomIn, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+.pic-one{
+    width: 100%;
+}
+.pic-two{
+    width: 100px;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+}
+.pic-three{
+    width: 75px;
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+}
+.pic-four{
+    width: 160px;
+    position: absolute;
+    right: 40px;
+    top: 110px;
+}
+.pic-five{
+    width: 110px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+.pic-six{
+    width: 160px;
+    position: absolute;
+    right: 160px;
+    bottom: 35px;
+}
+
+.slide-one{
+    background: #b0c6f5;
+}
+
+.slide-one h1{
+    animation-name: ani;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    z-index: 100;
+}
+.carousel-item .row{
+    margin: 12% 0;
+}
+
+.carousel-item h1{
+    margin-top: 40px;
+    font-weight: bold;
+    color:#fff;
+    
+}
+
+.carousel-item p{
+    margin: 30px 0 50px;
+    font-size: 13px;
+    color:#fff;
+    
+    animation-name: flyLeftIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+.carousel-item button{
+    padding: 8px 20px;
+    background: #0c5ce3;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    
+    animation-name: flyUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+/* Slide one ends*/
+
+.slide-two{
+    background: #f7f7f7;
+}
+
+.slide-two h1, .slide-two p{
+    color: #feb154;
+    z-index: 100;
+}
+.slide-two p{
+    animation-name: flyRightIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.slide-two h1{
+    
+    animation-name: flyLeftIn;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.img-one{
+    width: 100%;
+    
+}
+
+.img-two{
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+
+.img-three{
+    width: 70px;
+    position: absolute;
+    left: 245px;
+    bottom: 55px;
+}
+
+.img-four{
+    width: 60px;
+    position: absolute;
+    right: 155px;
+    bottom: 95px;
+}
+
+.img-five{
+    width: 100px;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+
+
+.slide-two .button{
+    background: linear-gradient(to right, #feb154, #ffd255);
+}
+
+/* Slide two ends*/
+
+.slide-three{
+    background: mediumvioletred;
+}
+
+.slide-three h1, .slide-three p{
+    color: lightyellow;
+    z-index: 100;
+}
+
+.slide-three h1{
+    
+    animation-name: bounce;
+    animation-iteration-count: 1;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+}
+
+/*Slide three ends*/
+
+
+
+.sun2{
+    background-color: transparent;
+    height: 49px;
+    width: 49px;
+    margin-top: -33rem;
+    margin-left: 10rem;
+    background-color: #b0c6f5;
+    box-shadow: -13px 13px 0 13px antiquewhite;
+    border-radius: 50%;
+    z-index: 1000;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.sun3{
+    background-color: darkorange;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -29rem;
+    margin-left: 12rem;
+    border-radius: 50%;
+    z-index: 1002;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.sun4{
+    background-color: darkorange;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -30rem;
+    margin-left: 9rem;
+    border-radius: 50%;
+    z-index: 1003;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.ob2{
+    background-color: transparent;
+    height: 49px;
+    width: 49px;
+    margin-top: -33rem;
+    margin-left: 10rem;
+    background-color: #f7f7f7;
+    box-shadow: -13px 13px 0 13px antiquewhite;
+    border-radius: 50%;
+    z-index: 1000;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.ob3{
+    background-color: darkorange;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -29rem;
+    margin-left: 12rem;
+    border-radius: 50%;
+    z-index: 1002;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.ob4{
+    background-color: darkorange;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -30rem;
+    margin-left: 9rem;
+    border-radius: 50%;
+    z-index: 1003;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.obb2{
+    background-color: transparent;
+    height: 49px;
+    width: 49px;
+    margin-top: -15rem;
+    margin-left: 15rem;
+    background-color: mediumvioletred;
+    box-shadow: -13px 13px 0 13px antiquewhite;
+    border-radius: 50%;
+    z-index: 1;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.obb3{
+    background-color: yellow;
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1.5rem;
+    margin-left: 6.5rem;
+    border-radius: 50%;
+    z-index: 1;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.obb4{
+    background-color: yellow;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -8rem;
+    margin-left: 6rem;
+    border-radius: 50%;
+    z-index: 1;
+    
+    animation-name: flyUp, floating;
+    animation-duration: 1s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
