@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide")
 const dots = document.querySelectorAll('.dot')
@@ -34,7 +35,7 @@ setInterval(() => {
 
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {
-    console.log(currentSlide)
+    /*console.log(currentSlide)*/
     init(i)
     currentSlide = i
   })
