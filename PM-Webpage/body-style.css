@@ -117,7 +117,7 @@
     .container {
       display: block;
       cursor: pointer;
-        padding-left: 10px;
+        
         height: 8rem;
         z-index:5000;
     }
@@ -196,12 +196,6 @@
         padding-top: 15px;
         padding-left: 20px;
         font-size: 22px;
-    }
-    .body .full-width{
-        width: 100%;
-        height: 20rem;;
-        display: block;
-        margin-top: 0px;
     }
 
 }
@@ -284,11 +278,9 @@
     .main-menu span{
         width: 200px;
     }
-    
     .main-menu .line{
         display: none;
     }
-
 
     .main-menu .active-page{
         position: relative;
@@ -304,15 +296,66 @@
     .main-menu span:hover{
         background-color: darkseagreen;
     }
-    
-    .body .full-width{
-        width: 100%;
-        height: 25rem;;
-        display: block;
-        margin-top: 1px;
-    }
 
 }
 
 
 /*Header ends*/
+.body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "s1 s1 i1"
+        "i2 s2 s2"
+        "s3 s3 i3"
+        ;
+    grid-gap: 20px;
+    z-index: 200;
+}
+.img{
+	width: 12rem;
+    height: inherit;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	opacity: 0.5;
+    
+}
+
+.s1{
+    grid-area: s1;
+}
+
+.s2{
+    grid-area: s2;
+}
+
+.s3{
+    grid-area: s3
+}
+.i1{
+    grid-area: i1;
+}
+.i2{
+    grid-area: i2;
+}
+.i3{
+    grid-area: i3;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
