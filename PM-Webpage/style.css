@@ -142,10 +142,6 @@
 
     }
     /*header mobile ends*/
-    .main-menu a{
-        text-decoration: none;
-        color: white;
-    }
 
     
     .header-menu{
@@ -209,6 +205,11 @@
         z-index: 1500;
         top: 8rem;
     }
+    .main-menu a{
+        text-decoration: none;
+        color: white;
+    }
+
     .main-menu span{
         width: 80%;
         float: left;
@@ -263,6 +264,16 @@
         height: 20rem;;
         display: block;
         margin-top: 0px;
+    }
+    
+    
+    .body{
+        margin-top:20px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 0px 20px 20px;
     }
 
 }
@@ -384,6 +395,7 @@
 
 
 /*Header ends*/
+
 #life .body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
