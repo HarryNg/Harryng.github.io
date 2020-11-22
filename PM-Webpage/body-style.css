@@ -117,7 +117,7 @@
     .container {
       display: block;
       cursor: pointer;
-        
+        padding-left: 10px;
         height: 8rem;
         z-index:5000;
     }
