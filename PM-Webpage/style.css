@@ -14,10 +14,22 @@
     --main-color: #0B2A9E;
 }
 
-/* Basic setting ends*/
+/* Global setting ends*/
+
+/*Header Top Setting begins*/
 .header{
     background-color: whitesmoke;
     z-index: 500;
+    width: 100%;
+}
+.header-top{
+    height: 9rem;
+}
+.header-body{
+    height: 1.5rem;
+}
+.header-bottom{
+    height: 4rem;
 }
 .greeting{
     background-color: #6F7572;
@@ -32,10 +44,9 @@
     
 }
 
-.header-mid{
+.header-items{
     position: relative;
     display: flex;
-    margin-bottom: 2rem;
     height: 3.8rem;
     padding: .5rem;
 }
@@ -62,7 +73,7 @@
     font-size: 12px;
     opacity: .5;
 }
-.header-mid button{
+.header-items button{
     position: absolute;
     font-size: 14px;
     width: 5.5rem;
@@ -76,75 +87,68 @@
     
 }
 
+/*Header Top Setting ends*/
 
+
+
+/*Footer Setting begins*/
+.footer{
+    text-align: center;
+    align-items: center;
+    opacity: .4;
+    font-family: var(--main-font);
+}
+/*Footer Setting ends*/
+
+
+
+/* Mobile Setting begins*/
 
 @media screen and (max-width:724px){
     
-    /* Basic setting ends*/
+    
+/*Mobile Header Setting begins*/
     .header{
-        background-color: whitesmoke;
-        z-index: 500;
+        padding-bottom: 1rem;
     }
     .greeting{
-        background-color: #6F7572;
-        width: 100%;
         font-size: .72rem;
-        font-family: var(--main-font);
-        color: white;
-        padding: 5px 5px 5px 15px;
     }
-    .greeting h3{
-        opacity: .9;
-
-    }
-
-    .header-mid{
-        position: relative;
-        display: flex;
+    
+    .header-items{
         margin-bottom: 2rem;
         height: 2rem;
-        padding: .5rem;
     }
 
     .logo{
-        position: absolute;
         left: 2.5rem;
         top: 1.1rem;
-        font-weight: bolder;
-        font-family: var(--main-font);
         font-size: 1.5rem;
         opacity: .66;
     }
+    
     .search-bar{
-        position: absolute;
-        right: 101px;
+        right: 103px;
         top: 15px;
         border: solid 3px gray;
         width: 8rem;
         height: 2rem;
-        padding-left: 10px;
-        padding-right: 1px;
-        background-color: white;
         font-size: 9px;
-        opacity: .5;
+        
     }
-    .header-mid button{
-        position: absolute;
+    .header-items button{
         font-size: 12px;
-        width: 5.5rem;
         height: 2rem;
-        cursor: pointer;
-        right: 17px;
         top: 15px;
-        border: solid 3px #B2B8B5;
-        color: #004494;
-        background-color: #B2B8B5;
 
     }
-    /*header mobile ends*/
+    
+/*Mobile Header Top ends*/
 
     
-    .header-menu{
+
+/*Mobile Header Body begins*/
+    .header-breadscrum{
         background-color: var(--main-color);
         padding: 11px 0px 0px 35px;
         width: 100%;
@@ -156,60 +160,70 @@
         text-align: left;
     }
 
-    .header-menu a,
-    .header-menu span,
+    .header-breadscrum a,
+    .header-breadscrum span,
     .header .line{
         display: none;
     }
 
     
     #title{
-
         font-family: var(--main-font);
         font-size: 1.9rem;
         padding-top: 20px;
     }
     #policy #title{
-        font-family: var(--main-font);
         font-size: 1.7rem;
-        padding-top: 20px;
     }
 
-    /*Header Mid ends*/
+/*Mobile Header body ends*/
+
     
-    .container {
-      display: block;
-      cursor: pointer;
-        padding-left: 10px;
+    
+    
+/*Mobile Navigation Bar begins*/
+    
+    .nav-bar {
+        display: block;
+        float: right;
+        cursor: pointer;
+        padding-right: 10px;
         height: 8rem;
         z-index:5000;
     }
 
     .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 5px;
+        width: 35px;
+        height: 5px;
         right: 20px;
-      background-color: #333;
-      margin: 6px 0;
-      transition: 0.4s;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
     }
 
     .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
     }
 
     .change .bar2 {opacity: 0;}
 
     .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
     }
-
-    /*css tricks code ends*/
+    
+/*Mobile Navigation Bar ends*/
+    
+    
+    
+    
+    
+/*Mobile Main Menu begins*/
     .main-menu{
         z-index: 1500;
         top: 8rem;
+        width: 80%;
     }
     .main-menu a{
         text-decoration: none;
@@ -217,7 +231,6 @@
     }
 
     .main-menu span{
-        width: 80%;
         float: left;
         opacity: 0;
         z-index: 1100;
@@ -238,7 +251,6 @@
 
     .main-menu.responsive {
         position: absolute;
-        width: 80%;
         height: 100%;
         background-color: #252525;
         opacity: 1;
@@ -254,7 +266,6 @@
         opacity: .7;
     }
     
-
     .main-menu.responsive span {
         position: relative;
         display: block;
@@ -265,40 +276,73 @@
         padding-left: 20px;
         font-size: 22px;
     }
-    #home .body .full-width{
+    
+/*Mobile Main Menu ends*/
+    
+    
+    
+    
+/*Mobile Content begins*/ 
+    .content{
+        display: block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 1rem 0rem 1rem;
+        max-width: 100%;
+    }
+    .content img{
+        width:100%;
+        padding:5px;
+    }
+    #home .content .full-width{
         width: 100%;
         height: 20rem;;
         display: block;
         margin-top: 0px;
     }
     
-    
-    .body{
-        margin-top:20px;
+    .footer{
         display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0px 20px 20px 20px;
+        position: relative;
+        margin-bottom: .5rem;
+        font-weight: 400;
+        font-size: .7rem;
+        padding: .5rem;
     }
+    
+    #policy .footer,
+    #contact .footer{
+        display: block;
+        position: absolute;
+        bottom: 1rem;
+        left: 30%;
+        
+    }
+
 }
 
+/*Mobile Content ends*/ 
+
+/*Mobile Header Setting ends*/
 
 
-/*Header mobile code ends*/
 
-
-
+/*Desktop Header Setting begins*/
 @media screen and (min-width:725px){
     
     
+    .header-body{
+        height: 10rem;
+    }
     .main-menu a{
         text-decoration: none;
         color: black;
     }
 
     
-    .header-menu{
+    .header-breadscrum{
         background-color: var(--main-color);
         padding: 15px 30px;
         width: 100%;
@@ -306,14 +350,14 @@
         color: white;
     }
 
-    .header-menu a{
+    .header-breadscrum a{
         text-decoration: none;
         color: white;
         font-family: var(--main-font);
         padding-right: 7px;
         font-size: 1.3rem;
     }
-    .header-menu span{
+    .header-breadscrum span{
         padding-right: 7px;
     }
 
@@ -344,7 +388,7 @@
     }
     
     /*Header mid ends*/
-    .container{
+    .nav-bar{
         display: none;
     }
     .main-menu{
@@ -391,27 +435,64 @@
         margin-top: -3px;
     }
     
-    .body{
-        
+    .content{
+        display: contents;
         padding: 1rem 8rem 1rem 8rem;
         align-items: center;
         text-align: center
     }
     
-    #home .body{
+    #home .content{
         padding: 0;
     }
-    #home .body .full-width{
+    #home .content .full-width{
         width: 100%;
         height: 25rem;;
-        display: block;
         margin-top: -21px;
     }
+    
+    .footer{
+        
+        left: 40%;
+        opacity: .4;
+        font-weight: 400;
+        font-size: .7rem;
+        padding: .5rem;
+    }
+    
+    
+    
+    #policy .footer,
+    #contact .footer{
+        display: block;
+        position: absolute;
+        bottom: .1rem;
+        left: 41.6%;
+        
+    }
+    
+    
+/*sticky nav bar main-menu*/
+
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content{
+      padding-top: 60px;
+    }
+
+/*Sticky nav bar ends*/
 
 }
 
 
 /*Header ends*/
+
 
 #life .body{
     display: grid;
@@ -472,12 +553,5 @@
 
 /*Body ends*/
 
-.footer{
-    text-align: center;
-    opacity: .4;
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: .7rem;
-    padding: 1rem;
-}
+
 

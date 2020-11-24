@@ -10,35 +10,38 @@
 </html>
 
 <body id="study">
-	<section class="header">
+		<section class="header header-top">
 		<div class="greeting"><h3>An Interactive Guide to Finland for International Students</h3></div>
-		<div class="header-mid">
+		<div class="header-items">
 		    <div class="logo">FinInNote</div>
 		    <input type=text class="search-bar" name="seach" placeholder="What are you looking for...">
 		    <button type="button">Search</button>
 		</div>
-		
-		<div class=header-menu>
-		    <a href="#" id="finland">Finland</a>
+		<nav class="nav-bar" onclick="myFunctionX(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </nav>
+    </section>
+    
+    <section class="header header-body">
+		<div class=header-breadscrum>
+		    <a href="index.html" id="finland">Finland</a>
 		    <span class="divider">></span>
 		    <a href="#" id="budget">Budget</a>
 		    <span class="divider">></span>
-		    <a href="#" id="planning">Planning</a>
+		    <a href="#life" id="planning">Planning</a>
 		    <span class="divider">></span>
-		    <a href="#" id="rent-buy">Rent/Buy</a>
+		    <a href="#trade" id="rent-buy">Rent/Buy</a>
 		    <div class="line"></div>
 		    <p id="title">Study in Finland</p>
 		    
 		</div>
-		
+    </section>
+    
+    <section class="header header-bottom">
 
-       <div class="container" onclick="myFunctionX(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        
-		<div class="main-menu" id="myTopnav">
+		<nav class="main-menu" id="myTopnav">
             <span id="home"><a href="index.html">Home</a>
 		    <div class="line"></div></span>
             <span id="about"><a href="about.html">About</a>
@@ -53,24 +56,12 @@
 		    <div class="line"></div></span>
             <span id="contact"><a href="contact.html">Contact</a>
 		    <div class="line"></div></span>
-		</div>
-        <script>
-        function myFunctionX(z) {
-            z.classList.toggle("change");
-          var x = document.getElementById("myTopnav");
-          if (x.className === "main-menu") {
-            x.className += " responsive";
-          } else {
-            x.className = "main-menu";
-          }
-        }
-        </script>
-        
-        
-		
+		</nav>
+
 	</section>
-	
-	<section class="body">
+       
+
+	<section class="content">
 		<div class="story s1"><h2>Story Number 1</h2></div>
 		<img class="img floating i1" src="images/story-1.jpg" alt="charcter-1">
 
@@ -83,8 +74,34 @@
 		<img class="img floating i3" src="images/story-1.jpg" alt="charcter-3">
 		
 	</section>
-	<footer class="footer">
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var myTopnav = document.getElementById("myTopnav");
+
+    // Get the offset position of the navbar
+    var sticky = myTopnav.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
+    function myFunction() {
+        
+        
+      if (window.pageYOffset >= sticky-13) {
+          
+        myTopnav.classList.add("sticky")
+      } else {
+        myTopnav.classList.remove("sticky");
+      }
+    }
+    </script>
+    <footer class="footer">
+		
+		<a href="#home">Back To Top</a>
 		<div class="social-media"><h3>All Rights Reserved @2020</h3></div>
-	</footer>
+    </footer>
 	
+	<script src="script.js"></script>
 </body>
