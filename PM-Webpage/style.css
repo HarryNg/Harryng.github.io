@@ -436,12 +436,15 @@
     }
     
     .content{
-        display: contents;
+        display: block;
         padding: 1rem 8rem 1rem 8rem;
         align-items: center;
         text-align: center
     }
     
+    .content img{
+        padding: .4rem;
+    }
     #home .content{
         padding: 0;
     }
