@@ -638,6 +638,7 @@
 .slideshow-container {
   position: relative;
   margin: auto;
+    z-index: 20;
 }
 
 #study .mySlides>img{
