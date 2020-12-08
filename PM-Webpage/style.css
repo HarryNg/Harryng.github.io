@@ -412,6 +412,7 @@
     text-align: center;
     line-height: 4rem;
     font-size: 1.3rem;
+    z-index: 999;
     }
 
     .main-menu span{
@@ -435,13 +436,30 @@
         margin-top: -3px;
         box-shadow: 1px 1px 4px 2px #B2B8B5;
         vertical-align: middle;
-        pointer-events: none;
+        /*pointer-events: none;*/
     }
     
 
     .main-menu span:hover{
         background-color: darkseagreen;
         margin-top: -3px;
+    }
+    
+    .main-menu .sub-nav .sub-menu{
+        display: none;
+        z-index: 9999;
+    }
+        
+    .main-menu .sub-nav:hover .sub-menu{
+        display: block;
+        background-color:darkgrey;
+        cursor: pointer;
+        z-index: 99999;
+    }
+    
+    
+    .main-menu .sub-nav:hover .sub-menu:hover{
+        background-color: darkseagreen;
     }
     
     .content{
@@ -597,10 +615,11 @@
 }
 
 
-#study img{
+#study .grid-container img,
+#study .full-width-slider img{
     width: 23rem;
     height: 15rem;
-    
+    z-index: 10;
 }
 
 #study .story h2{
@@ -619,6 +638,7 @@
     font-family: "helvetical" sans-serif;
 }
 
+/*Study Full page Slider Images Begins*/
 #study .full-width-slider{
     width: 100%;
 }
@@ -630,17 +650,10 @@
 }
 
 
-/*Slider Image begins*/
-#study .slider-container .slideimg{
-
-}
-
-/*Slider Image begins*/
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   margin: auto;
-    z-index: 20;
 }
 
 #study .mySlides>img{
@@ -726,8 +739,8 @@
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {opacity: .4; z-index: 5} 
+  to {opacity: 1; z-index: 25}
 }
 
 #study .grid-container img{
