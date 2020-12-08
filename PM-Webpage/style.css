@@ -345,12 +345,6 @@
     .header-body{
         height: 10rem;
     }
-    .main-menu a{
-        text-decoration: none;
-        color: black;
-    }
-
-    
     .header-breadscrum{
         background-color: var(--main-color);
         padding: 15px 30px;
@@ -407,17 +401,22 @@
     height: 4rem;
     background-color: white;
     font-family: var(--main-font);
-    font-weight: 555;;
+    font-weight: 555;
     border: solid 1px var(--main-color);
     text-align: center;
     line-height: 4rem;
     font-size: 1.3rem;
     z-index: 999;
     }
+    
+    .main-menu a{
+        text-decoration: none;
+        color: black;
+    }
 
     .main-menu span{
         position: relative;
-        width: 6.2rem;
+        width: 6.5rem;
         opacity: .9;
         float: left;
         left: .5rem;
@@ -427,15 +426,14 @@
         display: none;
     }
 
-
     .main-menu .active-page{
         position: relative;
         background-color: #EC3B92;
         height: 4rem;
-        color: white;
         margin-top: -3px;
         box-shadow: 1px 1px 4px 2px #B2B8B5;
         vertical-align: middle;
+        color: white;
         /*pointer-events: none;*/
     }
     
@@ -447,19 +445,27 @@
     
     .main-menu .sub-nav .sub-menu{
         display: none;
-        z-index: 9999;
+        font-size: .9rem;
+        
     }
         
     .main-menu .sub-nav:hover .sub-menu{
         display: block;
-        background-color:darkgrey;
+        background-color:white;
         cursor: pointer;
-        z-index: 99999;
+        color:dodgerblue;
+        font-weight: 690;
+        border-radius: 3px;
+        border: 2px solid pink;
     }
     
     
     .main-menu .sub-nav:hover .sub-menu:hover{
         background-color: darkseagreen;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 10px;
     }
     
     .content{
