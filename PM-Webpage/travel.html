@@ -5,12 +5,13 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Welcome to Finland Stories</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 </html>
 
 <body id="travel">
-		<section class="header header-top">
+    <section class="header header-top">
 		<div class="greeting"><h3>An Interactive Guide to Finland for International Students</h3></div>
 		<div class="header-items">
 		    <div class="logo">FinInNote</div>
@@ -40,7 +41,7 @@
     </section>
     
     <section class="header header-bottom">
-<nav class="main-menu" id="myTopnav">
+    <nav class="main-menu" id="myTopnav">
 		    <span id="home"><a href="index.html">Home</a>
 		    <div class="line"></div>
            </span>
@@ -67,9 +68,7 @@
             <div class="sub-nav">
                 <span id="travel"  class="active-page">Travel
                     <a class="sub-menu" href="post1.html">Budget</a>
-                    
                     <a class="sub-menu" href="post1.html">Food</a>
-                    
                     <a class="sub-menu" href="post1.html">Guides</a>
                     <a class="sub-menu" href="post1.html">Tours</a>
                     
@@ -88,7 +87,60 @@
        
 
 	<section class="content">
-		<div class="story s1"><h2>Story Number 1</h2></div>
+		
+		<section class="topic-posts" id="travel-top-topic">
+		    <div class="big-words"><span>TOPIC</span></div>
+		</section>
+		<section class="scroll-container disable-scrollbars" id="scroll-container">
+		    <div class="travel-scroll-high-bg " id="travel-scroll-high-bg">
+		        <div class="travel-scroll-items">
+		        <a href="coming-soon.html"><img src="images/The%20Aurora%20Borealis%20-%20Ivalo%20lapland%20by%20GiuseppeMilo.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Aurora Hunting</div>
+		        </div>
+		        <div class="travel-scroll-items">
+		        <a href="coming-soon.html"><img src="images/winter%20white%20snow%20trees%20Finland%20-%20Lapland%202014%20by%20edweerdt.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Snow Paradise</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/helsinki%20street%20cafe%201%20by%20pixelsblue.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Romantic Meetup</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/oops%20Hei%20Finland%20by%20Limping%20Frog%20Productions.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Discover</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/Cold%20sunset%20-%20Helsinki%20by%20GiuseppeMilo.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Peace & Relaxing</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/travel/Max%20van%20den%20Oetelaar.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Family Itinerary</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/revelation%20-%20turku%20by%20GiuseppeMilo.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Travel on a Budget</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/travel/Tapio%20Haaja.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Explore The City</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/travel/_Narahari%20K%20R.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Beautiful Lakes Land</div>
+		        </div>
+                <div class="travel-scroll-items"><a href="coming-soon.html"><img src="images/travel/_Julius%20Jansson.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Luxury Adventures</div>
+		        </div>
+		    </div>
+
+		    
+		</section>
+            
+		<section class="scrollable-buttons">
+		
+		    <div class="scroll-buttons">
+               <span id="panLeft" class="prev panner"  data-scroll-modifier='-1'>&#10094;</span>
+                <span id="panRight" class="next panner"  data-scroll-modifier='1'>&#10095;</span>
+            </div>
+
+		</section>
+		
+		<section class = "fill-in-contents">
+        <div class="story s1"><h2>Story Number 1</h2></div>
 		<img class="img floating i1" src="images/story-1.jpg" alt="charcter-1">
 
 		
@@ -98,6 +150,7 @@
 		
 		<div class="story s3"><h2>Story Number 3</h2></div>
 		<img class="img floating i3" src="images/story-1.jpg" alt="charcter-3">
+		</section>
 		
 	</section>
 	
@@ -105,7 +158,7 @@
 		<div class="footer-grid-container">
 		    <div class="footer-0"><h3>FinInNote</h3>
 		    <span>@2020 FPP <a href="policy.html">PRIVACY POLICY</a></span></div>
-           <div class="social-media"><h4>Follow Us</h4>
+           <div class="social-media" id="footer" ><h4>Follow Us</h4>
            <a href="https://facebook.com"><span id="facebook" style=background-image:url(images/fb.png)></span></a>
            <a href="https://youtube.com"><span id="youtube" style=background-image:url(images/youtube.png)></span></a>
            <a href="https://instagram.com"><span id="instagram" style=background-image:url(images/instagram.png)></span></a>
@@ -174,7 +227,7 @@
     </section>
 	
 	
-	<script>
+	<script id="sticky-topnav">
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
 
@@ -188,7 +241,6 @@
 
     function myFunction() {
         
-        
       if (window.pageYOffset >= sticky-13) {
           
         myTopnav.classList.add("sticky")
@@ -198,7 +250,48 @@
     }
     </script>
 
+    <script>
 
-	
+    </script>
+	<script id="travel-scroll-bar">
+    (function () {
+
+    var scrollHandle = 0,
+        scrollStep = 5,
+        parent = $("#scroll-container");
+
+    //Start the scrolling process
+    $(".panner").on("mouseenter", function () {
+        var data = $(this).data('scrollModifier'),
+            direction = parseInt(data, 10);
+
+        startScrolling(direction, scrollStep);
+    });
+
+    //Kill the scrolling
+    $(".panner").on("mouseleave", function () {
+        stopScrolling();
+        $(this).removeClass('active');
+    });
+
+    //Actual handling of the scrolling
+    function startScrolling(modifier, step) {
+        if (scrollHandle === 0) {
+            scrollHandle = setInterval(function () {
+                var newOffset = parent.scrollLeft() + (scrollStep * modifier);
+
+                parent.scrollLeft(newOffset);
+            }, 10);
+        }
+    }
+
+    function stopScrolling() {
+        clearInterval(scrollHandle);
+        scrollHandle = 0;
+    }
+
+}());
+
+    </script>
 	<script src="script.js"></script>
 </body>

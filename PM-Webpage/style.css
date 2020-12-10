@@ -448,7 +448,6 @@
         font-size: .9rem;
         
     }
-        
     .main-menu .sub-nav:hover .sub-menu{
         display: block;
         background-color:white;
@@ -458,8 +457,6 @@
         border-radius: 3px;
         border: 2px solid pink;
     }
-    
-    
     .main-menu .sub-nav:hover .sub-menu:hover{
         background-color: darkseagreen;
         color: whitesmoke;
@@ -467,18 +464,15 @@
         font-size: 1rem;
         border-radius: 10px;
     }
-    
     .content{
         display: block;
         padding: 2rem 8rem 1rem 8rem;
         align-items: center;
         text-align: center
     }
-    
     .content img{
         padding: .4rem;
     }
-    
     .content li{
         margin-left: 25rem;
         padding: 1rem 33rem 0rem 0rem;
@@ -492,6 +486,107 @@
         height: 25rem;;
         margin-top: -21px;
     }
+    
+    /*Travel Contents Begins*/
+    .topic-posts{
+        display: flex;
+        position: relative;
+        float: right;
+    }
+    #travel .big-words{
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 7rem;
+        font-weight: 700;
+        color: black;
+        margin-bottom: -3.7rem;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(1,133,175);
+        
+    }
+    
+    .scroll-container{
+        display: flex;
+        width: 100%;;
+        height: 34rem;
+        position: relative;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        padding: 1.3rem 0rem 0rem 2rem ;
+        background: transparent;
+        overflow-x: visible;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+    }
+    .travel-scroll-high-bg{
+        content: "";
+        display: inline-flex;
+        clear: both;
+        width: 96%;
+    }
+    .disable-scrollbars::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* Chrome/Safari/Webkit */
+    }
+    .disable-scrollbars {
+      -ms-overflow-style: none;  /* IE 10+ */
+    }
+    .travel-scroll-items{
+        float: left;
+        min-width: 16em;
+        margin-left: -11px;
+    }
+    .scroll-container img{
+        width: 100%;
+        height: 29rem;
+        vertical-align: middle;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all .8s ease-in-out;
+        z-index: 13;
+        position: relative;
+    }
+    
+    .scroll-container img:hover{
+        transform: scale(1.13);
+        border-radius: 20px;
+        z-index: 17;
+        box-shadow:3px 3px 20px antiquewhite;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        
+    }
+
+    .scroll-buttons{
+        max-width: 100%;
+        z-index: 99;
+        display: flex;
+        height: 12rem;
+        line-height: 5px;
+        text-align: center;
+        align-items: center;
+    }
+    #travel .prev,
+    #travel .next{
+        background-color: white;;
+        color: blue;
+        z-index: 999;
+        cursor: pointer;
+        width: .5rem;
+        height: 1.5rem;
+        border-radius: 30px;
+    }
+    #travel .prev{
+        margin-left: 1.85rem;
+        margin-top: 22.5rem;
+    }
+    
+    #travel .next{
+        margin-right:7rem;
+        margin-top: 23.5rem;
+    }
+    /*Travel Contents Ends*/
     
     .footer{
         width: 100%;
@@ -927,10 +1022,6 @@
     display: block;
 }
 #study .overlay{
-
-}
-
-#study .overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1020,5 +1111,50 @@
 }
 
 /*BLOG POST SECTION STYLE ENDS*/
+
+/*Coming Soon Section Begins*/
+#coming-soon .coming-soon-content{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0rem;
+    position: relative;
+}
+.bgimg {
+
+    background-image: url('/images/oops%20edited%20Hei%20Finland%20by%20Limping%20Frog%20Productions.jpg');
+    height: 40rem;;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0rem;
+    left: 5rem;;
+    background-color: black;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
 
 
