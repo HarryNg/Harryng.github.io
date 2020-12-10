@@ -21,7 +21,6 @@ var sticky = myTopnav.offsetTop;
 
 function myFunction() {
 
-
   if (window.pageYOffset >= sticky-13) {
 
     myTopnav.classList.add("sticky")
@@ -30,7 +29,7 @@ function myFunction() {
   }
 }
 
-
+/*full width slider function*/
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -41,6 +40,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 
 function showSlides(n) {
   var i;
@@ -57,3 +57,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+/*scrollable image function*/
