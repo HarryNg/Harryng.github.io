@@ -703,7 +703,7 @@
     #travel .des-left,
     #travel .des-right{
         margin-top: 8.5rem;
-        width: 37rem;
+        width: 40rem;
     }
     
     #travel .des-left{
@@ -790,12 +790,12 @@
     }
     #travel .showcase-img{
         float: right;
-        width: 100%;
+        max-width: 100%;
         height: 38rem;
     }
     
     #travel .showcase-img img{
-        max-width: 39rem;
+        max-width: 37rem;
         height: 38rem;
     }
     
