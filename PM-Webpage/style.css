@@ -714,7 +714,10 @@
         padding-left: 3rem;
         padding-right: 2rem;
     }
-    
+    #travel #des-three{
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
     .des-left h2,
     .des-right h2{
         font-size: 34px;
