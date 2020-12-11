@@ -515,9 +515,6 @@
         height: 8rem;
     }
     
-    #travel .content .left{
-        float: left;
-    }
     #travel #most-popular-section{
         height: 43rem;
         width: 122.333%;
@@ -804,7 +801,86 @@
         height: 38rem;
     }
     
+    #travel #journey-planner{
+        height: 27rem;
+        width: 122.333%;
+        background-color: antiquewhite;
+        margin-left: -8rem;
+        margin-top: 2rem;
+    }
     
+    #travel #journey-top{
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 7rem;
+        font-weight: 700;
+        color: black;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(1,133,175);
+    }
+    
+    #travel #journey-form{
+        float: left;
+        margin-left: 2.5rem;
+        position: relative;
+    }
+    
+    #travel #journey-form-two{
+        float: right;
+        margin-right: 2.5rem;
+        position: relative;
+    }
+    #travel #jform-to{
+        margin-left: 1rem;
+        padding-left: 3rem;
+    }
+    #travel input[type=text]{
+        width: 75%;
+        padding: .7rem .9rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+        border: 1px solid #555;
+        outline: none;
+        margin-left: 5rem;
+        margin-top: 4rem;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    
+    #travel input[type=text]:focus {
+      background-color: lightblue;
+    }
+    
+    #travel label{
+        display: inline-block;
+        position: absolute;
+        margin-left: -.17rem;
+        margin-top: 4rem;
+        border: 1px solid #555;
+        padding: 1rem 1rem 1.16rem .2rem;
+        font-size: 20px;
+        background-color: floralwhite;
+    }
+    
+    #travel #search-button{
+        cursor: pointer;
+        border: solid;
+        width: 7.5rem;
+        height: 4rem;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 1.2rem;
+        background-color: cornflowerblue;
+        color: white;
+        font-weight: 600;
+        position: relative;
+        top: 45%;
+    }
+    
+     #travel #search-button:hover{
+         background-color: darkcyan;
+    }
     /*Travel Contents Ends*/
     
     .footer{
