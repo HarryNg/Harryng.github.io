@@ -834,7 +834,7 @@
         margin-left: 1rem;
         padding-left: 3rem;
     }
-    #travel input[type=text]{
+    #travel #journey-planner input[type=text]{
         width: 75%;
         padding: .7rem .9rem;
         margin: 1rem 0;
@@ -848,7 +848,7 @@
     }
     
     
-    #travel input[type=text]:focus {
+    #travel #journey-planner input[type=text]:focus {
       background-color: lightblue;
     }
     
