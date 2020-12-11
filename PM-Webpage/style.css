@@ -834,6 +834,10 @@
         margin-left: 1rem;
         padding-left: 3rem;
     }
+    
+    #travel #label-to{
+        margin-left: 2rem;
+    }
     #travel #journey-planner input[type=text]{
         width: 75%;
         padding: .7rem .9rem;
