@@ -703,14 +703,16 @@
     #travel .des-left,
     #travel .des-right{
         margin-top: 8.5rem;
-        width: 40rem;
+        width: 30rem;
     }
     
     #travel .des-left{
         padding-right: 3rem;
+        padding-left: 2rem;
     }
     #travel .des-right{
         padding-left: 3rem;
+        padding-right: 2rem;
     }
     
     .des-left h2,
