@@ -491,19 +491,123 @@
     .topic-posts{
         display: flex;
         position: relative;
-        float: right;
     }
     #travel .big-words{
         font-family: "Helvetica Neue", sans-serif;
         font-size: 7rem;
         font-weight: 700;
         color: black;
-        margin-bottom: -3.7rem;
         -webkit-text-fill-color: white; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: rgb(1,133,175);
         
     }
+    #travel .content .right{
+        float: right;
+        margin-bottom: -6.7rem;
+        margin-right: .5rem;
+    }
+    
+    #travel .content .middle{
+        float: center;
+        margin-top: -14.5rem;
+        width: 70rem;
+        height: 8rem;
+    }
+    
+    #travel .content .left{
+        float: left;
+    }
+    #travel #most-popular-section{
+        height: 43rem;
+        width: 122.333%;
+        margin: -9rem 0rem 0rem -8rem;
+        /*background-color: black;*/
+        display: block;
+        position: relative;
+    }
+    #travel #most-popular{
+        width: 100%;
+        height: 35rem;
+        position: relative;
+        background-image: url(images/cafe.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    #travel .three-div-horizontal{
+        height: 32rem;
+        width: 80%;
+        display: block;
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        /*border: solid 3px white;*/
+        background-color: floralwhite;
+        border-radius: 20px;
+    }
+    #travel .outer-div-items{
+        
+    }
+    #travel .three-div-horizontal-items{
+        /*border: solid 2px red;*/
+        height: 32rem;
+        width: 25%;
+        float: left;
+        margin-top: -.3rem;
+        overflow: hidden;
+        border-radius: 8%;
+    }
+    
+    #travel .three-div-horizontal-items:hover{
+        transform: scale(1.13);
+    }
+    
+    #travel .three-div-horizontal img{
+        width: 100%;
+        height: 20rem;
+        float: left;
+    }
+    #travel .three-div-horizontal a{
+        text-decoration: none;
+        color: black;
+    }
+    #travel .three-div-horizontal .line{
+        width: 22%;
+        background-color: dimgray;
+        height: .8px;
+        opacity: .5;
+        margin-left: 1rem;
+        bottom: 3.8rem;
+        position: absolute;
+    }
+    #travel .bottom-first-half{
+        font-family: var(--main-font);
+        font-size: 13px;
+        width: 16rem;
+    }
+    
+    #travel .bottom-first-half-des{
+        font-family: var(--main-font);
+        font-size: 13px;
+        font-weight: 360;
+        line-height: 1.1rem;
+        width: 15rem;
+        position: absolute;
+        top: 23.5rem;
+        margin-left: 1rem;
+    }
+    
+    #travel .bottom-second-half{
+        font-family: var(--main-font);
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        bottom: 2.5rem;
+        padding-left: 1rem;
+    }
+    
     
     .scroll-container{
         display: flex;
@@ -533,7 +637,7 @@
     }
     .travel-scroll-items{
         float: left;
-        min-width: 16em;
+        min-width: 14em;
         margin-left: -11px;
     }
     .scroll-container img{
@@ -586,6 +690,112 @@
         margin-right:7rem;
         margin-top: 25.5rem;
     }
+    
+    #travel .third-width-showcase{
+        max-width: 130%;
+        width: 110%;
+        height: 40rem;
+        display: inline-flex;
+        position: relative;
+        margin-bottom: -2.8rem;
+        margin-left: -4rem;
+    }
+    #travel .des-left,
+    #travel .des-right{
+        margin-top: 8.5rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        max-width: 40rem;
+    }
+    }
+    
+    .des-left h2,
+    .des-right h2{
+        font-size: 34px;
+        font-weight: 900;
+        font-family: var(--secondary-font);
+        margin-bottom: 1rem;
+    }
+    
+    #travel .comma-line{
+        font-size: 43px;
+        color: coral;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+        float: center;
+        
+    }
+    
+    .des-left p,
+    .des-right p{
+        font-size: 18px;
+        font-weight: 340;
+        font-family: var(--main-font);
+        text-align: justify;
+        margin-bottom: 1.8rem;
+    }
+    
+    #travel .showcase-readmore{
+        float: left;
+        display: block;
+        position: relative;
+    }
+    
+    #travel .showcase-readmore:hover .readmore-button{
+        color: coral;
+        position: absolute;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        white-space: nowrap;
+    }
+    
+    #travel .showcase-readmore:hover .readmore-arrow{
+        
+        position: absolute;
+        animation-name: move-right;
+        animation-duration: 1s;
+        -webkit-animation-name: move-right;
+        -webkit-animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    #travel .readmore-arrow{
+        background-color: transparent;
+        font-size: 30px;
+        border-radius: 35% 40%;
+        border: solid 2px coral;
+        color: coral;
+        width: 2.7rem;
+        padding: .5rem;
+    }
+    @keyframes move-right{
+        0% { padding: 0rem 0rem 0rem 0rem ;}
+        50%{ padding: 0rem 0.5rem 0.2rem 0.5rem ;}
+        100%{padding: 0rem 0rem 0rem 0rem ;}
+    }
+    #travel .readmore-button{
+        color: black;
+        font-weight: 600;
+        padding-left: .8rem;
+    }
+    
+    #travel .showcase-readmore a{
+        text-decoration: none;
+    }
+    #travel .showcase-img{
+        float: right;
+        width: 100%;
+        height: 38rem;
+    }
+    
+    #travel .showcase-img img{
+        max-width: 39.86rem;
+        height: 38rem;
+    }
+    
+    
     /*Travel Contents Ends*/
     
     .footer{
@@ -597,6 +807,7 @@
         font-size: .7rem;
         background-color: var(--main-color);
         position: relative;
+        clear: both;
     }
 
     .footer-grid-container{
