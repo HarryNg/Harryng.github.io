@@ -12,6 +12,7 @@
     --secondary-font-color: #c59d5f;
     --body-font-color: #515151;
     --main-color: #0B2A9E;
+    --pink-color: #EC3B92;
 }
 
 /* Global setting ends*/
@@ -334,7 +335,6 @@
 
 /*Mobile Content ends*/ 
 
-/*Mobile Header Setting ends*/
 
 
 
@@ -471,22 +471,288 @@
         text-align: center
     }
     .content img{
-        padding: .4rem;
+        padding: 0rem;
     }
     .content li{
         margin-left: 25rem;
         padding: 1rem 33rem 0rem 0rem;
     }
+    
+    
+    /*Homepage Contents Begins*/
     #home .content{
         padding: 0;
     }
     #home .content .full-width,
     .blog-posts .content .full-width{
         width: 100%;
-        height: 25rem;;
+        height: 25rem;
         margin-top: -21px;
     }
     
+    #home .story img{
+        width: 50%;
+    }
+    #home .s1{
+        position: relative;
+    }
+    #home .s1 img{
+        /* Add the blur effect */
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+    }
+    #home .s1 h2{
+        position: absolute;
+        display: block;
+        top: 18%;
+        left: 30%;
+        width: 40rem;
+        color: white;
+        font-size: 2.55rem;
+        background-color: rgb(36,22,22, 0.5);
+        font-family: sans-serif;
+        border-radius: 10px 8px 30px 20px;
+        border: solid;
+    }
+    
+    #home .s1 p{
+        position: absolute;
+        display: block;
+        top: 80%;
+        left: 50%;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        width: 2.8rem;
+        height: 2.8rem;
+        cursor: pointer;
+    }
+    
+    #home .arrow {
+        border: solid rgb(0,123,247);
+        border-width: 0 2.9px 2.9px 0;
+        display: inline-block;
+        width: .85rem;
+        height: .85rem;
+        position: absolute;
+        top: 1.15rem;
+        left: 1rem;
+    }
+    
+    #home .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    #home #ione{
+        z-index: 2;
+    }
+    
+    #home #itwo{
+        background-color: transparent;
+        border-left: 2.8px solid rgb(0,123,247);
+        height: 1.1rem;
+        position: absolute;
+        left: 1.343rem;
+        top: .799rem;
+        z-index: 1;
+    }
+    
+    #home .s2{
+        width: 100%;
+        height: 40rem;
+        
+        background-color: antiquewhite;
+    }
+    
+    #home .s2 #s2-one{
+        height: 4rem;
+        padding: 12rem 19rem 22rem 19rem;
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: var(--body-font);
+        line-height: 4rem;
+    }
+    
+    #home .s3{
+        width: 100%;
+        height: 40rem;
+        border: solid;
+        display: block;
+        position: relative;
+    }
+    
+    #home #s3-div{
+        max-height: 40rem;
+        position: relative;
+        float: left;
+        color: black;
+        margin-top: 5rem;
+        margin-left: 3rem;
+    }
+    
+    #home #s3-div h2{
+        padding: 0rem 0rem 0rem 1rem;
+        height: 5rem;
+        font-size: 1.5rem;
+        font-family: var(--main-font);
+        position: relative;
+        margin-top: 5rem;
+        float: left;
+    }
+    
+    #home #s3-div p{
+        padding: 0rem 2rem 0rem 1rem;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        position: relative;
+        top: 1rem;
+        font-family: var(--main-font);
+        margin-top: 10rem;
+        width: 30rem;
+        line-height: 2rem;
+    }
+    
+    #home #s3-div button,
+    #home #s4-div button,
+    #home #s5-div button{
+        position: relative;
+        height: 3.5rem;
+        width: 9.5rem;
+        margin-top: 2.5rem;
+        margin-left: -2.4rem;
+        font-size: 1.1rem;
+        font-family: var(--body-font);
+        font-weight: 700;
+        border-radius: 5px 5px 5px 5px;
+        background-color: whitesmoke;
+        z-index: 3;
+        cursor: pointer;
+    }
+    
+    #home #s4-div button{
+        margin-right: -1rem;
+    }
+    #home #s3-div button:hover,
+    #home #s4-div button:hover,
+    #home #s5-div button:hover{
+        background-color: var(--pink-color);
+        color: white;
+    }
+    
+    
+    #home .s3 img{
+        height: 39.75rem;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        border-left: solid;
+    }
+    
+    #home .s4{
+        width: 100%;
+        height: 40rem;
+        border: solid;
+        display: block;
+        position: relative;
+    }
+    #home #s4-div{
+        max-height: 40rem;
+        position: relative;
+        float: right;
+        color: black;
+        margin-top: 5rem;
+        margin-right: 3rem;
+    }
+    
+    
+    #home #s4-div h2{
+        padding: 0rem 1rem 0rem 0rem;
+        height: 5rem;
+        font-size: 1.5rem;
+        font-family: var(--main-font);
+        position: relative;
+        margin-top: 5rem;
+        float: right;
+    }
+    
+    #home #s4-div p{
+        padding: 0rem 3rem 0rem 1rem;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        position: relative;
+        top: 1rem;
+        font-family: var(--main-font);
+        margin-top: 10rem;
+        width: 30rem;
+        line-height: 2rem;
+        
+    }
+    
+    #home .s4 img{
+        position: absolute;
+        height: 39.75rem;
+        z-index: 1;
+        left: 0;
+        border-left: solid;
+    }
+    #home .s5{
+        width: 100%;
+        height: 40rem;
+        border: solid;
+        display: block;
+        position: relative;
+    }
+    
+    #home #s5-div{
+        max-height: 40rem;
+        position: relative;
+        float: left;
+        color: black;
+        margin-top: 5rem;
+        margin-left: 4rem;
+    }
+    
+    
+    #home #s5-div h2{
+        padding: 0rem 2rem 0rem 7rem;
+        height: 5rem;
+        font-size: 1.5rem;
+        font-family: var(--main-font);
+        position: relative;
+        margin-top: 5rem;
+        float: left;
+    }
+    
+    #home #s5-div p{
+        padding: 0rem 2rem 0rem 1rem;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        position: relative;
+        top: 1rem;
+        font-family: var(--main-font);
+        margin-top: 10rem;
+        width: 30rem;
+        line-height: 2rem;
+    }
+    
+    
+    #home #s5-div button{
+        margin-right: -1rem;
+    }
+    
+    #home #s5-img-frame{
+        
+        position: absolute;
+        height: 39.75rem;
+        z-index: 1;
+        left: 50%;
+        border-left: solid;
+    }
+    #s5-img-frame img{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        float: left;
+    }
     /*Travel Contents Begins*/
     .topic-posts{
         display: flex;
@@ -1073,6 +1339,7 @@
     /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
     .sticky + .content{
       padding-top: 60px;
+        z-index: 10000;
     }
 
 /*Sticky nav bar ends*/
