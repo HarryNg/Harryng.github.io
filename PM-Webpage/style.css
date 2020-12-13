@@ -1276,7 +1276,9 @@
 .active, .dot:hover {
   background-color: #717171;
 }
-
+#study .story a:nth-child(1){
+    text-decoration: none;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -1310,28 +1312,6 @@
 	transition: .45s ease-in-out;
     opacity: .5;
     
-}
-#study .s6{
-    
-}
-#study .s6 .story{
-    margin-top: 15rem;
-}
-#study .contain{
-    position: absolute;
-    display: block;
-}
-#study .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
 }
 
 #study .grid-container .i2{
