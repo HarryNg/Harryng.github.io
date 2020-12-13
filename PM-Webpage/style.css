@@ -977,8 +977,11 @@
         padding-left: 3rem;
         padding-right: 2rem;
     }
+    #travel #travel-des-right-img{
+        margin-top: 1.8rem;
+    }
     #travel #des-three{
-        margin-top: -2rem;
+        margin-top: -1.25rem;
         margin-bottom: 3rem;
     }
     .des-left h2,
