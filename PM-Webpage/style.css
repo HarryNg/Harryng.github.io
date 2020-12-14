@@ -976,13 +976,14 @@ html {
     #travel .des-left{
         padding-right: 3rem;
         padding-left: 2rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 2.5rem;
+        margin-right: 3.5rem;
     }
     #travel .des-right{
         padding-left: 3rem;
         padding-right: 2rem;
-        margin-right: 6rem;
+        margin-left: 3.5rem;
+        margin-right: 2.5rem;
     }
     #travel #travel-des1,
     #travel #travel-des2,
