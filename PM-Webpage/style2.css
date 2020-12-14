@@ -1384,10 +1384,10 @@ html {
       color: black;
     }
 
-    #person1 button:hover, a:hover,
-    #person2 button:hover, a:hover,
-    #person3 button:hover, a:hover,
-    #person4 button:hover, a:hover{
+    #person1 button:hover, #person1 a:hover,
+    #person2 button:hover, #person2 a:hover,
+    #person3 button:hover, #person3 a:hover,
+    #person4 button:hover, #person4 a:hover{
       opacity: 0.7;
     }
     
