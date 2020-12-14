@@ -1078,7 +1078,7 @@ html {
     }
     
     #travel .showcase-img img{
-        width: 37rem;
+        width: 36.6rem;
         height: 100%;
         float: right;
     }
@@ -1188,12 +1188,13 @@ html {
         background-color: rgb(0,161,155);
         position: absolute;
         margin-top: -4rem;
-        margin-left: -4rem;
+        margin-left: 4rem;
         color: white;
         font-family: var(--body-font);
         font-size: 2rem;
         z-index: 2;
     }
+    
     
     #top-intro-heading h2{
         padding-top: 4.5rem;
@@ -1201,11 +1202,12 @@ html {
         
         
     }
+    
     #top-intro-heading p{
         font-family: var(--secondary-font);
         font-size: 1.4rem;
         width: 36rem;
-        padding:1rem 5rem rem 5rem ;
+        padding:1rem 0rem 0rem 0rem ;
     }
     #about #mid-intro{
         position: relative;
@@ -1226,12 +1228,10 @@ html {
         cursor: pointer;
     }
     
-    /*About + Life contents begin*/
+    /*About ends + Life contents begin*/
     #life #top-life{
-        width: 125.2%;
+        width: 100%;
         height: 30rem;
-        margin-left: -8rem;
-        margin-top: -2rem;
         border: solid;
     }
     
@@ -1260,8 +1260,82 @@ html {
       mix-blend-mode: screen;
     }
     
-    /*About Contents End*/
     
+    /*Life contents end*/
+    /*Contact content begins*/
+    
+    #contact #contact-person{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        border: solid;
+        margin-top: -2rem;
+    }
+    #contact-person img{
+        height: 20rem;
+    }
+    #contact #person1,
+    #contact #person2,
+    #contact #person3,
+    #contact #person4{
+        position: relative;
+        width: 25%;
+        float: left;
+    }
+    
+    #person1 .card,
+    #person2 .card,
+    #person3 .card,
+    #person4 .card{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    
+    #person1 .title,
+    #person2 .title,
+    #person3 .title,
+    #person4 .title{
+      color: grey;
+      font-size: 18px;
+    }
+    
+     #person1 button,
+    #person2 button,
+    #person3 button,
+    #person4 button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    
+    #person1 a,
+    #person2 a,
+    #person3 a,
+    #person4 a{
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+
+    #person1 button:hover, #person1 a:hover,
+    #person2 button:hover, #person2 a:hover,
+    #person3 button:hover, #person3 a:hover,
+    #person4 button:hover, #person4 a:hover{
+      opacity: 0.7;
+    }
+    
+    /*Contact contents ends*/
     .footer{
         width: 100%;
         height: 30rem;
