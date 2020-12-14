@@ -9,8 +9,8 @@
 
 </html>
 
-<body id="life">
-		<section class="header header-top">
+<body class="blog-posts" id="post2">
+	<section class="header header-top">
 		<div class="greeting"><h3>An Interactive Guide to Finland for International Students</h3></div>
 		<div class="header-items">
 		    <div class="logo">FinInNote</div>
@@ -34,13 +34,13 @@
 		    <span class="divider">></span>
 		    <a href="#trade" id="rent-buy">Rent/Buy</a>
 		    <div class="line"></div>
-		    <p id="title">Enjoy Life in Finland</p>
+		    <p id="title">How to hunt for scholarship</p>
 		    
 		</div>
     </section>
     
     <section class="header header-bottom">
-<nav class="main-menu" id="myTopnav">
+    <nav class="main-menu" id="myTopnav">
 		    <span id="home"><a href="index.html">Home</a>
 		    <div class="line"></div>
            </span>
@@ -51,7 +51,7 @@
             </span>
            
             <div class="sub-nav">
-                <span id="study">
+                <span id="study"  class="active-page">
                     <a href="study.html">Study</a>
                     <a class="sub-menu" href="post1.html">Language</a>
                     <a class="sub-menu" href="post1.html">Universities</a>
@@ -61,9 +61,9 @@
                 </span>
 		    </div>
 
-		    <span id="life"  class="active-page">Life
-		    <div class="line"></div></span>
-           
+            <span id="life"><a href="life.html">Life</a>
+            <div class="line"></div></span>		        
+
             <div class="sub-nav">
                 <span id="travel"><a href="travel.html">Travel</a>
                     <a class="sub-menu" href="post1.html">Budget</a>
@@ -82,23 +82,33 @@
 
             <span id="contact"><a href="contact.html">Contact</a>
 		    <div class="line"></div></span>    
+
 		</nav>
 
 	</section>
-
-
-	<section class="content">
-		<div id="top-life">
-		     
-
-            <div class="image-container">
-              <div class="text">NATURE</div>
-            </div>
-
+	
+	<section class="blog-post-content">
+				<div id="travel-scroll-container">
+		    <div class="big-words right"><span>TOPICS</span></div>
+		    <div id="travel-scroll-bg">
+		        <div class="travel-scroll-items-new">
+		        
+		        <a href="coming-soon.html"><img src="images/The%20Aurora%20Borealis%20-%20Ivalo%20lapland%20by%20GiuseppeMilo.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Aurora Hunting</div>
+		        </div>
+		        
+		        <div class="travel-scroll-items-new">
+                <a href="coming-soon.html"><img src="images/travel/_Julius%20Jansson.jpg" alt=""></a>
+		        <div class="travel-scroll-captions">Luxury Adventures</div>
+		        </div>
+		        
+		        
+		        
+		        
+		    </div>
 		</div>
-        
-	</section>	
 
+	</section>
     <section class="footer">
 		<div class="footer-grid-container">
 		    <div class="footer-0"><h3>FinInNote</h3>
@@ -162,7 +172,7 @@
 		        </ul></div>
 		</div>
 		<div class="back-to-top-button">
-		<a href="#life" class="footer-button"><h4>Back To Top</h4> <span style=background-image:url(images/character-01.png)></span></a>
+		<a href="#post1" class="footer-button"><h4>Back To Top</h4> <span style=background-image:url(images/character-01.png)></span></a>
 		</div>
 		<section class="footer-bottom">
             
@@ -171,8 +181,8 @@
 
     </section>
     
-    <script>
-        // When the user scrolls the page, execute myFunction
+    	<script>
+    // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
 
     // Get the navbar
@@ -196,3 +206,5 @@
     </script>
 	<script src="script.js"></script>
 </body>
+
+
