@@ -19,6 +19,9 @@
 /* Global setting ends*/
 
 /*Header Top Setting begins*/
+html {
+    scroll-behavior: smooth;
+}
 .header{
     background-color: whitesmoke;
     z-index: 500;
@@ -514,6 +517,7 @@
         font-family: sans-serif;
         border-radius: 10px 8px 30px 20px;
         border: solid;
+        
     }
     
     #home .s1 p{
@@ -891,12 +895,14 @@
         overflow-x: visible;
         overflow-y: hidden;
         flex-wrap: nowrap;
+        z-index: 3;
     }
     .travel-scroll-high-bg{
         content: "";
         display: inline-flex;
         clear: both;
         width: 96%;
+        z-index: 5;
     }
     .disable-scrollbars::-webkit-scrollbar {
         width: 0px;
@@ -909,6 +915,7 @@
         float: left;
         min-width: 14em;
         margin-left: -11px;
+        z-index: 10;
     }
     .scroll-container img{
         width: 100%;
@@ -1171,6 +1178,7 @@
         display: block;
         border: solid;
         margin-left: -8rem;
+        margin-top: -2rem;
         z-index: 1;
         
     }
@@ -1223,7 +1231,114 @@
         height: 2.8rem;
         cursor: pointer;
     }
+    
+    #mid-mid .image-container,
+    #life #top-life .image-container{
+      background-image: url("images/First%20snow%20of%20winter%20by%20dave_s.jpg");
+      background-size: cover;
+      position: relative;
+      height: 300px;
+    }
+
+    #mid-mid .text,
+    #life #top-life .text{
+      background-color: white;
+      color: black;
+      font-size: 10vw; 
+      font-weight: bold;
+      margin: 0 auto;
+        padding-bottom: 10rem;
+      width: 50%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: screen;
+    }
     /*About Contents End*/
+    /*Life contents begin*/
+    #life #top-life{
+        width: 122.3%;
+        height: 30rem;
+        margin-left: -8rem;
+        margin-top: -2rem;
+        border: solid;
+    }
+    
+    /*Life contents end*/
+    /*Contact content begins*/
+    
+    #contact #contact-person{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        border: solid;
+        margin-top: -2rem;
+    }
+    #contact-person img{
+        height: 20rem;
+    }
+    #contact #person1,
+    #contact #person2,
+    #contact #person3,
+    #contact #person4{
+        position: relative;
+        width: 25%;
+        float: left;
+    }
+    #person1 .card,
+    #person2 .card,
+    #person3 .card,
+    #person4 .card{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    #person1 .title,
+    #person2 .title,
+    #person3 .title,
+    #person4 .title{
+      color: grey;
+      font-size: 18px;
+    }
+
+    #person1 button,
+    #person2 button,
+    #person3 button,
+    #person4 button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    #person1 a,
+    #person2 a,
+    #person3 a,
+    #person4 a{
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+
+    #person1 button:hover, a:hover,
+    #person2 button:hover, a:hover,
+    #person3 button:hover, a:hover,
+    #person4 button:hover, a:hover{
+      opacity: 0.7;
+    }
+    
+    
+    /*Contact content ends*/
     .footer{
         width: 100%;
         height: 30rem;
