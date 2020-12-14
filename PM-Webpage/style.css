@@ -1195,7 +1195,9 @@ html {
         text-decoration: none;
     }
     
-    
+    #about #icon-container{
+        margin-left: -2.5rem;
+    }
     #about #icon-container p{
         position: absolute;
         display: block;
