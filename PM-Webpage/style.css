@@ -959,7 +959,7 @@ html {
     
     #travel .third-width-showcase{
         max-width: 100%;
-        width: 100%;
+        width: 80rem;
         height: 40rem;
         display: inline-flex;
         position: relative;
@@ -976,8 +976,8 @@ html {
         margin-right: 1rem;
     }
     #travel .des-right{
-        padding-left: 2rem;
-        padding-right: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         margin-left: 1rem;
         margin-right: 7.5rem;
     }
@@ -986,11 +986,15 @@ html {
     #travel #travel-des3{
         padding-left: 3rem;
         padding-right: 3rem;
-        margin-top: -.4rem;
     }
     
      #travel #travel-des2-img{
          float: left;
+         margin-top: -2rem;
+    }
+     #travel #travel-des3-img{
+         float: left;
+         margin-top: -3rem;
     }
     .des-left h2,
     .des-right h2{
@@ -1069,12 +1073,12 @@ html {
     }
     #travel .showcase-img{
         width: 80%;
-        height: 39.7rem;
+        height: 38rem;
     }
     
     #travel .showcase-img img{
-        width: 36.6rem;
-        height: 100%;
+        width: 37rem;
+        height: 38rem;
         float: right;
     }
     #travel #journey-planner{
