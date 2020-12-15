@@ -1407,14 +1407,14 @@ html {
         height: 36rem;
         width: 40rem;
         margin-right: .5rem;
-        margin-left: 6rem;
+        margin-left: 4rem;
         border-radius: 20px 20px 20px 20px;
     }
     
     #life #life-top-right{
         height: 100%;
-        width: 24rem;
-        margin-right: 13rem;
+        width: 25rem;
+        margin-right: 10rem;
         margin-left: 1.5rem;
         position: relative;
         top: 20%;
