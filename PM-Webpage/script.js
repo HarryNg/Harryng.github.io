@@ -60,3 +60,11 @@ function showSlides(n) {
 
 
 /*scrollable image function*/
+
+
+/*Appear on scroll ends*/
+
+
+
+
+

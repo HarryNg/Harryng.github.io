@@ -104,7 +104,7 @@
 		<div id="s2" class="story s2">
 		    
 		    
-		    <p id="s2-one">We'd Love to Make<br> <span style="color:red">Your Journey</span> in Finland <br><span style="color:coral">Unforgetably Enjoyable!</span></p>
+		    <p class=" inline-photo show-on-scroll" id="s2-one">We'd Love to Make<br> <span style="color:red">Your Journey</span> in Finland <br><span style="color:coral">Unforgetably Enjoyable!</span></p>
 		    
 		</div>
 		
@@ -116,7 +116,7 @@
             <a href="life.html"><button>Read More</button></a>
 		    </div>
 		    
-            <img src="images/pexels-julia-m-cameron-4145347.jpg" alt="">
+            <img class="inline-photo show-on-scroll" src="images/pexels-julia-m-cameron-4145347.jpg" alt="">
 		    
 		</div>
 		
@@ -126,7 +126,7 @@
                 <p>Grab our study guides about how to get a scholarship in Finland - FOR FREE</p>
             <a href="study.html"><button>Read More</button></a>
 		    </div>
-		    <img src="images/pexels-ravi-kant-2877338.jpg" alt="">
+		    <img class="inline-photo show-on-scroll"  src="images/pexels-ravi-kant-2877338.jpg" alt="">
 		</div>
 		
 		<div class="story s5">
@@ -135,7 +135,7 @@
             <p>Meet Finland!</p>
             <a href="life.html"><button>Read More</button></a>
 		    </div>
-		    <div id="s5-img-frame">
+		    <div class="inline-photo show-on-scroll"  id="s5-img-frame">
 		        <img src="images/pexels-mochammad-algi-3268175.jpg" alt="">
 		        <img src="images/Kakslauttanen%20-%20Lapland%20-%20Finland%20low%20res%20reindeer%20by%20greenland%20travel.jpg" alt="">
 		        <img src="images/pexels-andrea-piacquadio-3791666.jpg" alt="">
@@ -240,6 +240,48 @@
         myTopnav.classList.remove("sticky");
       }
     }
+    </script>
+    <script>
+        // Detect request animation frame
+        var scroll = window.requestAnimationFrame ||
+                     // IE Fallback
+                     function(callback){ window.setTimeout(callback, 1000/60)};
+        var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+        function loop() {
+
+            Array.prototype.forEach.call(elementsToShow, function(element){
+              if (isElementInViewport(element)) {
+                element.classList.add('is-visible');
+              } else {
+                element.classList.remove('is-visible');
+              }
+            });
+
+            scroll(loop);
+        }
+
+        // Call the loop for the first time
+        loop();
+
+        // Helper function from: http://stackoverflow.com/a/7557433/274826
+        function isElementInViewport(el) {
+          // special bonus for those using jQuery
+          if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+          }
+          var rect = el.getBoundingClientRect();
+          return (
+            (rect.top <= 0
+              && rect.bottom >= 0)
+            ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+            ||
+            (rect.top >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+          );
+        }
     </script>
 	<script src="script.js"></script>
 </body>
