@@ -1367,7 +1367,8 @@ html {
     #travel-go-with-us-helsinki,
     #travel-reliable-agencies,
     #post1-top-scholarship,
-    #study-abroad-usa-versus-finland{
+    #study-abroad-usa-versus-finland,
+    #study-residence-permit-by-you{
         width: 60rem;
         position: relative;
         padding-top: 2rem;
@@ -1392,7 +1393,8 @@ html {
     #travel-go-with-us-helsinki h3,
     #travel-reliable-agencies h3,
     #post1-top-scholarship h3,
-    #study-abroad-usa-versus-finland h3{
+    #study-abroad-usa-versus-finland h3,
+    #study-residence-permit-by-you h3{
         padding: .6rem 0;
     }
      
@@ -1409,7 +1411,8 @@ html {
     #travel-go-with-us-helsinki h2,
     #travel-reliable-agencies h2,
     #post1-top-scholarship h2,
-    #study-abroad-usa-versus-finland h2{
+    #study-abroad-usa-versus-finland h2,
+    #study-residence-permit-by-you h2{
         padding: 1.6rem 2rem;
     }
     
@@ -1426,7 +1429,8 @@ html {
     #travel-go-with-us-helsinki li,
     #travel-reliable-agencies li,
     #post1-top-scholarship li,
-    #study-abroad-usa-versus-finland li{
+    #study-abroad-usa-versus-finland li,
+    #study-residence-permit-by-you li{
         margin-left: 4.5rem;
     }
     
@@ -1443,7 +1447,8 @@ html {
     #travel-go-with-us-helsinki p,
     #travel-reliable-agencies p,
     #post1-top-scholarship p
-    #study-abroad-usa-versus-finland p{
+    #study-abroad-usa-versus-finland p,
+    #study-residence-permit-by-you p{
         padding-bottom: 1rem;
         padding-top: 1rem;
         margin-left: 2.5rem;
@@ -1462,7 +1467,8 @@ html {
     #travel-go-with-us-helsinki img,
     #travel-reliable-agencies img,
     #post1-top-scholarship img,
-    #study-abroad-usa-versus-finland img{
+    #study-abroad-usa-versus-finland img,
+    #study-residence-permit-by-you img{
         width: 45rem;
         height:30rem;
         position: relative;
