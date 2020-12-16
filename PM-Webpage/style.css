@@ -1364,7 +1364,8 @@ html {
     #travel-budget,
     #travel-top-local-food,
     #travel-go-with-us-helsinki,
-    #travel-reliable-agencies{
+    #travel-reliable-agencies,
+    #post1-top-scholarship{
         width: 60rem;
         position: relative;
         padding-top: 2rem;
@@ -1373,6 +1374,7 @@ html {
         font-weight: normal;
         padding: 3rem 3.5rem 2rem 2rem;
         line-height: 1.68rem;
+        margin-left: 12rem;
     }
     
     #top-ten-finnish-taboos h3,
@@ -1386,8 +1388,78 @@ html {
     #travel-budget h3,
     #travel-top-local-food h3,
     #travel-go-with-us-helsinki h3,
-    #travel-reliable-agencies h3{
+    #travel-reliable-agencies h3,
+    #post1-top-scholarship h3{
         padding: .6rem 0;
+    }
+     
+    #top-ten-finnish-taboos h2,
+    #life-insurrance h2,
+    #life-housing h2,
+    #life-marriage h2,
+    #life-pet-visa h2,
+    #study-entrance-exam h2,
+    #study-finnish-language h2,
+    #study-universities h2,
+    #travel-budget h2,
+    #travel-top-local-food h2,
+    #travel-go-with-us-helsinki h2,
+    #travel-reliable-agencies h2,
+    #post1-top-scholarship h2{
+        padding: 1.6rem 2rem;
+    }
+    
+    #top-ten-finnish-taboos li,
+    #life-insurrance li,
+    #life-housing li,
+    #life-marriage li,
+    #life-pet-visa li,
+    #study-entrance-exam li,
+    #study-finnish-language li,
+    #study-universities li,
+    #travel-budget li,
+    #travel-top-local-food li,
+    #travel-go-with-us-helsinki li,
+    #travel-reliable-agencies li,
+    #post1-top-scholarship li{
+        margin-left: 4.5rem;
+    }
+    
+    #top-ten-finnish-taboos p,
+    #life-insurrance p,
+    #life-housing p,
+    #life-marriage p,
+    #life-pet-visa p,
+    #study-entrance-exam p,
+    #study-finnish-language p,
+    #study-universities p,
+    #travel-budget p,
+    #travel-top-local-food p,
+    #travel-go-with-us-helsinki p,
+    #travel-reliable-agencies p,
+    #post1-top-scholarship p{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        margin-left: 2.5rem;
+    }
+    
+    #top-ten-finnish-taboos img,
+    #life-insurrance img,
+    #life-housing img,
+    #life-marriage img,
+    #life-pet-visa img,
+    #study-entrance-exam img,
+    #study-finnish-language img,
+    #study-universities img,
+    #travel-budget img,
+    #travel-top-local-food img,
+    #travel-go-with-us-helsinki img,
+    #travel-reliable-agencies img,
+    #post1-top-scholarship img{
+        width: 45rem;
+        height:30rem;
+        position: relative;
+        left: 20%;
     }
     #life #life-top-mid{
         width: 100%;
