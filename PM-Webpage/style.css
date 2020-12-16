@@ -1366,7 +1366,8 @@ html {
     #travel-top-local-food,
     #travel-go-with-us-helsinki,
     #travel-reliable-agencies,
-    #post1-top-scholarship{
+    #post1-top-scholarship,
+    #study-abroad-usa-versus-finland{
         width: 60rem;
         position: relative;
         padding-top: 2rem;
@@ -1390,7 +1391,8 @@ html {
     #travel-top-local-food h3,
     #travel-go-with-us-helsinki h3,
     #travel-reliable-agencies h3,
-    #post1-top-scholarship h3{
+    #post1-top-scholarship h3,
+    #study-abroad-usa-versus-finland h3{
         padding: .6rem 0;
     }
      
@@ -1406,7 +1408,8 @@ html {
     #travel-top-local-food h2,
     #travel-go-with-us-helsinki h2,
     #travel-reliable-agencies h2,
-    #post1-top-scholarship h2{
+    #post1-top-scholarship h2,
+    #study-abroad-usa-versus-finland h2{
         padding: 1.6rem 2rem;
     }
     
@@ -1422,7 +1425,8 @@ html {
     #travel-top-local-food li,
     #travel-go-with-us-helsinki li,
     #travel-reliable-agencies li,
-    #post1-top-scholarship li{
+    #post1-top-scholarship li,
+    #study-abroad-usa-versus-finland li{
         margin-left: 4.5rem;
     }
     
@@ -1438,7 +1442,8 @@ html {
     #travel-top-local-food p,
     #travel-go-with-us-helsinki p,
     #travel-reliable-agencies p,
-    #post1-top-scholarship p{
+    #post1-top-scholarship p
+    #study-abroad-usa-versus-finland p{
         padding-bottom: 1rem;
         padding-top: 1rem;
         margin-left: 2.5rem;
@@ -1456,7 +1461,8 @@ html {
     #travel-top-local-food img,
     #travel-go-with-us-helsinki img,
     #travel-reliable-agencies img,
-    #post1-top-scholarship img{
+    #post1-top-scholarship img,
+    #study-abroad-usa-versus-finland img{
         width: 45rem;
         height:30rem;
         position: relative;
@@ -1861,6 +1867,7 @@ html {
         "s4 s5 s6";
     grid-column-gap: 1rem;
     grid-row-gap: 5rem;
+    margin-bottom: 5rem;
 }
 
 #study .content-paragraph{
@@ -1871,7 +1878,6 @@ html {
     text-align: left;
 }
 
-
 #study .grid-container img{
     width: 23rem;
     height: 15rem;
@@ -1880,6 +1886,7 @@ html {
 
 #study .story h2{
     padding-bottom: .8rem;
+    padding-top: .9rem;
 }
 
 #study .story>span{
@@ -1891,7 +1898,9 @@ html {
     padding-top: .3rem;
     padding-bottom: 1rem;
     font-size: 17px;
+    font-weight: 500;
     font-family: "helvetical" sans-serif;
+    text-align: justify;
 }
 
 /*Study Full page Slider Images Begins*/
