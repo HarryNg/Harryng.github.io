@@ -35,6 +35,31 @@
         
         <div class="horizontal-slider" id="first-slider">
             
+            <div class="slides-container">
+                <div class="slides" id="slide-1">
+                <img src="images/CLASSICpng.png" alt="">
+                </div>
+                <div class="slides" id="slide-2">
+                <img src="images/MILK%20TEA.png" alt="">
+                </div>
+                <div class="slides" id="slide-3">
+                <img src="images/MILK%20CAP.png" alt="">
+                </div>
+                <div class="slides" id="slide-4">
+                <img src="images/SLUSH.png" alt="">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
         </div>
         <div class="flex-grid" id="second-block">
         
@@ -85,5 +110,6 @@
             <p id="bottom-footer">Copyright (C) 2021 KingTea. All Rights Reserved.　|　TEL:55523461000 　|　Contact Us: contact@kingtea.com</p>
         </footer>
         
+        <script src="script.js"></script>
     </body>
 </html>
