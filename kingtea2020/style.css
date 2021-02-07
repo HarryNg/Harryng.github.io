@@ -15,15 +15,13 @@
   }
 }
 /**********************flex grid for smaller screen **************/
-html {
-    height: 100%;
-}
+
 body {
     background-color: snow;
     height: 100vh;
     width: 100%;
     padding: 0px;
-    margin: 0;
+    margin: auto;
     
 }
 
@@ -35,12 +33,18 @@ body {
     flex:1;
 }
 
+#menu-logo {
+    flex: 0 0 10vh;
+}
 #main-menu .col img{
-    width: 10vw;
+    width: 12vw;
     height: 20vh;
     
 }
 
+#main-menu a{
+    text-decoration: none;
+}
 .col #contactbtn-top{
     height: 7.2vh;
     width: 10vw;
@@ -52,6 +56,37 @@ body {
     margin: 2rem 0px 2rem 0px;
     border-radius: 5px;
 }
+
+#menu-top {
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    flex: 0 0 45vw;
+/*    border: 2px solid;*/
+}
+#menu-top  ul{
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#menu-top ul li{
+    float: left;
+    width: 8vw;
+    height: 6vh;
+}
+#menu-top  ul li a{
+    display: block;
+    font-size: 3.5vh;
+}
+#menu-top  ul li a:hover{
+    border-bottom: 1px solid green;
+    border-bottom-width: 2vh;
+}
+
+
+
 /**********************End of Main Menu Block*********************/
 
 .first-frame {
@@ -151,9 +186,10 @@ body {
     border-radius: 45vh 5vh 45vh 10vh;
     
     justify-content: center;
+    text-align: center;
     margin-top: 10vh;
     background-image: url(images/greenbackground.jpg);
-    height: 135vh;
+    height: 145vh;
     
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -175,7 +211,8 @@ body {
 }
 
 #fourth-div-block{
-    height: 40vh;
+    
+    height: 70vh;
     width: 100%;
     text-align: center;
 }
@@ -187,7 +224,34 @@ body {
     padding: 1vw;
     margin: 1vw;
 }
-/**********************End of Third Block*********************/
+
+#fourth-div-block .col{
+    position: relative;
+    height: 65vh;
+}
+
+
+#fourth-div-block .col button{
+    position: absolute;
+    font-size: 20px;
+    border: solid;
+    width: 10vw;
+    height: 7vh;
+    top: 35%;
+    left: 35%;
+    display: none;
+}
+
+#fourth-div-block .col:hover button{
+    display: block;
+}
+
+#fourth-div-block .col:hover button:hover{
+    background-color: green;
+    color: white;
+}
+
+/**********************End of Fourth Block*********************/
 
 
 
@@ -198,41 +262,40 @@ body {
     padding-top: 10vh;
 }
 .two-column p{
-    float: left;
     width: 50%;
     text-align: center;
-    padding: 0vh 10vh 0vh 10vh;
+    padding: 0vh 10vh 0vh 20vh;
 }
 
 .two-column form {
-    float: right;
-    width: 50%;
+    padding-left: 7vw;
+    width: 70%;
     text-align: left;
     
 }
 
 .two-column #name{
-    width: 25vw;
+    width: 28vw;
     height: 4vh;
 }
 
 .two-column #email{
-    width: 25vw;
+    width: 28vw;
     height: 4vh;
 }
 
 .two-column #phone{
-    width: 25vw;
+    width: 28vw;
     height: 4vh;
 }
 
 .two-column #message{
-    width: 25vw;
+    width: 28vw;
     height: 16vh;
 }
 
 .two-column #submitbtn{
-    width: 25vw;
+    width: 28vw;
     height: 8vh;
 }
 
@@ -241,10 +304,9 @@ body {
 footer {
     background-color: black;
     width: 100%;
-    height: 15vh;
+    height: 27.65vh;
     color: white;
-  position: relative;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 6rem 1rem 1rem 1rem;
   text-align: center;
 }
 
