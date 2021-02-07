@@ -1913,9 +1913,9 @@ html {
 #study .full-width-slider{
     width: 100%;
 }
-#study .full-width-slider img{
+/*#study .full-width-slider img{
     height: 20rem;
-}
+}*/
 #study .slideshow-container{
     
     position: relative;
@@ -1932,6 +1932,7 @@ html {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    height: 20rem;
 }
 /* Next & previous buttons */
 .prev, .next {
