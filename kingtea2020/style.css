@@ -7,6 +7,9 @@
 
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
+    .first-frame p{
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
@@ -75,9 +78,10 @@ body {
 
 #menu-top ul li{
     float: left;
-    width: 8vw;
+    width: 10vw;
     height: 6vh;
     padding-right: 4rem;
+    padding-bottom: 3rem;
 }
 #menu-top  ul li a{
     display: block;
@@ -111,7 +115,7 @@ body {
 }
 .first-frame img{
     position: absolute;
-    top: 17%;
+    top: 22%;
     width: 10vw;
     height: 20vh;
     opacity: 75%;
@@ -291,6 +295,14 @@ body {
 #fourth-block p{
     font-weight: bolder;
     font-size: 3.5rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+#fourth-block .quotes{
+    width: 100vw;
+    font-size: 3rem;
+    height: 20vh;
     text-align: center;
 }
 
