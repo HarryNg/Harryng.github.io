@@ -91,10 +91,10 @@ body {
 
 #menu-top ul li{
     float: left;
-    width: 10vw;
-    height: 6vh;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+    width: 9vw;
+    height: 3.5vh;
+    padding-right: .3rem;
+    padding-bottom: 1.5rem;
 }
 #menu-top  ul li a{
     display: block;
