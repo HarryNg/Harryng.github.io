@@ -1,0 +1,563 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 480px) {
+/*
+  .flex-grid {
+    display: block;
+  }
+*/
+
+    
+}
+/**********************flex grid for smaller screen **************/
+
+body {
+    background-color: snow;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+.flex-grid {
+    display: flex;
+}
+.col {
+    flex:1;
+}
+
+#menu-logo {
+    flex: 0 0 10vh;
+}
+#main-menu .col img{
+    width: 12vw;
+    height: 20vh;
+    
+}
+
+#main-menu a{
+    text-decoration: none;
+}
+.col #contactbtn-top{
+    height: 7.2vh;
+    width: 10vw;
+    background-color: dimgray;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    margin: 2rem 0px 2rem 0px;
+    border-radius: 5px;
+}
+
+#menu-top {
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    flex: 0 0 55vw;
+/*    border: 2px solid;*/
+}
+#menu-top  ul{
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#menu-top ul li{
+    float: left;
+    width: 9vw;
+    height: 3.5vh;
+    padding-right: .3rem;
+    padding-bottom: 1.5rem;
+}
+#menu-top  ul li a{
+    display: block;
+    font-size: 3.5vh;
+}
+#menu-top  ul li a:hover{
+    border-bottom: 1px solid green;
+    border-bottom-width: 2vh;
+}
+
+
+
+/**********************End of Main Menu Block*********************/
+
+.first-frame {
+    height: 70vh; 
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.first-frame iframe {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: block;
+}
+.first-frame img{
+    position: absolute;
+    top: 22%;
+    width: 10vw;
+    height: 20vh;
+    opacity: 75%;
+    margin-left:-5vw;
+    z-index: 50;
+}
+
+.first-frame p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-top: 18vh;
+    z-index: 60;
+}
+
+/**********************End of First Block*********************/
+
+.horizontal-slider {
+    width: 60%;
+    height: 55vh;
+/*    border: 2px solid;*/
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 1rem;
+}
+
+.slides-container {
+    position: relative;
+    margin: auto;
+    height: 30vh;
+    display: block;
+}
+/*.slides {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 45vh;
+    
+}*/
+
+.slides img{
+    height: 30vh;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-color: red;
+    
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+/**********************End of First Slider*********************/
+
+#second-block .col{
+    height: 60vh;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#second-block .col img{
+    height: 85%;
+    width: 85%;
+}
+
+#second-block .col img:hover{
+    background-color: darkseagreen;
+    opacity: 50%;
+}
+
+
+/**********************End of Second Block*********************/
+
+.textblock {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.88rem;
+}
+
+#quote-text {
+    font-weight: bolder; 
+    font-size: 4rem; 
+    line-height: 3.9rem; 
+    margin-bottom: -1rem;
+    margin-top: -0rem;
+}
+/**********************End of text Block*********************/
+#third-block {
+    height: 55vh;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vh;
+}
+
+
+#third-block img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    border-style: solid;
+    margin-bottom: 1rem;
+}
+
+/**********************End of Third Block*********************/
+
+#fourth-block {
+    
+    border-radius: 45vh 5vh 45vh 10vh;
+    
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vh;
+    background-image: url(images/greenbackground.jpg);
+    height: 145vh;
+    
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fourth-block p{
+    font-weight: bolder;
+    font-size: 3.5rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+
+#fourth-block p img{
+    height: 30vh;
+    width: 20vw;
+    border: dashed;
+}
+
+#fourth-div-block{
+    
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+#fourth-div-block img {
+    height: 45vh;
+    width: 32vw;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    border: solid red 1rem;
+    grid-column-gap: 1rem;
+    padding: 1vw;
+    margin: 0,auto;
+}
+
+#fourth-div-block .col{
+    position: relative;
+    height: 65vh;
+}
+
+
+#fourth-div-block .col button{
+    position: absolute;
+    font-size: 20px;
+    border: solid;
+    width: 10vw;
+    height: 7vh;
+    top: 35%;
+    left: 35%;
+    display: none;
+}
+
+#fourth-div-block .col:hover button{
+    display: block;
+}
+
+#fourth-div-block .col:hover button:hover{
+    background-color: green;
+    color: white;
+}
+
+/**********************End of Fourth Block*********************/
+
+
+
+
+.two-column {
+    display: flex;
+    height: 72.2%;
+    padding-top: 10vh;
+    margin-bottom: 15vh;
+}
+.two-column p{
+    width: 50%;
+    text-align: center;
+    padding: 0vh 10vh 0vh 20vh;
+}
+
+.two-column form {
+    padding-left: 7vw;
+    width: 70%;
+    text-align: left;
+    
+}
+
+.two-column #name{
+    width: 28vw;
+    height: 4vh;
+}
+
+.two-column #email{
+    width: 28vw;
+    height: 4vh;
+}
+
+.two-column #phone{
+    width: 28vw;
+    height: 4vh;
+}
+
+.two-column #message{
+    width: 28vw;
+    height: 16vh;
+}
+
+.two-column #submitbtn{
+    width: 28vw;
+    height: 8vh;
+}
+
+/**********************End of Enquiry Page*********************/
+
+footer {
+/*    display: block;*/
+/*    margin-top: 20rem;*/
+/*    bottom: 0%;*/
+    background-color: black;
+    width: 100%;
+    height: 25.65vh;
+    color: white;
+  padding: 6rem 1rem 2.5rem 1rem;
+  text-align: center;
+}
+
+#bottom-footer {
+    width: 90vw;
+    max-width: 100%;
+}
+
+/**********************End of Footer*********************/
+
+@media only screen and (max-width:480px) {
+    /* For mobile phones: */
+    .first-frame p{
+        display: none;
+    }
+    
+    #fourth-block .quotes{
+        width: 100vw;
+        font-size: 1.5rem;
+        height: 20vh;
+        text-align: center;
+    }
+    
+    #menu-top ul li{
+        width: 2rem;
+        min-height: 11vh;
+        padding-top: .8rem;
+        margin-right: 2rem;
+        font-size: 8px;
+    }
+    
+    #main-menu .col img{
+        min-width: 20vw;
+        min-height: 15vh;
+
+    }
+    .col #contactbtn-top{
+        min-width: 15vw;
+        min-height: 8vh;
+    }
+    #fourth-block {
+        height: 95vh;
+    }
+    
+    #fourth-div-block img {
+        min-height: 14vh;
+        max-height: 12vh;
+        min-width: 33vw;
+        max-width: 40vw;
+        border: solid orange 10px;
+        margin-top: -17vh;
+    }
+    #fourth-div-block .col button{
+        min-width: 5.5rem;
+        max-height: 1.5rem;
+        margin-top: -14.0rem;
+        margin-left: -1.5rem;
+        font-size: 12px;
+        font-weight: bold;
+        opacity: 90%;
+    }
+    #fourth-block p img{
+        max-height: 24vh;
+        min-width: 24vh;
+    }
+    
+    .two-column {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        max-height: 100vh;
+        margin-bottom: 15rem;
+    }
+    .two-column p{
+/*        width: 30rem;*/
+        position: relative;
+        padding: 0 15px;
+        margin: 0;
+        margin-top: 3rem;
+        left: 23%;
+/*        margin-left: 5.5rem;*/
+        min-width: 17rem;
+        font-size: 1rem;
+    }
+
+    .two-column form{
+        margin-top: 8vh;
+        width: 100%;
+        min-width: 70vh;
+        max-width: 100%;
+        
+    }
+    
+    .two-column #name,
+    .two-column #email,
+    .two-column #phone{
+        align-self: center;
+        max-width: 100%;
+        min-width: 48vw;
+        height: 7vh;
+/*        margin-left: 20vw;*/
+        position: absolute;
+        left:32%;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .two-column label{
+        align-self: center;
+        max-width: 100%;
+        min-width: 48vw;
+        height: 6vh;
+/*        margin-left: 20vw;*/
+        position: absolute;
+        left:32%;
+/*        margin-bottom: 1rem;*/
+        margin-top: .3rem;
+        z-index: 5;
+    }
+    .two-column #message{
+        width: 48vw;
+        height: 15vh;
+/*        margin-left: 20vw;*/
+        position: absolute;
+        left:32%;
+    }
+    
+    .two-column #submitbtn{
+        position: absolute;
+        min-width: 35vw;
+        max-width: 55vw;
+        max-height: 5vh;
+        bottom: -.5%;
+        left: 38%;
+    }
+    footer {
+        height: 25vh;
+    }
+    #bottom-footer {
+        position: absolute;
+        width: 50vw;
+        max-width: 92vw;
+        min-height: 5vh;
+        font-size: 1.5vh;
+        padding:10px;
+        margin-top: -2rem;
+        left: 30%;
+        line-height: 15.5px;
+    }
+
+}
