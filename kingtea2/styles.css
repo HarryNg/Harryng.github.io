@@ -175,25 +175,31 @@ header{
 	line-height: .4;
 	letter-spacing: 2px;
 }
-
+.hero .first-letter{
+    
+    font-size: 6rem;
+}
 .hero .sub-headline{
 /*    margin-top: 6rem;*/
 /*    position: absolute;*/
     position: relative;
     z-index: 1;
     opacity: 95%;
+    font-size: 4.8rem;
+    line-height: .5em;
 }
 .hero .headline{
     z-index: 1;
     position: relative;
-    opacity: 70%;
+    opacity: 65%;
+    font-size: 2rem;
     
 }
 
 .hero .headline-description{
     position: relative;
     z-index: 1;
-    opacity: 70%;
+    opacity: 65%;
 }
 .first-letter{
 	text-transform: uppercase;
@@ -253,7 +259,7 @@ header{
 
 .headline-description h5{
 	color: #fff;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 100;
 	text-transform: uppercase;
 	margin-bottom: 1.2rem;
@@ -514,8 +520,8 @@ header{
 }
 
 #second-block .col img{
-    height: 85%;
-    width: 85%;
+    height: 83%;
+    width: 88%;
 }
 
 #second-block .col img:hover{
@@ -547,12 +553,13 @@ header{
     width: 100%;
     text-align: center;
     font-size: 3.5vh;
+    margin-top: 2rem;
 }
 
 
 #third-block img{
-    height: 90%;
-    width: 90%;
+    height: 75%;
+    width: 92%;
     border-radius: 50%;
     border-style: solid;
     margin-bottom: 1rem;
@@ -598,8 +605,8 @@ header{
 }
 
 #fourth-div-block img {
-    height: 20vh;
-    width: 25vw;
+    height: 19vh;
+    width: 27vw;
     max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -749,6 +756,9 @@ footer{
 	margin-left: 20.5rem;
 }
 
+#bottom-footer{
+    padding-top: 2rem;
+}
 /*Media queries*/
 @media screen and (min-width: 900px){
 	section{
@@ -894,6 +904,17 @@ footer{
         top: 35%;
         left: 35%;
         display: none;
+    }
+    
+    #first-iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0; 
+        top: 0;
+        clear: both; 
+        z-index: 0; 
+
     }
 
 }
