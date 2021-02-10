@@ -559,6 +559,8 @@ header{
 /**********************End of Third Block*********************/
 
 #fourth-edit{
+    max-width: 100%;
+    width: 100%;
     background-image: url(images/greenbackground.jpg);
 	background-size: cover;
     border-radius: 45vh 5vh 45vh 10vh;
@@ -570,7 +572,7 @@ header{
 }
 #fourth-block {
     
-    
+    max-width: 100%;
     justify-content: center;
     text-align: center;
     height: 55vh;
@@ -579,10 +581,10 @@ header{
 
 #fourth-block p{
     font-weight: bolder;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     text-align: center;
     max-width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -594,8 +596,8 @@ header{
 }
 
 #fourth-div-block img {
-    height: 40vh;
-    width: 20vw;
+    height: 20vh;
+    width: 25vw;
     max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -603,8 +605,6 @@ header{
     border-radius: 50%;
     grid-column-gap: 1rem;
     background-color: #ff000080;
-/*    padding: 1vw;*/
-/*    margin: 0,auto;*/
 }
 
 #fourth-div-block .col{
@@ -615,12 +615,13 @@ header{
 
 #fourth-div-block .col button{
     position: absolute;
-    font-size: 20px;
+    font-size: 1.2em;
     border: solid;
-    width: 10vw;
-    height: 7vh;
-    top: 35%;
-    left: 35%;
+    width: 17vw;
+    height: 5.5vh;
+    top: 33%;
+    left: 20%;
+    line-height: 1em;
     display: none;
 }
 
@@ -860,6 +861,39 @@ footer{
 		margin-left: 17.5rem;
 	}
 	
+    #fourth-block p{
+        font-weight: bolder;
+        font-size: 4.5rem;
+        text-align: center;
+        max-width: 100%;
+        padding-bottom: 3rem;
+    }
+    
+    
+    #fourth-div-block img {
+        height: 40vh;
+        width: 20vw;
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        border: dashed coral .5em;
+        border-radius: 50%;
+        grid-column-gap: 1rem;
+        background-color: #ff000080;
+    }
+    
+    
+    #fourth-div-block .col button{
+        position: absolute;
+        font-size: 20px;
+        border: solid;
+        width: 10vw;
+        height: 7vh;
+        top: 35%;
+        left: 35%;
+        display: none;
+    }
+
 }
 
 .floating {  
