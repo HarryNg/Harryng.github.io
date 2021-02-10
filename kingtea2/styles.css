@@ -65,7 +65,7 @@ header{
 
 .logo img {
     height: 18vh;
-    width: 10vw;
+    width: 18vw;
 }
 .nav{
 	height:7.2rem;
@@ -915,6 +915,26 @@ footer{
         clear: both; 
         z-index: 0; 
 
+    }
+    
+    
+    .hero .first-letter{
+
+		font-size: 12.2rem;
+    }
+    .hero .sub-headline{
+		font-size: 10rem;
+    }
+    .hero .headline{
+		font-size: 4.7rem;
+		letter-spacing: .8rem;
+
+    }
+
+    .hero .headline-description{
+        position: relative;
+        z-index: 1;
+        opacity: 65%;
     }
 
 }
