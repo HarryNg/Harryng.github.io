@@ -341,10 +341,10 @@ header{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+/*  top: 25%;*/
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -355,12 +355,14 @@ header{
 
 /* Position the "next button" to the right */
 .prev {
-    left: 0;
+    left: 54%;
   border-radius: 3px 0 0 3px;
+    display: none;
 }
 .next {
-  right: 0;
+  right: 10%;
   border-radius: 3px 0 0 3px;
+    display: none;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -479,6 +481,166 @@ header{
 	padding-top: 3rem;
 	margin-bottom: 0;
 }
+
+
+/*Top 10*/
+
+
+.flex-grid {
+    display: flex;
+}
+.col {
+    flex:1;
+}
+
+#second-block span{
+    font-size: 2.5rem;
+    color: navajowhite;
+    text-shadow: 1px 1px black;
+}
+#lp img,#rp img{
+    margin-top: 1.5rem;
+}
+/**********************End of First Slider*********************/
+
+#second-block .col{
+    height: 60vh;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#second-block .col img{
+    height: 85%;
+    width: 85%;
+}
+
+#second-block .col img:hover{
+    background-color: darkseagreen;
+    background-blend-mode: overlay;
+    opacity: 95%;
+    transform: scale(1.05);
+}
+
+
+/**********************End of Second Block*********************/
+
+.textblock {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.88rem;
+}
+
+#quote-text {
+    font-weight: bolder; 
+    font-size: 4rem; 
+    line-height: 3.9rem; 
+    margin-bottom: -1rem;
+    margin-top: -0rem;
+}
+/**********************End of text Block*********************/
+#third-block {
+    height: 55vh;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vh;
+}
+
+
+#third-block img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    border-style: solid;
+    margin-bottom: 1rem;
+}
+
+/**********************End of Third Block*********************/
+
+#fourth-edit{
+    background-image: url(images/greenbackground.jpg);
+	background-size: cover;
+    border-radius: 45vh 5vh 45vh 10vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fourth-block {
+    
+    
+    justify-content: center;
+    text-align: center;
+    height: 55vh;
+    
+}
+
+#fourth-block p{
+    font-weight: bolder;
+    font-size: 4.5rem;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 3rem;
+}
+
+
+#fourth-div-block{
+    
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+#fourth-div-block img {
+    height: 40vh;
+    width: 20vw;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    border: dashed coral .5em;
+    border-radius: 50%;
+    grid-column-gap: 1rem;
+    background-color: #ff000080;
+/*    padding: 1vw;*/
+/*    margin: 0,auto;*/
+}
+
+#fourth-div-block .col{
+    position: relative;
+    height: 65vh;
+}
+
+
+#fourth-div-block .col button{
+    position: absolute;
+    font-size: 20px;
+    border: solid;
+    width: 10vw;
+    height: 7vh;
+    top: 35%;
+    left: 35%;
+    display: none;
+}
+
+#fourth-div-block .col:hover button{
+    display: block;
+}
+
+#fourth-div-block .col:hover button:hover{
+    background-color: green;
+    color: white;
+}
+
+/**********************End of Fourth Block*********************/
+#blank-fill{
+    background-color: white;
+    height: 4.5rem;
+}
+
+
+
 
 /*The perfect blend*/
 .perfect-blend{
