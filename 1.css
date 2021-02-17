@@ -1,11 +1,65 @@
 body {
     font-family: "segoe ui";
+    box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4 {
+    background-color: aliceblue;
+    border: .2rem solid;
+}
+.grid-item1{
+    grid-area: hd;
 }
 
-img {
-    width: 50%;
+.grid-item1 h1{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item2{
+    grid-area: me;
+    display: block;
+    padding: 0 1rem;
+    position: relative;
+    
+}
+.grid-item2 a{
+    text-decoration: none;
+    display: flex;
+/*    border: solid;*/
+    margin-bottom: 1vh;
+}
+.grid-item2 a:hover{
+    background-color: azure;
+    color: red;
+}
+.grid-item3{
+    grid-area: ma;
+}
+.grid-item3 img {
+    width: 100%;
+    height: 100%;
+}
+.grid-item4 {
+    grid-area: fo;
+    display: block;
+}
+
+.grid-item4 span{
+    display: flex;
+}
+
+.intro-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(1rem, 100%);
+    grid-template-areas: 
+        "hd hd hd hd hd"
+        "me ma ma fo fo"
+        "me ma ma fo fo"
+        ;
+    grid-gap: 10px;
 }

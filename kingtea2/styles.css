@@ -936,6 +936,11 @@ footer{
         z-index: 1;
         opacity: 65%;
     }
+    
+    .logo img {
+        height: 18vh;
+        width: 14vw;
+    }
 
 }
 
