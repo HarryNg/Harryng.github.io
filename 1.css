@@ -6,7 +6,7 @@ body {
 .grid-item1,
 .grid-item2,
 .grid-item3,
-.grid-item4 {
+.grid-item4{
     background-color: aliceblue;
     border: .2rem solid;
 }
