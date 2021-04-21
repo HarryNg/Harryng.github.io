@@ -1,0 +1,72 @@
+
+
+/*******************************************************
+    Top Headline Bar
+*******************************************************/
+
+
+/*******************************************************
+    First Column - Video / Header
+*******************************************************/
+.product-filter{
+    margin-left: 0;    /*change from 12% to 0*/
+    width: 35%;
+    background-color: #FFFF;
+}
+
+.top-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 9vh;
+}
+
+.top-menu span{
+    line-height: 3vw;
+    color: skyblue;
+    text-shadow: 2px 2px yellow;
+    font-weight: bold;
+    
+    /*total border width around 3px*/
+    width: calc(100%/3 - 3px);  
+    
+    text-align: center;
+    border: 1px solid black;
+    
+    background-size: 100% 200%;    /*width - height percent*/
+    background-image: linear-gradient(to bottom, white 50%, coral 50%);
+    
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s, color 1.5s, text-shadow 1.5s;
+}
+
+.top-menu span:hover {
+    background-position: 70% 100%;    /*start from 70% instead of 0*/
+    color: yellow;
+    text-shadow: 2px 2px black;
+}
+
+.product-filter img{
+    position: relative;
+    height: 60vh;
+    left: 10%;
+/*    margin-top: 10vh;*/
+}
+
+/*******************************************************
+    Second Column - Menu
+*******************************************************/
+.middle {
+    margin-left: 35%;    /*equal video width*/
+    width: 16%;
+}
+
+/*******************************************************
+    Third Column - Scrollable Contents
+*******************************************************/
+.products{
+/*    flex: 1 0 47%;*/
+    margin-left: 53%;
+    background-color: #FFFF;
+}
