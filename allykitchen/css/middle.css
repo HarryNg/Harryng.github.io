@@ -103,13 +103,13 @@
     }
     
     #right-about h2{
-        margin: 0 auto;
+        margin: 1vh auto;
         max-width: 45vh;
     }
     .divider-about {
         position: relative;
         z-index: 10;
-        border: 10px solid red;
+/*        border: 10px solid red;*/
     }
     .divider-about:before {
         content: "";
@@ -119,15 +119,16 @@
         left: -7px;
         width: 14px;
         height: 14px;
-/*        transform: rotate(45deg);*/
+        transform: rotate(45deg);
 /*        background-color: white;*/
         border-bottom: 1px solid rgb(48,49,51);
         border-right: 1px solid rgb(48,49,51);
-        border: 1px solid;
+/*        border: 1px solid;*/
     }
     
     .divider-about hr{
         width: 65%;
+        margin: 0 auto;
     }
     .grid-items img{
         display: flex;
