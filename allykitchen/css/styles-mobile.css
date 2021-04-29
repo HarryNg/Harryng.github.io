@@ -42,13 +42,16 @@
         
     }
     
-    .mobile-nav-icon:hover div{
+    .mobile-nav-icon:hover div,
+    .mobile-nav-icon div:active{
         transform: scale(0);
     }
-    .mobile-nav-icon:hover:before{
+    .mobile-nav-icon:hover::before,
+    .mobile-nav-icon:active::before{
         transform: translateY(1.3vh) rotate(45deg);
     }
-    .mobile-nav-icon:hover:after{
+    .mobile-nav-icon:hover::after,
+    .mobile-nav-icon:active::after{
         transform: translateY(-1.3vh) rotate(-45deg);
     }   
     .mobile-navbar {
