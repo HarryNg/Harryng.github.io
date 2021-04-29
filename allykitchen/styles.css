@@ -127,9 +127,6 @@ p {
         First Column - Menu
     *******************************************************/
 
-    .dis {
-        display: none;
-    }
     #middle-nav a:hover {
         color: var(--first-color);
     }
@@ -277,5 +274,10 @@ p {
         height:10%;
         margin: 12px;
         background-color:rgb(125,191,255);
+    }
+    
+    
+    .dis {
+        display: none;
     }
 }
