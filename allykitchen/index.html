@@ -15,107 +15,145 @@
 </head>
 
 <body>
-<!--    <div class="container">-->
-    <div class="mobile-nav-icon mobile" onclick="">
-      <div></div>
-    </div>
-
 <!--
 *******************************************************
         Desktop version
 *******************************************************
 -->
-        <nav class="menu middle desktop">
-            <a  href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
-          
-            <ul id="middle-nav">
-               <li 
-                   id="tab-about"  
-                   
-                   onmouseover="setOn('about-intro'); setOn('right-about'); setOff('right-index');" 
-                   
-                   onmouseout="setOff('about-intro'); setOff('right-about'); setOn('right-index');">
+    <header class="mobile-header mobile">
+        <a  href="index.html"><img id="mobile-logo" src="images/logo.png" alt="logo"></a>
+        <ul>
+            <li>&nbsp; Menu &nbsp;</li>
+            <li>&nbsp; Find Yours &nbsp;</li>
+        </ul>
+        </header>
+    <section class="mobile-left-nav mobile" >
+        <div class="mobile-nav-icon mobile " onclick="clickedOn('mobile-right-nav');">
+            <div></div>
+        </div>
+    </section>
+    <section id="mobile-right-nav" class="mobile-right-nav mobile">
+        <nav class="mobile-nav mobile">
+
+            <ul id="mobile-nav-items">
+               <li id="tab-about"  >
                    <a href="pages/about.html">About</a>
                 </li>
-               
-               <li 
-                   id="tab-menu"  
-                   
-                   onmouseover="setOn('menu-intro'); updateVid(); setOn('right-menu'); setOff('right-index');" 
-                   
-                   onmouseout="setOff('menu-intro'); restoreVid(); setOff('right-menu'); setOn('right-index');">
+
+               <li id="tab-menu">
                    <a href="pages/menu.html">Menu</a>
                </li>
-               
-               <li id="tab-gallery" onmouseover="setOn('gallery-intro'); hideThis('vid-static');  setOff('right-index');" onmouseout="setOff('gallery-intro'); unhideThis('vid-static'); setOn('right-index');"><a href="pages/gallery.html">Gallery</a></li>
-               
-               <li id="tab-blog" onmouseover="setOn('blog-intro')" onmouseout="setOff('blog-intro')"><a href="pages/blog.html">Blog</a></li>
-               
-               <li id="tab-contact" onmouseover="setOn('contact-intro')" onmouseout="setOff('contact-intro')"><a href="pages/contact.html">Contact</a></li>
-               
-               <li></li>
-               <li></li>
-               <li></li>
+
+               <li id="tab-gallery"><a href="pages/gallery.html">Gallery</a></li>
+
+               <li id="tab-blog"><a href="pages/blog.html">Blog</a></li>
+
+               <li id="tab-contact"><a href="pages/contact.html">Contact</a></li>
+
                <li><a href="pages/cart.html">Cart</a></li>
                <li><a href="pages/my-account.html">My Account</a></li>
             </ul>
-            
-            <ul id="bottom-nav">
-               <li>Follow Us!</li>
-               <span><a href="https://instagram.com"><img src="../images/instagram.png" alt="instagram-icon"></a></span>
-               <span><a href="https://facebook.com"><img src="../images/fb.png" alt="facebook-icon"></a></span>
-               <span><a href="https://youtube.com"><img src="../images/youtube.png" alt="youtube-icon"></a></span>
-           </ul>
-           
-            
+
        </nav>
-        <div class="navbar text-scroll desktop">
-            <p><span>SPECIAL DISCOUNT COUPON: "30%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>EARLY BIRD CUSTOMERS DISCOUNT: "HALFPRICE"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>LIMITED TIME OFFER: "FREE-EXTRA-DRINK"</span></p>
-        </div>
+   </section>
 
-        <main class="col-left desktop">
-           
-            <section id="about-intro" class="descriptions dis">
-                <h2>Who we are</h2>
-                <p> <strong>Ally Kitchen</strong> is the Vietnamese restaurant where tasting food is an enlightenment.</p>
-                
-            </section>
-            <section id="menu-intro" class="descriptions dis">
-                <h2>Discover our menu</h2>
-                <p>All you can eat <strong>Vietnamese cuisine</strong>.</p>
-                
-            </section>
-            <section id="gallery-intro" class="descriptions dis">
-                <h2>Watch out for food awesomeness overflow! </h2>
-                <p>April best collection of shots &amp; fun.</p>
-                <img src="images/mcdonals-big.jpg" alt="">
-            </section>
-            <section id="blog-intro" class="descriptions dis">
-                <h2>What's On Trending</h2>
-                <p>Foodie Tips and Advices.</p>
-            </section>
-            <section id="contact-intro" class="descriptions dis">
-                <h2>Available Online Today </h2>
-                <p><strong>Shoot us</strong> a message Or say 'Hi! &#128521' on our social media accounts.</p>
-            </section>
-            
-            <section id="container-iframe" class="frame">
+    <section class="mobile-frame mobile">
+        <video loop autoplay muted>
+            <source src="vids/food-home.mp4#t=4">
+        </video>
+    </section>
+       
+    <nav class="menu middle desktop">
+        <a  href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
 
-                <video id="vid-static" loop autoplay muted><source src="vids/food-home.mp4#t=4"></video>
-            </section>
+        <ul id="middle-nav">
+           <li 
+               id="tab-about"  
+
+               onmouseover="setOn('about-intro'); setOn('right-about'); setOff('right-index');" 
+
+               onmouseout="setOff('about-intro'); setOff('right-about'); setOn('right-index');">
+               <a href="pages/about.html">About</a>
+            </li>
+
+           <li 
+               id="tab-menu"  
+
+               onmouseover="setOn('menu-intro'); updateVid(); setOn('right-menu'); setOff('right-index');" 
+
+               onmouseout="setOff('menu-intro'); restoreVid(); setOff('right-menu'); setOn('right-index');">
+               <a href="pages/menu.html">Menu</a>
+           </li>
+
+           <li id="tab-gallery" onmouseover="setOn('gallery-intro'); setOff('vid-static');  setOff('right-index');" onmouseout="setOff('gallery-intro'); setOn('vid-static'); setOn('right-index');"><a href="pages/gallery.html">Gallery</a></li>
+
+           <li id="tab-blog" onmouseover="setOn('blog-intro')" onmouseout="setOff('blog-intro')"><a href="pages/blog.html">Blog</a></li>
+
+           <li id="tab-contact" onmouseover="setOn('contact-intro')" onmouseout="setOff('contact-intro')"><a href="pages/contact.html">Contact</a></li>
+
+           <li></li>
+           <li></li>
+           <li></li>
+           <li><a href="pages/cart.html">Cart</a></li>
+           <li><a href="pages/my-account.html">My Account</a></li>
+        </ul>
+
+        <ul id="bottom-nav">
+           <li>Follow Us!</li>
+           <span><a href="https://instagram.com"><img src="../images/instagram.png" alt="instagram-icon"></a></span>
+           <span><a href="https://facebook.com"><img src="../images/fb.png" alt="facebook-icon"></a></span>
+           <span><a href="https://youtube.com"><img src="../images/youtube.png" alt="youtube-icon"></a></span>
+       </ul>
+
+
+   </nav>
+    <div class="navbar text-scroll desktop">
+        <p><span>SPECIAL DISCOUNT COUPON: "30%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>EARLY BIRD CUSTOMERS DISCOUNT: "HALFPRICE"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>LIMITED TIME OFFER: "FREE-EXTRA-DRINK"</span></p>
+    </div>
+
+    <main class="col-left desktop">
+
+        <section id="about-intro" class="descriptions dis">
+            <h2>Who we are</h2>
+            <p> <strong>Ally Kitchen</strong> is the Vietnamese restaurant where tasting food is an enlightenment.</p>
+
+        </section>
+        <section id="menu-intro" class="descriptions dis">
+            <h2>Discover our menu</h2>
+            <p>All you can eat <strong>Vietnamese cuisine</strong>.</p>
+
+        </section>
+        <section id="gallery-intro" class="descriptions dis">
+            <h2>Watch out for food awesomeness overflow! </h2>
+            <p>April best collection of shots &amp; fun.</p>
+            <img src="images/mcdonals-big.jpg" alt="">
+        </section>
+        <section id="blog-intro" class="descriptions dis">
+            <h2>What's On Trending</h2>
+            <p>Foodie Tips and Advices.</p>
+        </section>
+        <section id="contact-intro" class="descriptions dis">
+            <h2>Available Online Today </h2>
+            <p><strong>Shoot us</strong> a message Or say 'Hi! &#128521' on our social media accounts.</p>
+        </section>
+
+        <section id="container-iframe" class="frame">
+
+            <video id="vid-static" loop autoplay muted><source src="vids/food-home.mp4#t=4"></video>
+        </section>
 
             
 <!--            <iframe id="vid-about" src="https://player.vimeo.com/video/227149526?&autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0s&controls=0&muted=1#t=14s"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
             
             
-            <script src="https://player.vimeo.com/api/player.js"></script>
+<!--        <script src="https://player.vimeo.com/api/player.js"></script>-->
 
-        </main>
+    </main>
 
-        <main class="col-right desktop">
+    <main class="col-right desktop">
             <section id="right-about" class=" dis">
                <article class="about-description">
                   <h2>A HIGHER STANDARD</h2>
@@ -179,9 +217,9 @@
                 </div>
             </section>
         </main>
-<!--    </div>-->
-<script>
 
+<script>
+    
 </script>
 
 </body>

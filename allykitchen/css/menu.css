@@ -42,7 +42,7 @@
 }
 
 .top-menu span:hover {
-    background-position: 70% 100%;    /*start from 70% instead of 0*/
+    background-position: 0 100%;   
     color: yellow;
     text-shadow: 2px 2px black;
 }

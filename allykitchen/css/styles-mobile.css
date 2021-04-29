@@ -21,12 +21,19 @@
         display: none;
     }
     
+    .mobile{
+        display: block;
+    }
     /*******************************************************
         Top Headline Bar
     *******************************************************/
     .mobile-nav-icon{
         margin: 2vh;
         width: 5.5vw;
+    }    
+    
+    .mobile-nav-icon:hover{
+        cursor: pointer;
     }
     
     .mobile-nav-icon div,
@@ -35,32 +42,88 @@
         content: '';
         display: block;
         height: .8vh;
-        background-color: black;
+        background-color: #fff;
         border-radius: 3px;
         margin: .5vh 0;
         transition: all .2s ease-in-out;
         
     }
     
-    .mobile-nav-icon:hover div,
-    .mobile-nav-icon div:active{
+    .mobile-nav-icon.active div{
         transform: scale(0);
     }
-    .mobile-nav-icon:hover::before,
-    .mobile-nav-icon:active::before{
+    .mobile-nav-icon.active::before{
         transform: translateY(1.3vh) rotate(45deg);
     }
-    .mobile-nav-icon:hover::after,
-    .mobile-nav-icon:active::after{
+    .mobile-nav-icon.active::after{
         transform: translateY(-1.3vh) rotate(-45deg);
     }   
-    .mobile-navbar {
-
+    
+    .mobile-left-nav {
+        width: 10%;
+        height: auto;
+        padding: 1rem 0;
+        background-color: var(--second-color);
     }
-
+    
+    .mobile-right-nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 90%;
+        max-width: 90%;
+        background-color: #fff;
+    }
     /*******************************************************
         First Column - Menu
     *******************************************************/
+    .mobile-header{
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 90vw;
+        height: 16vh;
+        margin-left: 10vh;
+/*        border:  1px solid;*/
+    }
+    #mobile-logo{
+        margin: 0vh 5vh;
+        width: 16vh;
+        height: 100%;
+    }
+    .mobile-header ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2rem auto 0rem auto;
+        height: 10vh;
+        line-height: 4vh;
+        text-align: center;
+    }
+    .mobile-header li{
+        display: inline-block;
+        width: auto;
+        margin: 0 1rem;
+        border-bottom: 3px solid var(--second-color);
+        transition: all .5s ease-in-out;
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, white 50%, chocolate 50%);
+        font-size: var(--nav-size);
+    }
+    
+    .mobile-header li:hover{
+        background-position: 0 100%;
+        color: white;
+    }
+    
+    .mobile-frame {
+        display: block;
+        height: 25vh;
+        border: 2px solid black;
+        visibility: visible;
+    }
 
     .mobile-dis {
         
@@ -73,12 +136,10 @@
         
     }
     .mobile-menu {
-
+        
     }
 
-    .mobile-menu img{
 
-    }
 
     .mobile-menu a{
 
@@ -120,9 +181,6 @@
 
     }
 
-    .mobile-col-left .mobile-frame {
-
-    }
 
     .mobile-col-left ul {
 

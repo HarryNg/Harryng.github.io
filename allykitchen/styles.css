@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
 /*Global styles*/
 *,
 *::before,
@@ -12,13 +13,18 @@ html,body{
     width: 100%;
     display: block;
     position: relative;
+    font-family: var(--main-font);
 }
 
 :root {
-    --first-color: rgb(100,10,50, 45%);
+    --first-color: rgb(100,10,50, 45%);  
+    --second-color: rgb(220,87,17, 96%);
+    --main-font: "Montserrat", sans-serif;
+    --body-font: 'Cabin', sans-serif;
     --header-size: 1.6em; 
     --nav-size: 3.5vh;
 }
+
 
 h2 {
     font-size: var(--header-size);
@@ -27,8 +33,6 @@ h2 {
 
 strong{
     color: var(--first-color);
-/*    font-size: 2.5vh;*/
-/*    font-weight: bold;*/
 }
 
 ul {
@@ -36,12 +40,13 @@ ul {
 }
 p {
     line-height: 1.25;
-    
 }
 .col-left p,
 .col-right article{
     font-size: 2.6vh;
+    font-family: var( --body-font);
 }
+
 /*******************************************************
     Top Headline Bar
 *******************************************************/
@@ -115,7 +120,6 @@ p {
     }
 
     body {
-        font-family: "Montserrat", sans-serif;
         max-height: 100vh;
     }
     
