@@ -9,25 +9,56 @@
     <title>Ally Kitchen</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/styles-mobile.css">
     <link rel="icon" type="image/png" href="icons/fav.png">
+    <script type="text/javascript" src="scripts/main-script.js"></script>
 </head>
 
 <body>
-    <div class="container">
-       <nav class="middle menu">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-           <ul id="middle-nav">
-               <li><a href="pages/about.html">About</a></li>
-               <li><a href="pages/menu.html">Menu</a></li>
-               <li><a href="pages/gallery.html">Gallery</a></li>
-               <li><a href="pages/blog.html">Blog</a></li>
-               <li><a href="pages/contact.html">Contact</a></li>
+<!--    <div class="container">-->
+    <div class="mobile-nav-icon mobile">
+      <div></div>
+    </div>
+
+<!--
+*******************************************************
+        Desktop version
+*******************************************************
+-->
+        <nav class="menu middle desktop">
+            <a  href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+          
+            <ul id="middle-nav">
+               <li 
+                   id="tab-about"  
+                   
+                   onmouseover="setOn('about-intro'); setOn('right-about'); setOff('right-index');" 
+                   
+                   onmouseout="setOff('about-intro'); setOff('right-about'); setOn('right-index');">
+                   <a href="pages/about.html">About</a>
+                </li>
+               
+               <li 
+                   id="tab-menu"  
+                   
+                   onmouseover="setOn('menu-intro'); updateVid(); setOn('right-menu'); setOff('right-index');" 
+                   
+                   onmouseout="setOff('menu-intro'); restoreVid(); setOff('right-menu'); setOn('right-index');">
+                   <a href="pages/menu.html">Menu</a>
+               </li>
+               
+               <li id="tab-gallery" onmouseover="setOn('gallery-intro'); hideThis('vid-static');  setOff('right-index');" onmouseout="setOff('gallery-intro'); unhideThis('vid-static'); setOn('right-index');"><a href="pages/gallery.html">Gallery</a></li>
+               
+               <li id="tab-blog" onmouseover="setOn('blog-intro')" onmouseout="setOff('blog-intro')"><a href="pages/blog.html">Blog</a></li>
+               
+               <li id="tab-contact" onmouseover="setOn('contact-intro')" onmouseout="setOff('contact-intro')"><a href="pages/contact.html">Contact</a></li>
+               
                <li></li>
                <li></li>
                <li></li>
                <li><a href="pages/cart.html">Cart</a></li>
                <li><a href="pages/my-account.html">My Account</a></li>
-           </ul>
+            </ul>
             
             <ul id="bottom-nav">
                <li>Follow Us!</li>
@@ -35,45 +66,122 @@
                <span><a href="https://facebook.com"><img src="../images/fb.png" alt="facebook-icon"></a></span>
                <span><a href="https://youtube.com"><img src="../images/youtube.png" alt="youtube-icon"></a></span>
            </ul>
+           
+            
        </nav>
-        <div class="navbar text-scroll">
-            <p><span>SPECIAL DISCOUNT CODE: "50%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="navbar text-scroll desktop">
+            <p><span>SPECIAL DISCOUNT COUPON: "30%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>EARLY BIRD CUSTOMERS ONLY: "FREE-DRINK"</span></p>
+            <span>EARLY BIRD CUSTOMERS DISCOUNT: "HALFPRICE"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>LIMITED TIME OFFER: "FREE-EXTRA-DRINK"</span></p>
         </div>
 
-        <div class="product-filter">
-<!--
-           <video loop autoplay="true" muted>
-               <source src="https://player.vimeo.com/video/394809216" type="video/mp4">
-            </video>
--->
+        <main class="col-left desktop">
+           
+            <section id="about-intro" class="descriptions dis">
+                <h2>Who we are</h2>
+                <p> <strong>Ally Kitchen</strong> is the Vietnamese restaurant where tasting food is an enlightenment.</p>
+                
+            </section>
+            <section id="menu-intro" class="descriptions dis">
+                <h2>Discover our menu</h2>
+                <p>All you can eat <strong>Vietnamese cuisine</strong>.</p>
+                
+            </section>
+            <section id="gallery-intro" class="descriptions dis">
+                <h2>Watch out for food awesomeness overflow! </h2>
+                <p>April best collection of shots &amp; fun.</p>
+                <img src="images/mcdonals-big.jpg" alt="">
+            </section>
+            <section id="blog-intro" class="descriptions dis">
+                <h2>What's On Trending</h2>
+                <p>Foodie Tips and Advices.</p>
+            </section>
+            <section id="contact-intro" class="descriptions dis">
+                <h2>Available Online Today </h2>
+                <p><strong>Shoot us</strong> a message Or say 'Hi! &#128521' on our social media accounts.</p>
+            </section>
             
+            <section id="container-iframe" class="frame">
 
-                <iframe src="https://player.vimeo.com/video/227149526?&autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0s&controls=0&muted=1#t=14s"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                <video id="vid-static" loop autoplay muted><source src="vids/food-home.mp4#t=4"></video>
+            </section>
 
-                </iframe>
+            
+<!--            <iframe id="vid-about" src="https://player.vimeo.com/video/227149526?&autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0s&controls=0&muted=1#t=14s"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
+            
+            
             <script src="https://player.vimeo.com/api/player.js"></script>
 
-        </div>
+        </main>
 
-        <div class="products">
-            <div class="product">1</div>
-            <div class="product">2</div>
-            <div class="product">3</div>
-            <div class="product">4</div>
-            <div class="product">5</div>
-            <div class="product">6</div>
-            <div class="product">7</div>
-            <div class="product">8</div>
-            <div class="product">9</div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-        </div>
-    </div>
+        <main class="col-right desktop">
+            <section id="right-about" class=" dis">
+               <article class="about-description">
+                  <h2>A HIGHER STANDARD</h2>
+                  <span class="divider-about"> <hr></span>
+                  <p>DELICIOUS FOODS</p>
+                  <p>PERFECT SERVICE</p>
+                  <p>TREAT PEOPLE RIGHT</p>
+                   We focus on providing the freshest, best tasting, highest quality food and beverages because we believe you and your family deserve it.
+               </article>
+                <img src="../images/food/couple-at-restaurant.jpg" alt="couple-at-restaurant">
+                <article class="about-description">
+                  <h2>QUALITY YOU WON’T FIND ANYWHERE ELSE.</h2>
+                  <p>ONE TASTE</p>
+                  <p>IS ALL IT GET</p>
+                  <p>TO FALL IN LOVE</p>
+                   Traditional Vietnamese cuisine combine with secret sauces and ingredient you cannot expect to find elsewhere even from 5 stars restaurant in Ho Chi Minh city.
+                   Guaranteed customer satisfaction.
+               </article>
+
+
+                   
+               
+            </section>
+            <section id="right-index" class="grid-container ">
+                <div id="call-to-act-index" class="grid-items">
+                    <p>ORDER YOUR</p>
+                    <p>BREAKFAST</p>
+                    <p>ONLINE NOW</p>
+                    <img src="../images/food/delivery-food.png" alt="food-delivery-man-picture">
+                    <p>FOR DELIVERY OR PICKUP!</p>
+                    <button type="button" onclick="window.location.href='pages/menu.html';">PLACE YOUR ORDER</button>
+                </div>
+                <div class="grid-items">
+                    
+                </div>
+                <div class="grid-items">
+                    <img src="images/food-table.jpg" alt="table-of-food-cover">
+                </div>
+                <div class="grid-items">
+                    <img src="images/platter.jpg" alt="platter-dish">
+                </div>
+                <div class="grid-items">
+                    <img src="images/strawberry.jpg" alt="strawberry-dish">
+                </div>
+                <div class="grid-items">
+                    
+                </div>
+                <div class="grid-items">
+                    
+                </div>
+            </section>
+            
+            <section id="right-menu" class="grid-container dis">
+                <div id="call-to-act-menu" class="grid-items">
+                    <p>ORDER YOUR</p>
+                    <p>BREAKFAST</p>
+                    <p>ONLINE NOW</p>
+                    <img src="../images/food/delivery-food.png" alt="food-delivery-man-picture">
+                    <p>FOR DELIVERY OR PICKUP!</p>
+                    <button type="button">PLACE YOUR ORDER</button>
+                </div>
+            </section>
+        </main>
+<!--    </div>-->
+<script>
+
+</script>
+
 </body>

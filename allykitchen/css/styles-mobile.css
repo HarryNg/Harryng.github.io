@@ -1,0 +1,148 @@
+
+/*******************************************************
+   Ipad Pro Responsive
+*******************************************************/
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+        
+    .mobile{
+        display: block;
+    }
+}
+
+/*******************************************************
+    Mobile Responsive
+*******************************************************/
+@media only screen and (max-width:550px), (orientation:portrait){
+    .desktop{
+        display: none;
+    }
+    
+    /*******************************************************
+        Top Headline Bar
+    *******************************************************/
+    .mobile-nav-icon{
+        margin: 2vh;
+        width: 5.5vw;
+    }
+    
+    .mobile-nav-icon div,
+    .mobile-nav-icon::before,
+    .mobile-nav-icon::after{
+        content: '';
+        display: block;
+        height: .8vh;
+        background-color: black;
+        border-radius: 3px;
+        margin: .5vh 0;
+        transition: all .2s ease-in-out;
+        
+    }
+    
+    .mobile-nav-icon:hover div{
+        transform: scale(0);
+    }
+    .mobile-nav-icon:hover:before{
+        transform: translateY(1.3vh) rotate(45deg);
+    }
+    .mobile-nav-icon:hover:after{
+        transform: translateY(-1.3vh) rotate(-45deg);
+    }   
+    .mobile-navbar {
+
+    }
+
+    /*******************************************************
+        First Column - Menu
+    *******************************************************/
+
+    .mobile-dis {
+        
+    }
+    #mobile-tab-about:hover {
+
+    }
+
+    #mobile-vid-about {
+        
+    }
+    .mobile-menu {
+
+    }
+
+    .mobile-menu img{
+
+    }
+
+    .mobile-menu a{
+
+    }
+
+    .mobile-menu a:hover{
+
+    }
+
+    .mobile-menu ul{
+
+    }
+
+    .mobile-menu li{
+
+
+    }
+
+
+    #mobile-middle-nav{
+
+    }
+
+    #mobile-bottom-nav{
+
+    }
+
+    #mobile-bottom-nav img{
+
+    }
+    /*******************************************************
+        Second Column - Video / Header
+    *******************************************************/
+    .mobile-col-left {
+
+    }
+
+    .mobile-col-left .mobile-descriptions {
+
+    }
+
+    .mobile-col-left .mobile-frame {
+
+    }
+
+    .mobile-col-left ul {
+
+    }
+
+    .mobile-col-left li {
+
+    }
+
+
+
+    /*******************************************************
+        Third Column - Scrollable Contents
+    *******************************************************/
+    .mobile-col-right {
+
+    }
+
+    .mobile-col-right img{
+
+    }
+    .mobile-product {
+
+    }
+
+}

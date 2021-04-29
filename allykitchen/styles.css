@@ -1,165 +1,277 @@
-html,body{
-    height: 100%;        /*fill the screen height*/
-    overflow: hidden;    /*No overflow out of screen*/
-    width: 100%;
-    padding: 0;
+/*Global styles*/
+*,
+*::before,
+*::after{
     margin: 0;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
+    padding: 0;
     box-sizing: border-box;
 }
 
-
-.container {
-    position: relative;
+html,body{
+    height: 100%;        /*fill the screen height*/
     width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    overflow: hidden;
+    display: block;
+    position: relative;
 }
 
+:root {
+    --first-color: rgb(100,10,50, 45%);
+    --header-size: 1.6em; 
+    --nav-size: 3.5vh;
+}
+
+h2 {
+    font-size: var(--header-size);
+    width: 75vh;
+}
+
+strong{
+    color: var(--first-color);
+/*    font-size: 2.5vh;*/
+/*    font-weight: bold;*/
+}
+
+ul {
+    list-style: none;
+}
+p {
+    line-height: 1.25;
+    
+}
+.col-left p,
+.col-right article{
+    font-size: 2.6vh;
+}
 /*******************************************************
     Top Headline Bar
 *******************************************************/
 .navbar {
-/*height: 30px;*/
     height: 4vh;
-background-color:rgb(100,10,50, 35%);
+    background-color:var(--first-color);
 }
 
-/*******************************************************
-    First Column - Menu
-*******************************************************/
-.menu {
-    width: 12%;
-    height: calc(100%-4vh);
-    top: 4vh;
-    bottom: 0;
-    display: block;
-    position: absolute;
-/*    justify-content: center;*/
-    text-align: center;
-}
-
-.menu img{
-    display: block;
+.text-scroll {
     position: relative;
-    padding-top: 4vh;
-    left: 30%;
-    width: 45%;
-    height: 12vh;
+    color: yellow;
+    text-shadow: 1px 2px 2px black;
+    overflow-x: hidden;
+    z-index: 100;
+}
+.text-scroll p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 2vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: .5vh 0vh;
+
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 17s linear infinite;
+    -webkit-animation: scroll-left 17s linear infinite;
+    animation: scroll-left 17s linear infinite;
+
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+    0%   { 
+        -moz-transform: translateX(100%); 
+        -webkit-transform: translateX(100%); 
+        transform: translateX(100%); 		
+    }
+    100% { 
+        -moz-transform: translateX(-100%); 
+        -webkit-transform: translateX(-100%); 
+        transform: translateX(-100%); 
+    }
 }
 
-.menu a{
-    text-decoration: none;
-    color: black;
-    opacity: 70%;
+.text-scroll span{
+    vertical-align: middle;
 }
 
-.menu a:hover{
-    opacity: 100%;
-    border-bottom: 2px solid red;
-}
-
-.menu ul{
-   list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    height: 100%;
-    font-size: 3.5vh;
-    font-weight: 485;
-}
-
-.menu li{
-/*    display: block;*/
-    padding-bottom: 1.7vh;
+/*******************************************************
+    Desktop-responsive
+*******************************************************/
+@media only screen and (min-width:800px), (orientation: landscape){
     
-}
+    .mobile{
+        display: none;
+    }
+    html,body{
+        overflow: hidden;    /*No overflow out of screen*/
+    }
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        max-height: 100vh;
+    }
+    
+    /*******************************************************
+        First Column - Menu
+    *******************************************************/
+
+    .dis {
+        display: none;
+    }
+    #middle-nav a:hover {
+        color: var(--first-color);
+    }
 
 
-#middle-nav{
-    margin-top: 6vh;
-    height: 46vh;
-}
+    .menu {
+        width: 12%;
+        height: calc(100%-4vh);
+        top: 4vh;
+        bottom: 0;
+        display: block;
+        position: absolute;
+    /*    justify-content: center;*/
+        text-align: center;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
 
-#bottom-nav{
-    margin-top: 8vh;
-    height: 15vh;
-}
+    #logo{
+        display: block;
+        position: relative;
+        padding: 2vh;
+        margin: 2vh auto;
+        width: 66%;
+        height: 15vh;
+    }
 
-#bottom-nav img{
-    display: inline-block;
-    left: 0;
-    padding: 0;
-    width: 2vw;
-    height: 4vh;
-}
-/*******************************************************
-    Second Column - Video / Header
-*******************************************************/
-.product-filter {
-display:block;
-position:absolute;
-top:4vh;
-/*left:0;*/
-width:28%;
-height: calc(100% - 4vh);
-/*    height: 94vh;*/
-background-color:rgb(255,255,255);
-/*    border: 2px solid black;*/
-    margin-left: 12%;
-}
+    .menu a{
+        text-decoration: none;
+        color: black;
+        opacity: 70%;
+    }
 
-.product-filter ul {
-margin-left:0;
-padding-left:0;
-list-style:none;
-    height: 100%;
-    overflow: scroll;
-}
+    .menu a:hover{
+        opacity: 100%;
+        border-bottom: 2px solid red;
+    }
 
-.product-filter li {
-display:block;
-margin: 0 auto;
-width:80%;
-margin-bottom:6px;
-padding:6px 0;
-color:rgb(255,255,255);
-font-weight:bold;
-text-align:center;
-background-color:rgb(0,163,0);
-border:2px solid rgb(255,255,255);
-    height: auto;
-}
+    .menu ul{
+        height: 100%;
+        font-size: var(--nav-size);
+        font-weight: 485;
+    }
 
-.product-filter video{
-    width: 100%;
-    height: 50vh;
-/*    height: 100vh;*/    /*full height*/
-    margin-left: auto;
-    margin-right: auto;
-}
+    .menu li{
+        padding-bottom: 1.7vh;
 
-/*******************************************************
-    Third Column - Scrollable Contents
-*******************************************************/
-.products {
-display:flex;
-flex-wrap: wrap;
-justify-content:flex-start;
-flex: 1 0 60%;
-margin-left:40%;
-background-color:rgb(255,255,255);
-    height: 96vh;
-overflow-y: auto;
-/*    border: 2px solid red;*/
-}
+    }
 
-.product {
-width:100%;
-height:10%;
-margin: 12px;
-background-color:rgb(125,191,255);
+
+    #middle-nav{
+        margin-top: 6vh;
+        height: 46vh;
+    }
+
+    #bottom-nav{
+        margin-top: 8vh;
+        height: 15vh;
+    }
+
+    #bottom-nav img{
+        display: inline-block;
+        width: 4.5vh;
+        height: 4.5vh;
+    }
+    
+    #bottom-nav li{
+        padding: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    #bottom-nav li:hover{
+        transform: scale(1.1, 1.2);
+    }
+    
+    /*******************************************************
+        Second Column - Video / Header
+    *******************************************************/
+    .col-left {
+        display:flex;
+        flex-wrap: wrap;
+    /*    flex-grow: 1;*/
+        position:absolute;
+        top:4vh;
+        /*left:0;*/
+        width:28%;
+        height: calc(100% - 4vh);
+        /*    height: 94vh;*/
+        background-color:rgb(255,255,255);
+        margin-left: 12%;
+    }
+
+    .col-left img {
+        width: 100%;
+        height: 100%;
+    }
+    
+     .col-left p {
+         width: 55ch;
+    }
+    
+    
+    .col-left ul {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .col-left li {
+/*        display:block;*/
+/*        margin: 0 auto;*/
+        width:80%;
+        margin-bottom:6px;
+        padding:6px 0;
+        color:rgb(255,255,255);
+        font-weight:bold;
+        text-align:center;
+        background-color:rgb(0,163,0);
+        border:2px solid rgb(255,255,255);
+        height: auto;
+    }
+
+
+
+    /*******************************************************
+        Third Column - Scrollable Contents
+    *******************************************************/
+    .col-right {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        flex: 1 0 60%;
+        margin-left:40%;
+        background-color:rgb(255,255,255);
+        height: 96vh;
+        width: auto;
+        overflow-y: auto;
+        /*    border: 2px solid red;*/
+    }
+
+    .col-right img{
+        width: 100%;
+        height: 60%;
+    }
+    .product {
+        width:100%;
+        height:10%;
+        margin: 12px;
+        background-color:rgb(125,191,255);
+    }
 }
