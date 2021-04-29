@@ -14,7 +14,7 @@ body{
 	display: grid;
 	grid-template-columns: 13rem 15rem 14rem 15rem;
     grid-template-rows: 18rem 18rem;
-    gap: 2rem;
+    grid-gap: 2rem;
 	padding :1rem;
 	
     top: 50%; 

@@ -20,204 +20,209 @@
         Desktop version
 *******************************************************
 -->
-    <header class="mobile-header mobile">
-        <a  href="index.html"><img id="mobile-logo" src="images/logo.png" alt="logo"></a>
-        <ul>
-            <li>&nbsp; Menu &nbsp;</li>
-            <li>&nbsp; Find Yours &nbsp;</li>
-        </ul>
-        </header>
-    <section class="mobile-left-nav mobile" >
-        <div class="mobile-nav-icon mobile " onclick="clickedOn('mobile-right-nav');">
-            <div></div>
-        </div>
-    </section>
-    <section id="mobile-right-nav" class="mobile-right-nav mobile">
-        <nav class="mobile-nav mobile">
+   <section class="mobile">
+        <header class="mobile-header">
+            <a  href="index.html"><img id="mobile-logo" src="images/logo.png" alt="logo"></a>
+            <ul>
+                <li>&nbsp; Menu &nbsp;</li>
+                <li>&nbsp; Find Yours &nbsp;</li>
+            </ul>
+            </header>
+        <section class="mobile-left-nav" >
+            <div class="mobile-nav-icon " onclick="clickedOn('mobile-right-nav');">
+                <div></div>
+            </div>
+        </section>
 
-            <ul id="mobile-nav-items">
-               <li id="tab-about"  >
+
+        <main class="mobile-vid">
+            <video loop autoplay muted>
+                <source src="vids/food-home.mp4#t=4">
+            </video>
+        </main>
+
+        <section id="mobile-right-nav" class="mobile-right-nav">
+            <nav class="mobile-nav mobile">
+
+                <ul id="mobile-nav-items">
+                   <li id="tab-about"  >
+                       <a href="pages/about.html">About</a>
+                    </li>
+
+                   <li id="tab-menu">
+                       <a href="pages/menu.html">Menu</a>
+                   </li>
+
+                   <li id="tab-gallery"><a href="pages/gallery.html">Gallery</a></li>
+
+                   <li id="tab-blog"><a href="pages/blog.html">Blog</a></li>
+
+                   <li id="tab-contact"><a href="pages/contact.html">Contact</a></li>
+
+                   <li><a href="pages/cart.html">Cart</a></li>
+                   <li><a href="pages/my-account.html">My Account</a></li>
+                </ul>
+
+           </nav>
+       </section>
+       <section class="mobile-footer"></section>
+
+   </section>
+   <section class="desktop">
+        <nav class="menu middle desktop">
+            <a  href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+
+            <ul id="middle-nav">
+               <li 
+                   id="tab-about"  
+
+                   onmouseover="setOn('about-intro'); setOn('right-about'); setOff('right-index');" 
+
+                   onmouseout="setOff('about-intro'); setOff('right-about'); setOn('right-index');">
                    <a href="pages/about.html">About</a>
                 </li>
 
-               <li id="tab-menu">
+               <li 
+                   id="tab-menu"  
+
+                   onmouseover="setOn('menu-intro'); updateVid(); setOn('right-menu'); setOff('right-index');" 
+
+                   onmouseout="setOff('menu-intro'); restoreVid(); setOff('right-menu'); setOn('right-index');">
                    <a href="pages/menu.html">Menu</a>
                </li>
 
-               <li id="tab-gallery"><a href="pages/gallery.html">Gallery</a></li>
+               <li id="tab-gallery" onmouseover="setOn('gallery-intro'); setOff('vid-static');  setOff('right-index');" onmouseout="setOff('gallery-intro'); setOn('vid-static'); setOn('right-index');"><a href="pages/gallery.html">Gallery</a></li>
 
-               <li id="tab-blog"><a href="pages/blog.html">Blog</a></li>
+               <li id="tab-blog" onmouseover="setOn('blog-intro')" onmouseout="setOff('blog-intro');setOn('right-index');"><a href="pages/blog.html">Blog</a></li>
 
-               <li id="tab-contact"><a href="pages/contact.html">Contact</a></li>
+               <li id="tab-contact" onmouseover="setOn('contact-intro')" onmouseout="setOff('contact-intro');setOn('right-index');"><a href="pages/contact.html">Contact</a></li>
 
+               <li></li>
+               <li></li>
+               <li></li>
                <li><a href="pages/cart.html">Cart</a></li>
                <li><a href="pages/my-account.html">My Account</a></li>
             </ul>
 
+            <ul id="bottom-nav">
+               <li>Follow Us!</li>
+               <span><a href="https://instagram.com"><img src="../images/instagram.png" alt="instagram-icon"></a></span>
+               <span><a href="https://facebook.com"><img src="../images/fb.png" alt="facebook-icon"></a></span>
+               <span><a href="https://youtube.com"><img src="../images/youtube.png" alt="youtube-icon"></a></span>
+           </ul>
+
+
        </nav>
-   </section>
+        <div class="navbar text-scroll desktop">
+            <p><span>SPECIAL DISCOUNT COUPON: "30%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>EARLY BIRD CUSTOMERS DISCOUNT: "HALFPRICE"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>LIMITED TIME OFFER: "FREE-EXTRA-DRINK"</span></p>
+        </div>
 
-    <section class="mobile-frame mobile">
-        <video loop autoplay muted>
-            <source src="vids/food-home.mp4#t=4">
-        </video>
-    </section>
-       
-    <nav class="menu middle desktop">
-        <a  href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <main class="col-left desktop">
 
-        <ul id="middle-nav">
-           <li 
-               id="tab-about"  
+            <section id="about-intro" class="descriptions dis">
+                <h2>Who we are</h2>
+                <p> <strong>Ally Kitchen</strong> is the Vietnamese restaurant where tasting food is an enlightenment.</p>
 
-               onmouseover="setOn('about-intro'); setOn('right-about'); setOff('right-index');" 
-
-               onmouseout="setOff('about-intro'); setOff('right-about'); setOn('right-index');">
-               <a href="pages/about.html">About</a>
-            </li>
-
-           <li 
-               id="tab-menu"  
-
-               onmouseover="setOn('menu-intro'); updateVid(); setOn('right-menu'); setOff('right-index');" 
-
-               onmouseout="setOff('menu-intro'); restoreVid(); setOff('right-menu'); setOn('right-index');">
-               <a href="pages/menu.html">Menu</a>
-           </li>
-
-           <li id="tab-gallery" onmouseover="setOn('gallery-intro'); setOff('vid-static');  setOff('right-index');" onmouseout="setOff('gallery-intro'); setOn('vid-static'); setOn('right-index');"><a href="pages/gallery.html">Gallery</a></li>
-
-           <li id="tab-blog" onmouseover="setOn('blog-intro')" onmouseout="setOff('blog-intro')"><a href="pages/blog.html">Blog</a></li>
-
-           <li id="tab-contact" onmouseover="setOn('contact-intro')" onmouseout="setOff('contact-intro')"><a href="pages/contact.html">Contact</a></li>
-
-           <li></li>
-           <li></li>
-           <li></li>
-           <li><a href="pages/cart.html">Cart</a></li>
-           <li><a href="pages/my-account.html">My Account</a></li>
-        </ul>
-
-        <ul id="bottom-nav">
-           <li>Follow Us!</li>
-           <span><a href="https://instagram.com"><img src="../images/instagram.png" alt="instagram-icon"></a></span>
-           <span><a href="https://facebook.com"><img src="../images/fb.png" alt="facebook-icon"></a></span>
-           <span><a href="https://youtube.com"><img src="../images/youtube.png" alt="youtube-icon"></a></span>
-       </ul>
-
-
-   </nav>
-    <div class="navbar text-scroll desktop">
-        <p><span>SPECIAL DISCOUNT COUPON: "30%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>EARLY BIRD CUSTOMERS DISCOUNT: "HALFPRICE"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>LIMITED TIME OFFER: "FREE-EXTRA-DRINK"</span></p>
-    </div>
-
-    <main class="col-left desktop">
-
-        <section id="about-intro" class="descriptions dis">
-            <h2>Who we are</h2>
-            <p> <strong>Ally Kitchen</strong> is the Vietnamese restaurant where tasting food is an enlightenment.</p>
-
-        </section>
-        <section id="menu-intro" class="descriptions dis">
-            <h2>Discover our menu</h2>
-            <p>All you can eat <strong>Vietnamese cuisine</strong>.</p>
-
-        </section>
-        <section id="gallery-intro" class="descriptions dis">
-            <h2>Watch out for food awesomeness overflow! </h2>
-            <p>April best collection of shots &amp; fun.</p>
-            <img src="images/mcdonals-big.jpg" alt="">
-        </section>
-        <section id="blog-intro" class="descriptions dis">
-            <h2>What's On Trending</h2>
-            <p>Foodie Tips and Advices.</p>
-        </section>
-        <section id="contact-intro" class="descriptions dis">
-            <h2>Available Online Today </h2>
-            <p><strong>Shoot us</strong> a message Or say 'Hi! &#128521' on our social media accounts.</p>
-        </section>
-
-        <section id="container-iframe" class="frame">
-
-            <video id="vid-static" loop autoplay muted><source src="vids/food-home.mp4#t=4"></video>
-        </section>
-
-            
-<!--            <iframe id="vid-about" src="https://player.vimeo.com/video/227149526?&autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0s&controls=0&muted=1#t=14s"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
-            
-            
-<!--        <script src="https://player.vimeo.com/api/player.js"></script>-->
-
-    </main>
-
-    <main class="col-right desktop">
-            <section id="right-about" class=" dis">
-               <article class="about-description">
-                  <h2>A HIGHER STANDARD</h2>
-                  <span class="divider-about"> <hr></span>
-                  <p>DELICIOUS FOODS</p>
-                  <p>PERFECT SERVICE</p>
-                  <p>TREAT PEOPLE RIGHT</p>
-                   We focus on providing the freshest, best tasting, highest quality food and beverages because we believe you and your family deserve it.
-               </article>
-                <img src="../images/food/couple-at-restaurant.jpg" alt="couple-at-restaurant">
-                <article class="about-description">
-                  <h2>QUALITY YOU WON’T FIND ANYWHERE ELSE.</h2>
-                  <p>ONE TASTE</p>
-                  <p>IS ALL IT GET</p>
-                  <p>TO FALL IN LOVE</p>
-                   Traditional Vietnamese cuisine combine with secret sauces and ingredient you cannot expect to find elsewhere even from 5 stars restaurant in Ho Chi Minh city.
-                   Guaranteed customer satisfaction.
-               </article>
-
-
-                   
-               
             </section>
-            <section id="right-index" class="">
-                <div id="call-to-act-index" class="grid-items">
-                    <p>ORDER YOUR</p>
-                    <p>BREAKFAST</p>
-                    <p>ONLINE NOW</p>
-                    <img src="../images/food/delivery-food.png" alt="food-delivery-man-picture">
-                    <p>FOR DELIVERY OR PICKUP!</p>
-                    <button type="button" onclick="window.location.href='pages/menu.html';">PLACE YOUR ORDER</button>
-                </div>
-                <div class="grid-items">
-                    
-                </div>
-                <div class="grid-items">
-                    <img src="images/food-table.jpg" alt="table-of-food-cover">
-                </div>
-                <div class="grid-items">
-                    <img src="images/platter.jpg" alt="platter-dish">
-                </div>
-                <div class="grid-items">
-                    <img src="images/strawberry.jpg" alt="strawberry-dish">
-                </div>
-                <div class="grid-items">
-                    
-                </div>
-                <div class="grid-items">
-                    
-                </div>
+            <section id="menu-intro" class="descriptions dis">
+                <h2>Discover our menu</h2>
+                <p>All you can eat <strong>Vietnamese cuisine</strong>.</p>
+
             </section>
-            
-            <section id="right-menu" class=" dis">
-                <div id="call-to-act-menu" class="grid-items">
-                    <p>ORDER YOUR</p>
-                    <p>BREAKFAST</p>
-                    <p>ONLINE NOW</p>
-                    <img src="../images/food/delivery-food.png" alt="food-delivery-man-picture">
-                    <p>FOR DELIVERY OR PICKUP!</p>
-                    <button type="button">PLACE YOUR ORDER</button>
-                </div>
+            <section id="gallery-intro" class="descriptions dis">
+                <h2>Watch out for food awesomeness overflow! </h2>
+                <p>April best collection of shots &amp; fun.</p>
+                <img src="images/mcdonals-big.jpg" alt="">
             </section>
+            <section id="blog-intro" class="descriptions dis">
+                <h2>What's On Trending</h2>
+                <p>Foodie Tips and Advices.</p>
+            </section>
+            <section id="contact-intro" class="descriptions dis">
+                <h2>Available Online Today </h2>
+                <p><strong>Shoot us</strong> a message Or say 'Hi! &#128521' on our social media accounts.</p>
+            </section>
+
+            <section id="container-iframe" class="frame">
+
+                <video id="vid-static" loop autoplay muted><source src="vids/food-home.mp4#t=4"></video>
+            </section>
+
+
+    <!--            <iframe id="vid-about" src="https://player.vimeo.com/video/227149526?&autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0s&controls=0&muted=1#t=14s"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
+
+
+    <!--        <script src="https://player.vimeo.com/api/player.js"></script>-->
+
         </main>
 
+        <main class="col-right desktop">
+
+                <section id="right-index" class=" ">
+                    <div id="call-to-act-index" class="grid-items">
+                        <p>ORDER YOUR</p>
+                        <p>BREAKFAST</p>
+                        <p>ONLINE NOW</p>
+                        <img src="../images/food/delivery-food.png" alt="food-delivery-man-picture">
+                        <p>FOR DELIVERY OR PICKUP!</p>
+                        <button type="button" onclick="window.location.href='pages/menu.html';">PLACE YOUR ORDER</button>
+                    </div>
+                    <div class="grid-items">
+
+                    </div>
+                    <div class="grid-items">
+                        <img src="images/food-table.jpg" alt="table-of-food-cover">
+                    </div>
+                    <div class="grid-items">
+                        <img src="images/platter.jpg" alt="platter-dish">
+                    </div>
+                    <div class="grid-items">
+                        <img src="images/strawberry.jpg" alt="strawberry-dish">
+                    </div>
+
+                </section>
+
+                <section id="right-about" class=" dis">
+                   <article class="about-description">
+                      <h2>A HIGHER STANDARD</h2>
+                      <span class="divider-about"> <hr></span>
+                      <p>DELICIOUS FOODS</p>
+                      <p>PERFECT SERVICE</p>
+                      <p>TREAT PEOPLE RIGHT</p>
+                       We focus on providing the freshest, best tasting, highest quality food and beverages because we believe you and your family deserve it.
+                   </article>
+
+                    <img src="../images/food/couple-at-restaurant.jpg" alt="couple-at-restaurant">
+
+                    <article class="about-description">
+                      <h2>QUALITY YOU WON’T FIND ANYWHERE ELSE.</h2>
+                      <p>ONE TASTE</p>
+                      <p>IS ALL IT GET</p>
+                      <p>TO FALL IN LOVE</p>
+                       Traditional Vietnamese cuisine combine with secret sauces and ingredient you cannot expect to find elsewhere even from 5 stars restaurant in Ho Chi Minh city.
+                       Guaranteed customer satisfaction.
+                   </article>
+
+
+
+
+                </section>
+
+                <section id="right-menu" class=" dis">
+                    <div id="call-to-act-menu" class="grid-items">
+                        <p>ORDER YOUR</p>
+                        <p>BREAKFAST</p>
+                        <p>ONLINE NOW</p>
+                        <img src="../images/food/delivery-food.png" alt="food-delivery-man-picture">
+                        <p>FOR DELIVERY OR PICKUP!</p>
+                        <button type="button">PLACE YOUR ORDER</button>
+                    </div>
+                </section>
+        </main>
+    </section>
 <script>
     
 </script>

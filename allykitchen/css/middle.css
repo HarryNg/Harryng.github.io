@@ -3,16 +3,10 @@
     Desktop-responsive
 *******************************************************/
 @media only screen and (min-width:800px), (orientation:landscape) {
-/*@media only screen and (min-width:800px) {*/
+
     /*******************************************************
         Top Headline Bar
     *******************************************************/
-/*
-*, *:before, *:after {
-    box-sizing: border-box;
-    }
-*/
-    
 
     /*******************************************************
         First Column - Video / Header
@@ -244,5 +238,9 @@
         box-shadow: .7vh .7vh black;
         font-size: 2.1vh;
         font-weight: bold;
+    }
+    
+    #right-about {
+        display: none;
     }
 }
