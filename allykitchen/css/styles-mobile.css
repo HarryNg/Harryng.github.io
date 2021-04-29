@@ -23,25 +23,24 @@
     
     .mobile{
         display: grid;
-/*
-        grid-template-columns: ... | ... | ...;
-        grid-template-rows: auto;
-*/
+        grid-template-columns: 15vw 100vw;
         grid-template-rows: repeat(1fr);
         grid-template-areas: 
-            'l-nav head head head r-nav'
-            'l-nav vid vid vid r-nav'
-            'l-nav foot foot foot r-nav';
-            
+            'l-nav head head head'
+            'l-nav vid vid vid'
+            'l-nav cta cta cta'
+            'l-nav story story story'
+            'foot foot foot foot'
+            ;
     }
     
-    /*******************************************************
+     /*******************************************************
         Top Headline Bar
     *******************************************************/
 
     .mobile-nav-icon{
         margin: 2vh;
-        width: 5.5vw;
+        width: 5.8vw;
         height: 5.5vh;
     }    
     
@@ -73,7 +72,7 @@
     
     .mobile-left-nav {
         grid-area: l-nav;
-        width: 100%;
+        width: 15vw;
         height: 100%;
         padding: 1rem 0;
         background-color: var(--second-color);
@@ -81,7 +80,7 @@
     }
     
     .mobile-right-nav {
-        grid-area: r-nav;
+/*        grid-area: r-nav;*/
         display: none;
         position: absolute;
         right: 0;
@@ -99,7 +98,8 @@
     .mobile-header{
         grid-area: head;
         display: block;
-        height: 12vh;
+        height: 10vh;
+        width: 85vw;
 /*        position: absolute;*/
 /*        top: 0;*/
 /*        width: 90vw;*/
@@ -140,22 +140,113 @@
     
     .mobile-vid {
         grid-area: vid;
-/*        display: inline-block;*/
-/*        position: relative;*/
-/*        width: 100%;*/
         height: 100%;
-/*        border: 2px solid black;*/
+        width: 85vw;;
+/*        border: 1px solid black;*/
     }
     
     .mobile-vid video{
         width: 100%;
-        height: 15vh;
-/*        position: relative;*/
+        height: 100%;
+        object-fit: fill;
     }
-
+    
+    .mobile-cta-container {
+        grid-area: cta;
+        height: 30vh;
+        width: 85vw;
+        text-align: center;
+        margin-bottom: 1vh;
+/*        border: 2px solid black;*/
+    }
+    
+    .mobile-cta-container img{
+        height: 10vh;
+        margin: 0 auto;
+    }
+    
+    #mobile-cta p{
+        color: #FFF;
+        font-size: 1.8vh;
+        margin: 0;
+        text-shadow: -1px -1px 0 orange,
+            1px -1px 0 orange,
+            -1px 1px 0 orange,
+            1px 1px 0 orange;
+    }
+    
+    #mobile-cta p:nth-of-type(2){
+        font-size: 3.9vh;
+        color: rgb(227,111,30,30%);
+        font-weight: 450;
+    }
+    #mobile-cta p:last-of-type{
+        text-shadow: none;
+        color: #000;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.5vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    
+    #mobile-cta button{
+        background-color: #fff;
+        border-color:darkblue;
+        height: 5.5vh;
+        text-align: center;
+        line-height: 5.5vh;
+        padding: 0 1vh;
+        width: auto;
+        min-width: 18vh;
+        cursor: pointer;
+        box-shadow: .7vh .7vh 0 -.5px black;    /*x,y,blur,spread, color*/
+        font-size: 1.5vh;
+        font-weight: bolder;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in;
+    }
+    
+    #mobile-cta button:active:hover{
+        box-shadow: none;
+        background-color: ghostwhite;
+    }
+    .mobile-story {
+        grid-area: story;
+        display: flex;
+        height: 18vh;
+        width: 100%;
+        max-width: 85vw;
+        font-size: .95vh;
+        border: 1px solid black;
+    }
+    .mobile-story article{
+        width: 36%;
+        text-align: center;
+        background-color: rgb(0,71,44, 85%);
+    }
+    .mobile-story h2{
+        margin: 1vh auto;
+        font-size: 1.3vh;
+        width: 100%;
+        color: #fff;
+/*        background-color: aliceblue;*/
+    }
+    .mobile-story p{
+        margin: 0 auto;
+        width: 12vh;
+        justify-content: center;
+        text-align: left;
+        font-family: var(--body-font);
+        color: #fff;
+    }
+    .mobile-story img{
+        width: 64%;
+    }
     .mobile-footer {
         grid-area: foot;
         height: 15vh;
+        width: 100vw;
 /*        border: 2px solid black;*/
     }
     #mobile-tab-about:hover {
