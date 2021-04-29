@@ -8,7 +8,7 @@
 /*******************************************************
     First Column - Video / Header
 *******************************************************/
-.product-filter{
+.col-left{
     margin-left: 0;    /*change from 12% to 0*/
     width: 35%;
     background-color: #FFFF;
@@ -47,7 +47,7 @@
     text-shadow: 2px 2px black;
 }
 
-.product-filter img{
+.col-left img{
     position: relative;
     height: 60vh;
     left: 10%;
@@ -65,7 +65,7 @@
 /*******************************************************
     Third Column - Scrollable Contents
 *******************************************************/
-.products{
+.col-right{
 /*    flex: 1 0 47%;*/
     margin-left: 53%;
     background-color: #FFFF;

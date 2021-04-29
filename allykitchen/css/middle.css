@@ -1,94 +1,248 @@
 
-
 /*******************************************************
-    Top Headline Bar
+    Desktop-responsive
 *******************************************************/
-
-
-.text-scroll {
-    position: relative;
-    color: yellow;
-    text-shadow: 1px 2px 2px black;
-}
-.text-scroll p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    text-align: center;
-    font-weight: bold;
-
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);	
-    transform:translateX(100%);
-
-    /* Apply animation to this element */	
-    -moz-animation: scroll-left 17s linear infinite;
-    -webkit-animation: scroll-left 17s linear infinite;
-    animation: scroll-left 17s linear infinite;
-
-}
-
-/* Move it (define the animation) */
-@-moz-keyframes scroll-left {
-    0%   { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes scroll-left {
-    0%   { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
-}
-
-
-@keyframes scroll-left {
-    0%   { 
-        -moz-transform: translateX(100%); 
-        -webkit-transform: translateX(100%); 
-        transform: translateX(100%); 		
-    }
-    100% { 
-        -moz-transform: translateX(-100%); 
-        -webkit-transform: translateX(-100%); 
-        transform: translateX(-100%); 
-    }
-}
-
-
-/*******************************************************
-    First Column - Video / Header
-*******************************************************/
-.product-filter{
-    margin-left: 0;    /*change from 12% to 0*/
-    width: 35%;
-    background-color: cornsilk;
-    height: 100vh;
-}
+@media only screen and (min-width:800px), (orientation:landscape) {
+/*@media only screen and (min-width:800px) {*/
+    /*******************************************************
+        Top Headline Bar
+    *******************************************************/
 /*
-.product-filter video{
-    height:100vh;
-    object-fit:fill;
-}
+*, *:before, *:after {
+    box-sizing: border-box;
+    }
+*/
+    
+
+    /*******************************************************
+        First Column - Video / Header
+    *******************************************************/
+    .col-left{
+        margin-left: 0;    /*change from 12% to 0*/
+        width: 45%;
+        height: 100vh;
+    }
+    
+        
+/*
+    .col-left strong{
+        color: var(--first-color);
+    }
 */
 
+/*
+    .col-left iframe {
+        height: 100%;
+        width: 100%;
+        transform: scaleY(2);
+    }*/
+    
+    .col-left video {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+        
+    .col-left .descriptions {
+        width: 100%;
+        height: auto;
+        padding: 2vw;
+        margin-bottom: -20vh;
+        z-index: 1;
+    }
+    
+    .col-left .descriptions h2{
+        padding: 1vh 0;
+    }
 
-.product-filter iframe {
-    height: 100%;
-    width: 100%;
-    transform: scaleY(2.35);
-}
-/*******************************************************
-    Second Column - Menu
-*******************************************************/
-.middle {
-    margin-left: 35%;    /*equal video width*/
-    width: 16%;
-}
+    .col-left .descriptions p{
+        padding: .5vh 0;
+        max-width: 55vh;
+    }
 
-/*******************************************************
-    Third Column - Scrollable Contents
-*******************************************************/
-.products{
-/*    flex: 1 0 47%;*/
-    margin-left: 53%;
+    .col-left .frame {
+        flex-grow: 1;
+        z-index: 0;
+    }
+
+    /*******************************************************
+        Second Column - Menu
+    *******************************************************/
+    .middle {
+        margin-left: 45%;    /*equal video width*/
+        width: 14%;
+    }
+
+    /*******************************************************
+        Third Column - Scrollable Contents
+    *******************************************************/
+    .col-right{
+    /*    flex: 1 0 47%;*/
+        margin-left: 59%;
+        width: 41%;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .col-right::-webkit-scrollbar {
+        display: none;    /*chrome,safari and opera*/
+    }
+    #right-about {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #right-about img{
+        height: 48vh;
+        width: 100%;
+        border: 3px solid black;
+        box-sizing: border-box;
+    }
+    
+    #right-about article{
+        position: relative;
+        text-align:center;
+        border: 3px solid black;
+        height: auto;
+        width: 100%;
+        padding: 5vh;
+        box-sizing: border-box;
+    }
+    
+    #right-about h2{
+        margin: 0 auto;
+        max-width: 45vh;
+    }
+    .divider-about {
+        position: relative;
+        z-index: 10;
+        border: 10px solid red;
+    }
+    .divider-about:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -7px;
+        left: -7px;
+        width: 14px;
+        height: 14px;
+/*        transform: rotate(45deg);*/
+/*        background-color: white;*/
+        border-bottom: 1px solid rgb(48,49,51);
+        border-right: 1px solid rgb(48,49,51);
+        border: 1px solid;
+    }
+    
+    .divider-about hr{
+        width: 65%;
+    }
+    .grid-items img{
+        display: flex;
+    }
+    .col-right #right-menu,
+    .col-right #right-index{
+        width: 100%;
+    }
+    .col-right #call-to-act-menu,
+    .col-right #call-to-act-index{
+        width: 100%;
+        text-align: center;
+    }
+    .col-right #call-to-act-index{
+        height: auto;
+        padding-bottom: 1vh;
+    }
+    /*******************************************************
+        Index Call to action
+    *******************************************************/    
+    #call-to-act-index p{
+        color: #FFF;
+        font-size: 4vh;
+        margin: 0;
+        text-shadow: -1px -1px 0 orange,
+            1px -1px 0 orange,
+            -1px 1px 0 orange,
+            1px 1px 0 orange;
+        
+    }
+
+    #call-to-act-index p:nth-of-type(2){
+        font-size: 8vh;
+        color: rgb(227,111,30,30%);
+        font-weight: 450;
+    }
+    #call-to-act-index p:last-of-type{
+        text-shadow: none;
+        color: #000;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 3vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+    #call-to-act-index img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #call-to-act-index button{
+        background-color: #fff;
+        border-color:darkblue;
+        height: 8vh;
+        text-align: center;
+        line-height: 7.5vh;
+        min-width: 12vw;
+        cursor: pointer;
+        box-shadow: .7vh .7vh 0 -.5px black;    /*x,y,blur,spread, color*/
+        font-size: 2.1vh;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in;
+    }
+    
+    #call-to-act-index button:hover{
+        box-shadow: none;
+        background-color: ghostwhite;
+    }
+ 
+    
+    /*******************************************************
+        Menu - Call to actions
+    *******************************************************/
+    #call-to-act-menu p{
+        color: #FFF;
+        font-size: 4vh;
+        margin: 0;
+        text-shadow: -1px -1px 0 orange,
+            1px -1px 0 orange,
+            -1px 1px 0 orange,
+            1px 1px 0 orange;
+    }
+    
+
+    #call-to-act-menu p:nth-of-type(2){
+        font-size: 8vh;
+        color: rgb(227,111,30,30%);
+/*        text-shadow: none;*/
+        font-weight: 450;
+    }
+    #call-to-act-menu p:last-of-type{
+        text-shadow: none;
+        color: #000;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 3vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+    #call-to-act-menu img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #call-to-act-menu button{
+        background-color: #fff;
+        height: 8vh;
+        width: 12vw;
+        box-shadow: .7vh .7vh black;
+        font-size: 2.1vh;
+        font-weight: bold;
+    }
 }
