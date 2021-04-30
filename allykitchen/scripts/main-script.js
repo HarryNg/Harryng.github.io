@@ -18,9 +18,9 @@ function restoreVid(temp=defaultVid) {
     document.getElementById('vid-static').src = temp;
 }
 
-function clickedOn(myDivId) {
+function clickedOn(myDivId,myClass) {
     let icon = document.getElementById(myDivId);
-    let ab = document.querySelector(".mobile-nav-icon");
+    let ab = document.querySelector(myClass);
     if (icon.style.display === "none") {
         icon.style.display = "block";
         ab.classList.add("active");
