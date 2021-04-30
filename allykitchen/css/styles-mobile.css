@@ -39,7 +39,7 @@
     *******************************************************/
 
     .mobile-nav-icon{
-        margin: 2vh;
+        margin: 2vh auto;
         width: 5.8vw;
         height: 5.5vh;
     }    
@@ -110,27 +110,29 @@
     #mobile-logo{
         margin: 1vh 4vh;
 /*        padding: 1vh;*/
-        width: 8vh;
+        width: 9vh;
         height: 8vh;
     }
     .mobile-header ul{
         position: absolute;
         top: 0;
         right: 0;
-        margin: 2vh 1vh 0vh 1vh;
+        margin: 2.2vh 0vh 0vh 2vh;
         height: 8vh;
+        width: 55%;
         line-height: 4vh;
         text-align: center;
+/*        border:  1px solid;*/
     }
     .mobile-header li{
         display: inline-block;
         width: auto;
-        margin: 0 1vw;
+        margin: 0 1vh;
         border-bottom: 3px solid var(--second-color);
         transition: all .5s ease-in-out;
         background-size: 100% 200%;
         background-image: linear-gradient(to bottom, white 50%, chocolate 50%);
-        font-size: 2vh;
+        font-size: 1em;
     }
     
     .mobile-header li:hover{
@@ -140,7 +142,7 @@
     
     .mobile-vid {
         grid-area: vid;
-        height: 100%;
+        height: 22vh;
         width: 85vw;;
 /*        border: 1px solid black;*/
     }
@@ -167,7 +169,7 @@
     
     #mobile-cta p{
         color: #FFF;
-        font-size: 1.8vh;
+        font-size: 2vh;
         margin: 0;
         text-shadow: -1px -1px 0 orange,
             1px -1px 0 orange,
@@ -207,47 +209,60 @@
         transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in;
     }
     
-    #mobile-cta button:active:hover{
+    #mobile-cta button:hover{
         box-shadow: none;
         background-color: ghostwhite;
     }
     .mobile-story {
         grid-area: story;
         display: flex;
-        height: 18vh;
+        height: 20vh;
         width: 100%;
         max-width: 85vw;
         font-size: .95vh;
         border: 1px solid black;
     }
     .mobile-story article{
-        width: 36%;
+        width: 32%;
         text-align: center;
         background-color: rgb(0,71,44, 85%);
     }
     .mobile-story h2{
         margin: 1vh auto;
-        font-size: 1.3vh;
+        font-size: 2.5vh;
         width: 100%;
         color: #fff;
 /*        background-color: aliceblue;*/
     }
     .mobile-story p{
         margin: 0 auto;
-        width: 12vh;
+        width: 22vh;
         justify-content: center;
         text-align: left;
         font-family: var(--body-font);
+        font-size: 1.5vh;
         color: #fff;
     }
     .mobile-story img{
-        width: 64%;
+        width: 68%;
     }
     .mobile-footer {
         grid-area: foot;
-        height: 15vh;
+        height: 12vh;
         width: 100vw;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
 /*        border: 2px solid black;*/
+    }
+    .mobile-footer p{
+        margin: 1vh auto;
+        font-size: 2.2vh;
+    }
+    .mobile-footer img{
+        width: 15vh;
+        margin-top: 1vh;
+        
     }
     #mobile-tab-about:hover {
 
