@@ -86,16 +86,17 @@
         width: 100%;
     }
     #right-about img{
-        height: 48vh;
+        height: 40vh;
         width: 100%;
-        border: 3px solid black;
-        box-sizing: border-box;
+        margin: 3vh auto 0vh auto;
+/*        border: 3px solid black;*/
+/*        box-sizing: border-box;*/
     }
     
     #right-about article{
         position: relative;
         text-align:center;
-        border: 3px solid black;
+        border: 2px solid black;
         height: auto;
         width: 100%;
         padding: 5vh;
@@ -105,11 +106,26 @@
     #right-about h2{
         margin: 1vh auto;
         max-width: 45vh;
+        text-align: left;
+    }  
+    #right-about p{
+        margin: 1vh auto;
+        max-width: 45vh;
+        text-align: left;
+    }    
+    #right-about aside{
+        margin: 1.4vh auto;
+        padding: 0 5vh 0 0vh;
+/*        padding: 0 25vh;*/
+        color: var(--first-color);
+        font-weight: bold;
+/*        text-align: left;*/
     }
+/*
     .divider-about {
         position: relative;
         z-index: 10;
-/*        border: 10px solid red;*/
+        border: 10px solid red;
     }
     .divider-about:before {
         content: "";
@@ -120,16 +136,16 @@
         width: 14px;
         height: 14px;
         transform: rotate(45deg);
-/*        background-color: white;*/
+        background-color: white;
         border-bottom: 1px solid rgb(48,49,51);
         border-right: 1px solid rgb(48,49,51);
-/*        border: 1px solid;*/
     }
     
     .divider-about hr{
         width: 65%;
         margin: 0 auto;
     }
+*/
     .grid-items img{
         display: flex;
     }

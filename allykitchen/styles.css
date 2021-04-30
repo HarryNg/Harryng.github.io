@@ -124,7 +124,7 @@ p {
     }
     
     /*******************************************************
-        First Column - Menu
+        Middle Column - Menu
     *******************************************************/
 
     #middle-nav a:hover {
@@ -202,15 +202,13 @@ p {
     }
     
     /*******************************************************
-        Second Column - Video / Header
+        Column Left - Video / Header
     *******************************************************/
     .col-left {
         display:flex;
         flex-wrap: wrap;
-    /*    flex-grow: 1;*/
         position:absolute;
         top:4vh;
-        /*left:0;*/
         width:28%;
         height: calc(100% - 4vh);
         /*    height: 94vh;*/
@@ -250,7 +248,7 @@ p {
 
 
     /*******************************************************
-        Third Column - Scrollable Contents
+        Column Right - Scrollable Contents
     *******************************************************/
     .col-right {
         display:flex;
