@@ -53,6 +53,7 @@ p {
 .navbar {
     height: 4vh;
     background-color:var(--first-color);
+/*    width: 100%;*/
 }
 
 .text-scroll {
@@ -115,13 +116,8 @@ p {
     .mobile{
         display: none;
     }
-    html,body{
-        overflow: hidden;    /*No overflow out of screen*/
-    }
 
-    body {
-        max-height: 100vh;
-    }
+
     
     /*******************************************************
         Middle Column - Menu
