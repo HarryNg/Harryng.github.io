@@ -24,7 +24,7 @@
     .mobile{
         display: grid;
         grid-template-columns: 15vw 100vw;
-        grid-template-rows: repeat(1fr);
+        grid-template-rows: 1fr;
         grid-template-areas: 
             'l-nav head head head'
             'l-nav vid vid vid'
