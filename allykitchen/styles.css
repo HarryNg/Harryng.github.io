@@ -120,13 +120,8 @@ p {
 
     
     /*******************************************************
-        Middle Column - Menu
+        Middle Column - Nav
     *******************************************************/
-
-    #middle-nav a:hover {
-        color: var(--first-color);
-    }
-
 
     .menu {
         width: 12%;
@@ -177,24 +172,33 @@ p {
         margin-top: 6vh;
         height: 46vh;
     }
+    
+    #middle-nav a:hover {
+        color: var(--first-color);
+    }
+
 
     #bottom-nav{
         margin-top: 8vh;
         height: 15vh;
     }
-
-    #bottom-nav img{
-        display: inline-block;
-        width: 4.5vh;
-        height: 4.5vh;
-    }
     
     #bottom-nav li{
         padding: 0;
+    }
+    
+    #bottom-nav a{
+        display: inline-block;
         transition: all 0.3s ease-in-out;
     }
-    #bottom-nav li:hover{
+    
+    #bottom-nav a:hover{
         transform: scale(1.1, 1.2);
+    }
+
+    #bottom-nav img{
+        width: 4.5vh;
+        height: 4.2vh;
     }
     
     /*******************************************************
