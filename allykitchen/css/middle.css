@@ -11,7 +11,6 @@
         overflow: hidden;    /*No overflow out of screen*/
     }
     
-    
     body {
         max-height: 100vh;
     }
@@ -20,24 +19,11 @@
     *******************************************************/
     .col-left{
         margin-left: 0;    /*change from 12% to 0*/
-        width: 45%;
+        width: 35%;
         height: 100vh;
     }
     
-        
-/*
-    .col-left strong{
-        color: var(--first-color);
-    }
-*/
-
-/*
-    .col-left iframe {
-        height: 100%;
-        width: 100%;
-        transform: scaleY(2);
-    }*/
-    
+ 
     .col-left video {
         width: 100%;
         height: 100%;
@@ -70,8 +56,8 @@
         Second Column - Menu
     *******************************************************/
     .middle {
-        margin-left: 45%;    /*equal video width*/
-        width: 14%;
+        margin-left: 35%;    /*equal video width*/
+        width: 12%;
     }
 
     /*******************************************************
@@ -79,10 +65,12 @@
     *******************************************************/
     .col-right{
     /*    flex: 1 0 47%;*/
-        margin-left: 59%;
-        width: 41%;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        margin-left: 47%;
+        width: 53%;
+/*        -ms-overflow-style: none;  */
+        /* IE and Edge */
+/*        scrollbar-width: none;  */
+        /* Firefox */
     }
     .col-right::-webkit-scrollbar {
         display: none;    /*chrome,safari and opera*/
@@ -128,31 +116,8 @@
         font-weight: bold;
 /*        text-align: left;*/
     }
-/*
-    .divider-about {
-        position: relative;
-        z-index: 10;
-        border: 10px solid red;
-    }
-    .divider-about:before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: -7px;
-        left: -7px;
-        width: 14px;
-        height: 14px;
-        transform: rotate(45deg);
-        background-color: white;
-        border-bottom: 1px solid rgb(48,49,51);
-        border-right: 1px solid rgb(48,49,51);
-    }
+
     
-    .divider-about hr{
-        width: 65%;
-        margin: 0 auto;
-    }
-*/
     .grid-items img{
         display: flex;
     }
