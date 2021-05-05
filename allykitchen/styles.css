@@ -166,6 +166,11 @@ p {
         padding-bottom: 1.7vh;
 
     }
+    
+    .menu-footer a img{
+        width: 7.5vh;
+        height: 4vh;
+    }
 
 
     #middle-nav{
@@ -180,7 +185,7 @@ p {
 
     #bottom-nav{
         margin-top: 8vh;
-        height: 15vh;
+        height: 10vh;
     }
     
     #bottom-nav li{
