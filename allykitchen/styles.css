@@ -125,7 +125,7 @@ p {
 
     .menu {
         width: 12%;
-        height: calc(100%-4vh);
+/*        height: calc(100%-4vh);*/
         top: 4vh;
         bottom: 0;
         display: block;
