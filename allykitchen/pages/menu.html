@@ -24,8 +24,8 @@
 
     <div class="mobile">
              
-        <section id="menu-right-nav" class="menu-right-nav">
-                <nav class="menu-nav menu">
+        <nav id="menu-right-nav" class="menu-right-nav">
+<!--                <nav class="menu-nav menu">-->
 
                     <ul id="menu-nav-items">
                        <li id="tab-about"  >
@@ -46,8 +46,8 @@
                        <li><a href="../pages/my-account.html">My Account</a></li>
                     </ul>
 
-               </nav>
-           </section>
+<!--               </nav>-->
+           </nav>
             <!--menu Right Nav ends-->
 
         <section class="grid-container">
@@ -61,34 +61,34 @@
             </header>
             <!--Header ends-->
 
-            <section class="menu-left-nav" onclick="clickedOn('menu-right-nav','.menu-nav-icon');">
+            <div class="menu-left-nav" onclick="clickedOn('menu-right-nav','.menu-nav-icon');">
                 <div class="menu-nav-icon " >
                     <div></div>
                 </div>
-            </section>
+            </div>
             <!--menu Left Nav ends-->
 
-            <section class="menu-main">
+            <div class="menu-main">
 
-               <section class="menu-cta-container content">
+               <div class="menu-cta-container content">
                     <p>ORDER YOUR</p>
                     <p>BREAKFAST</p>
                     <p>ONLINE NOW</p>
                     <img src="../../images/food/delivery-food.png" alt="food-delivery-man-picture">
                     <p>FOR DELIVERY OR PICKUP!</p>
                     <button type="button" onclick="window.location.href='pages/menu.html';">PLACE YOUR ORDER</button>
-               </section>
+               </div>
                 <!--menu CTA Container ends-->
 
-               <section class="menu-story content">
+               <div class="menu-story content">
                    <article>
                        <h2>OUR FOOD STORY</h2>
                        <p>Our chefs thoughtfully prepare every ingredient, every dish. We work with partners who are as passionate about food and our planet as we are. Together, we foster a more sustainable food system.</p>
                    </article>
                    <img src="../images/dish-table.jpg" alt="dish-table">
-               </section>
+               </div>
 
-            </section>
+            </div>
              <!--menu Main ends-->
 
             <footer class="menu-footer">
@@ -158,8 +158,9 @@
 
         <section class="col-right">
            <h1>Energy Pump</h1>
-            <div class="product">1</div>
-            <div class="product">2</div>
+            <div class="menu-items"><img src="../images/01.jpg" alt="chicken-wings"></div>
+            <div class="menu-items"><img src="../images/04.jpg" alt="chicken-butter"></div>
+            <div class="menu-items"><img src="../images/06.jpg" alt="chicken-chips"></div>
         </section>
     </div>
 </body>

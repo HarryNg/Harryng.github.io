@@ -170,8 +170,12 @@ p {
     .menu-footer a img{
         width: 7.5vh;
         height: 4vh;
+        opacity: 10%;
     }
-
+    
+     .menu-footer a img:hover{
+         opacity: 100%;
+    }
 
     #middle-nav{
         margin-top: 6vh;
