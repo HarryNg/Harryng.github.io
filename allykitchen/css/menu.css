@@ -81,6 +81,6 @@
     top: 4vh;
     width: 53%;
     margin-left: 47%;
-/*    background-color: #FFFF;*/
+    overflow: hidden;
     
 }
