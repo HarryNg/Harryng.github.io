@@ -10,21 +10,7 @@ html,body {
     padding: 0;
 }
 
-.body{
-/*    box-sizing: border-box;*/
-/*
-    display: grid;
-    grid-template-columns: 15vw 100vw;
-    grid-template-rows: repeat(1fr);
-    grid-template-areas: 
-        'l-nav head head head'
-        'l-nav vid vid vid'
-        'l-nav cta cta cta'
-        'l-nav story story story'
-        'foot foot foot foot'
-        ;
-*/
-}
+
 
  .grid-container {
      display: grid;
@@ -345,15 +331,3 @@ html,body {
 /*******************************************************
     Third Column - Scrollable Contents
 *******************************************************/
-.mobile-col-right {
-
-}
-
-.mobile-col-right img{
-
-}
-.mobile-product {
-
-}
-
-}
