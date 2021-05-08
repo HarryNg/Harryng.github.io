@@ -115,28 +115,39 @@
 .col-3 {grid-area: cl3;}
 
 .col-right .menu-items{
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
-    height: 50vh;
-    margin-bottom: 2vh;
+    height: 45vh;
+/*    margin-bottom: 2vh;*/
     border: 1.3vh solid var(--second-color);
+    text-align: center;
 }
 
 .reviews {
-    display: flex;
-    width: 30vh;
+    display: block;
+    width: 100%;
     height: auto;
 }
 
+.menu-items p{
+    margin-top: 1vh;
+/*    width: 100%;*/
+}
+.menu-items p span,
+.grid-container h1 span{
+    width: 100%;;
+    display: block;
+}
 
 .col-right img{
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 29vh;
     margin: 0;
-    padding: .5rem;
-    border-radius: 12px;
+    padding: .2vw;
+    border-radius: 7px;
 }
 
 
