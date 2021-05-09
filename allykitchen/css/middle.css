@@ -40,7 +40,7 @@
     
     .col-left .descriptions h2{
         padding: 1vh 0;
-        max-width: 71vh;
+        max-width: 100%;
     }
 
     .col-left .descriptions p{
