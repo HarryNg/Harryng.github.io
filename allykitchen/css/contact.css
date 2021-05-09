@@ -1,0 +1,51 @@
+
+/*******************************************************
+    Desktop-responsive
+*******************************************************/
+@media only screen and (min-width:800px), (orientation: landscape){
+    .desktop{
+        display: block;
+    }
+    
+    .col-right{
+/*        text-align: center;*/
+        justify-content: center;
+    }
+    .col-right h1{
+        width: 100%;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    .col-right form{
+        width: 80%;
+        height: 75vh;
+        margin: 2vh auto;
+        font-size: 2.5vh;
+        display: inline-block;
+    }
+    
+    #fname,#lname{
+        height: 7vh;
+        width: 49.6%;
+        margin: 2vh auto;
+        padding: 2vh;
+        border-radius: 5px;
+    }
+    #email{
+        height: 7vh;
+        width: 100%;
+        padding: 2vh;
+        border-radius: 5px;
+    }
+    
+    #message{
+        height: 49vh;
+        width: 100%;
+        padding: 2vh;
+        border-radius: 5px;
+        margin: 2vh auto;
+    }
+    
+    
+    
+}
