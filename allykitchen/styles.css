@@ -163,7 +163,7 @@ p {
     .menu ul{
         height: 100%;
         font-size: var(--nav-size);
-        font-weight: 485;
+        font-weight: 500;
     }
 
     .menu li{
