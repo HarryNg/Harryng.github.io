@@ -46,6 +46,8 @@
         margin: 2vh auto;
     }
     
-    
+    #message::placeholder{
+        position: absolute;
+    }
     
 }
