@@ -10,7 +10,9 @@ html,body {
     padding: 0;
 }
 
-
+.desktop{
+    display: none;
+}
 
  .grid-container {
      display: grid;
@@ -264,68 +266,18 @@ html,body {
     width: 92vw;
     height: 28vh;
 }
-#about-tab-about:hover {
 
-}
-
-#about-vid-about {
-
-}
-.about-menu {
-
-}
-
-
-
-.about-menu a{
-
-}
-
-.about-menu a:hover{
-
-}
-
-.mobile-menu ul{
-
-}
-
-.mobile-menu li{
-
-
-}
-
-
-#mobile-middle-nav{
-
-}
-
-#mobile-bottom-nav{
-
-}
-
-#mobile-bottom-nav img{
-
-}
 /*******************************************************
-    Second Column - Video / Header
+    Desktop-responsive
 *******************************************************/
-.mobile-col-left {
-
+@media only screen and (min-width:800px), (orientation: landscape){
+    .desktop{
+        display: block;
+    }
+    #right-about{
+        display: block;
+    }
 }
-
-.mobile-col-left .mobile-descriptions {
-
-}
-
-
-.mobile-col-left ul {
-
-}
-
-.mobile-col-left li {
-
-}
-
 
 
 /*******************************************************
