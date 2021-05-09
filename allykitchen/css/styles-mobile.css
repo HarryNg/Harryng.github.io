@@ -180,7 +180,7 @@
     #mobile-cta p:nth-of-type(2){
         font-size: 3.9vh;
         color: rgb(227,111,30,30%);
-        font-weight: 450;
+        font-weight: 500;
     }
     #mobile-cta p:last-of-type{
         text-shadow: none;
@@ -511,7 +511,7 @@
     .menu-cta-container p:nth-of-type(2){
         font-size: 3.5vh;
         color: rgb(227,111,30,30%);
-        font-weight: 450;
+        font-weight: 500;
     }
     .menu-cta-container p:last-of-type{
         text-shadow: none;
