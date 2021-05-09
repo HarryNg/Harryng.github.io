@@ -50,4 +50,21 @@
         position: absolute;
     }
     
+    .col-right form button {
+        float: right;
+        height: 7vh;
+        width: 10vw;
+        border-radius: 8px;
+        background-color: deepskyblue;
+        color: #fff;
+        font-weight: bold;
+        font-size: 2.5vh;
+        font-family: var(--body-font);
+    }
+    
+    .col-right form button:hover {
+        background-color: antiquewhite;
+        color: var(--second-color);
+    }
+    
 }
