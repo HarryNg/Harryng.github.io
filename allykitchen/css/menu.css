@@ -121,6 +121,7 @@
     display: block;
     position: relative;
     width: 100%;
+/*    max-width: 19vw;*/
     height: 45vh;
 /*    margin-bottom: 2vh;*/
     border: 1.3vh solid var(--second-color);
@@ -129,7 +130,8 @@
 
 .reviews {
 /*    display: block;*/
-    width: 100%;
+    width: 15vw;
+    word-wrap: break-word;
 /*    height: 13vh;*/
 }
 
