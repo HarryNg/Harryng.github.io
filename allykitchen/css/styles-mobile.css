@@ -167,7 +167,8 @@
         grid-area: head;
         display: block;
         height: 10vh;
-        width: calc(100%-8vw);    /*l-nav width equal 8vw*/
+/*        width: calc(100%-8vw);    l-nav width equal 8vw*/
+        width: 88vw;    /*validator bug with calc so use this instead*/
 /*        position: absolute;*/
 /*        top: 0;*/
 /*        width: 90vw;*/
