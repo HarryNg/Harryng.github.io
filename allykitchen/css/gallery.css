@@ -1,5 +1,40 @@
+/*******************************************************
+    Mobile View
+*******************************************************/
+/*styles-mobile.css*/
 
+.col-1{
+    height: 55vh;
+}
 
+.col-1 img{
+    height: 70%;
+    width: 90%;
+}
+
+.col-2 {
+    width: 99%;
+    height: 45vh;
+}
+
+.col-2 img{
+    height: 100%;
+    width: 100%;
+}
+.two-col-gal{
+    display: inline-flex;
+}
+
+.col-3 {
+    display: inline-block;
+    height: auto;
+/*    border: 2px solid;*/
+}
+
+.col-3 img{
+    width: 50%;
+    height: 35vh;
+}
 /*******************************************************
     Desktop-responsive
 *******************************************************/
