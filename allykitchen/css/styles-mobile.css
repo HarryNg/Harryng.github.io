@@ -17,19 +17,79 @@
     Mobile Responsive
 *******************************************************/
 @media only screen and (max-width:550px), (orientation:portrait){
+    html,body {
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     .desktop{
         display: none;
     }
     
+    .col-1{grid-area: top;}
+    .col-2{grid-area: first;}
+    .col-3{grid-area: second;}
+    .col-4{grid-area: third;}
+    .col-5{grid-area: fourth;}
+    .divider {
+        height: 2vh;
+        width: 100%;
+    }
+    
+    .col-1{
+        height: 20vh;
+        max-width: 100%;
+        padding: 2vh;
+        text-align: center;
+/*        border: 2px solid red;*/
+    }
+    
+    .col-1 h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .col-1 p{
+        padding: 1vh 2rem;
+    }
+    .col-2,.col-3,.col-4,.col-5{
+        height: 74vh;
+        width: 100%;
+        max-width: 100%;
+        text-align:center;
+/*        border: 2px solid red;*/
+    }
+    
+    .col-2 h2,.col-3 h2,.col-4 h2,.col-5 h2{
+        margin: 0 auto;
+    }
+    .col-2 p,.col-3 p,.col-4 p,.col-5 p{
+        padding: 2vh;
+    }
+    
+    .col-1 img, .col-2 img,.col-3 img,.col-4 img,.col-5 img{
+        height: 50%;
+        width: 100%;
+/*        max-width: 80vw;*/
+    }
+    
+    
     .mobile{
+        max-width: 100vw;
+        overflow: hidden;
         display: grid;
-        grid-template-columns: 15vw 100vw;
+/*        border: 1px solid;*/
+/*        grid-template-columns: 15vw 50vw;*/
         grid-template-rows: 1fr;
         grid-template-areas: 
             'l-nav head head head'
-            'l-nav vid vid vid'
-            'l-nav cta cta cta'
-            'l-nav story story story'
+            'l-nav top top top'
+            'l-nav first first first'
+            'l-nav second second second'
+            'l-nav third third third'
+            'l-nav fourth fourth fourth'
             'foot foot foot foot'
             ;
     }
@@ -72,7 +132,7 @@
     
     .mobile-left-nav {
         grid-area: l-nav;
-        width: 15vw;
+        width: 8vw;
         height: 100%;
         padding: 1rem 0;
         background-color: var(--second-color);
@@ -80,26 +140,26 @@
     }
     
     .mobile-right-nav {
-/*        grid-area: r-nav;*/
         display: none;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 4vh;
         height: 100%;
         width: 90%;
         max-width: 90%;
         background-color: #fff;
+        z-index: 100;
         
 /*        border: 2px solid black;*/
     }
     /*******************************************************
         First Column - Menu
     *******************************************************/
-    .mobile-header{
+    header{
         grid-area: head;
         display: block;
         height: 10vh;
-        width: 85vw;
+        width: calc(100%-8vw);    /*l-nav width equal 8vw*/
 /*        position: absolute;*/
 /*        top: 0;*/
 /*        width: 90vw;*/
@@ -107,6 +167,7 @@
 /*        margin-left: 10vh;*/
 /*        border:  1px solid;*/
     }
+    
     #mobile-logo{
         margin: 1vh 4vh;
 /*        padding: 1vh;*/
@@ -115,14 +176,13 @@
     }
     .mobile-header ul{
         position: absolute;
-        top: 0;
+        top: 4vh;
         right: 0;
         margin: 2.2vh 0vh 0vh 2vh;
         height: 8vh;
         width: 55%;
         line-height: 4vh;
         text-align: center;
-/*        border:  1px solid;*/
     }
     .mobile-header li{
         display: inline-block;
@@ -139,9 +199,9 @@
         background-position: 0 100%;
         color: white;
     }
-    
+
+
     .mobile-vid {
-        grid-area: vid;
         height: 22vh;
         width: 85vw;;
 /*        border: 1px solid black;*/
@@ -153,8 +213,7 @@
         object-fit: fill;
     }
     
-    .mobile-cta-container {
-        grid-area: cta;
+    .mobile-cta-container{
         height: 30vh;
         width: 85vw;
         text-align: center;
@@ -246,102 +305,23 @@
     .mobile-story img{
         width: 68%;
     }
-    .mobile-footer {
+    footer {
         grid-area: foot;
         height: 12vh;
-        width: 100vw;
+        width: 100%;
+        max-width: 100%;
         text-align: center;
         background-color: #000;
         color: #fff;
-/*        border: 2px solid black;*/
     }
-    .mobile-footer p{
+    footer p{
         margin: 1vh auto;
         font-size: 2.2vh;
     }
-    .mobile-footer img{
+    footer img{
         width: 15vh;
         margin-top: 1vh;
-        
     }
-    #mobile-tab-about:hover {
-
-    }
-
-    #mobile-vid-about {
-        
-    }
-    .mobile-menu {
-        
-    }
-
-
-
-    .mobile-menu a{
-
-    }
-
-    .mobile-menu a:hover{
-
-    }
-
-    .mobile-menu ul{
-
-    }
-
-    .mobile-menu li{
-
-
-    }
-
-
-    #mobile-middle-nav{
-
-    }
-
-    #mobile-bottom-nav{
-
-    }
-
-    #mobile-bottom-nav img{
-
-    }
-    /*******************************************************
-        Second Column - Video / Header
-    *******************************************************/
-    .mobile-col-left {
-
-    }
-
-    .mobile-col-left .mobile-descriptions {
-
-    }
-
-
-    .mobile-col-left ul {
-
-    }
-
-    .mobile-col-left li {
-
-    }
-
-
-
-    /*******************************************************
-        Third Column - Scrollable Contents
-    *******************************************************/
-    .mobile-col-right {
-
-    }
-
-    .mobile-col-right img{
-
-    }
-    .mobile-product {
-
-    }
-    
 
 
     /*******************************************************

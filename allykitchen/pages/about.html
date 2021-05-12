@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/middle.css">
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/styles-mobile.css">
     <link rel="icon" type="image/png" href="../icons/fav.png">
     <script src="../scripts/main-script.js"></script>
 </head>
@@ -24,10 +25,10 @@
     </div>
     
     <div class="mobile">  
-        <div id="about-right-nav" class="about-right-nav">
-                <nav class="about-nav about">
+        <div id="mobile-right-nav" class="mobile-right-nav">
+                <nav class="mobile-nav">
 
-                    <ul id="about-nav-items">
+                    <ul id="mobile-nav-items">
                        <li id="tab-about"  >
                            <a href="../pages/about.html">About</a>
                         </li>
@@ -52,8 +53,8 @@
 
         <div class="grid-container">
 
-            <header class="about-header">
-                <a  href="index.html"><img id="about-logo" src="../images/logo.png" alt="logo"></a>
+            <header class="mobile-header">
+                <a  href="index.html"><img id="mobile-logo" src="../images/logo.png" alt="logo"></a>
                 <ul>
                     <li>&nbsp; Menu &nbsp;</li>
                     <li>&nbsp; Find Yours &nbsp;</li>
@@ -61,37 +62,49 @@
             </header>
             <!--Header ends-->
 
-            <div class="about-left-nav" onclick="clickedOn('about-right-nav','.about-nav-icon');">
-                <div class="about-nav-icon " >
+            <div class="mobile-left-nav" onclick="clickedOn('mobile-right-nav','.mobile-nav-icon');">
+                <div class="mobile-nav-icon " >
                     <div></div>
                 </div>
             </div>
             <!--about Left Nav ends-->
 
-            <main class="about-main">
+            <main class="mobile-main">
 
-               <div class="about-cta-container content">
-                    <p>ORDER YOUR</p>
-                    <p>BREAKFAST</p>
-                    <p>ONLINE NOW</p>
-                    <img src="../../images/food/delivery-food.png" alt="food-delivery-man-picture">
-                    <p>FOR DELIVERY OR PICKUP!</p>
-                    <button type="button" onclick="window.location.href='pages/menu.html';">PLACE YOUR ORDER</button>
-               </div>
-                <!--about CTA Container ends-->
+               <div id="mobile-intro" class="col-1">
+                    <h2>Who we are</h2>
+                    <p> <strong>Ally Kitchen</strong> is the Vietnamese restaurant where tasting food is an enlightenment.</p>
 
-               <div class="about-story content">
-                   <article>
-                       <h2>OUR FOOD STORY</h2>
-                       <p>Our chefs thoughtfully prepare every ingredient, every dish. We work with partners who are as passionate about food and our planet as we are. Together, we foster a more sustainable food system.</p>
-                   </article>
-                   <img src="../images/dish-table.jpg" alt="dish-table">
-               </div>
+                </div>
+                <!--about intro Container ends-->
+                
+                <div class="divider"></div>
+
+               <article class="col-2">
+                     <h2>A HIGHER STANDARD</h2>
+
+                     <aside>DELICIOUS FOODS</aside>
+                     <aside>PERFECT SERVICE</aside>
+                     <aside>TREAT PEOPLE RIGHT</aside>
+                     <p>We focus on providing the freshest, best tasting, highest quality food and beverages because we believe you and your family deserve it.</p>
+                     <img src="../../images/food/couple-at-restaurant.jpg" alt="couple-at-restaurant">
+                </article>
+                
+                <div class="divider"></div>
+                
+                <article class="col-3">
+                   <h2>QUALITY YOU WON’T FIND ANYWHERE ELSE.</h2>
+                   <aside>ONE TASTE</aside>
+                   <aside>IS ALL IT GET</aside>
+                   <aside>TO FALL IN LOVE</aside>
+                    <p>Traditional Vietnamese cuisine combine with secret sauces and ingredient you cannot expect to find elsewhere even from 5 stars restaurant in Ho Chi Minh city.
+                    Guaranteed customer satisfaction.</p>
+                </article>
 
             </main>
              <!--about Main ends-->
 
-            <footer class="about-footer">
+            <footer >
                <p>Hai Nguyen, 2020<br>
 
                 <a href="http://validator.w3.org/check?uri=https://harryng.github.io/allykitchen/pages/about.html">
@@ -171,11 +184,11 @@
 
                  <article class="about-description">
                    <h2>QUALITY YOU WON’T FIND ANYWHERE ELSE.</h2>
-                   <p>ONE TASTE</p>
-                   <p>IS ALL IT GET</p>
-                   <p>TO FALL IN LOVE</p>
-                    Traditional Vietnamese cuisine combine with secret sauces and ingredient you cannot expect to find elsewhere even from 5 stars restaurant in Ho Chi Minh city.
-                    Guaranteed customer satisfaction.
+                   <aside>ONE TASTE</aside>
+                   <aside>IS ALL IT GET</aside>
+                   <aside>TO FALL IN LOVE</aside>
+                    <p>Traditional Vietnamese cuisine combine with secret sauces and ingredient you cannot expect to find elsewhere even from 5 stars restaurant in Ho Chi Minh city.
+                    Guaranteed customer satisfaction.</p>
                 </article>
 
              </div>
