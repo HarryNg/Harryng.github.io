@@ -10,14 +10,14 @@ form {
     margin: 2vh auto;
     font-size: 2.5vh;
 }
-#fname,#lname{
+#fname,#lname,#c-fname,#c-lname{
     height: 7vh;
     width: 69.96%;
     margin: 1vh auto;
     padding: 2vh;
     border-radius: 5px;
 }
-#email{
+#email,#c-email{
     height: 7vh;
     width: 69.96%;
     padding: 2vh;
@@ -25,7 +25,7 @@ form {
     margin: 1vh auto;
 }
 
-#message{
+#message,#c-message{
     height: 25vh;
     width: 69.96%;
     padding: 2vh;
@@ -33,7 +33,7 @@ form {
     margin: 1vh auto;
 }
 
-#message::placeholder{
+#message::placeholder,#c-message::placeholder{
     position: absolute;
 }
 
