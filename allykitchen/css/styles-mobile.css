@@ -23,11 +23,19 @@
         margin: 0;
         padding: 0;
     }
+    .mobile {
+        display: block;
+    }
 
     .desktop{
         display: none;
     }
     
+    .mobile-main{
+        width: 89vw;
+        max-width: 100%;
+/*        border: 2px solid;*/
+    }
     .col-1{grid-area: top;}
     .col-2{grid-area: first;}
     .col-3{grid-area: second;}
@@ -308,7 +316,7 @@
     footer {
         grid-area: foot;
         height: 12vh;
-        width: 100%;
+        width: 100vw;
         max-width: 100%;
         text-align: center;
         background-color: #000;
