@@ -48,10 +48,10 @@
     height: 100%;
 }
 
-.col-3 {
+.col-3, .col-4 {
     height: 53vh;
 }
-.col-3 h1{
+.col-3 h2, .col-4 h2{
     grid-area: he;
     display: block;
     width: 96%;
@@ -79,11 +79,17 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    
+    height: 60%;
+}
+
+.me-1 p,.me-2 p,.me-3 p{
+    font-size: 2.2vh;
+    font-weight: bold;
 }
 .menu-item-container{
     display: grid;
     grid-template-areas: 'he he he he he'
+        '.. cl1 cl2 cl3 ..'
         '.. cl1 cl2 cl3 ..'
         '.. cl1 cl2 cl3 ..'
         '.. cl1 cl2 cl3 ..'
