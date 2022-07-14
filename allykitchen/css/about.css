@@ -3,6 +3,7 @@
 /*******************************************************
     Mobile View
 *******************************************************/
+<<<<<<< HEAD
 html,body {
     width: auto;
     max-width: 100%;
@@ -283,46 +284,23 @@ html,body {
 }
 
 .mobile-menu ul{
-
-}
-
-.mobile-menu li{
-
-
-}
+=======
+/*styles-mobile.css*/
+>>>>>>> 1762f4b1afc0a2714375b23e7df246300dbdfd7e
 
 
-#mobile-middle-nav{
 
-}
-
-#mobile-bottom-nav{
-
-}
-
-#mobile-bottom-nav img{
-
-}
 /*******************************************************
-    Second Column - Video / Header
+    Desktop-responsive
 *******************************************************/
-.mobile-col-left {
-
+@media only screen and (min-width:800px), (orientation: landscape){
+    .desktop{
+        display: block;
+    }
+    #right-about{
+        display: block;
+    }
 }
-
-.mobile-col-left .mobile-descriptions {
-
-}
-
-
-.mobile-col-left ul {
-
-}
-
-.mobile-col-left li {
-
-}
-
 
 
 /*******************************************************
