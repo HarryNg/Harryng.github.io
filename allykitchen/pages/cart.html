@@ -9,14 +9,121 @@
     <title>Ally Kitchen</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/middle.css">
+    <link rel="stylesheet" href="../css/styles-mobile.css">
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="icon" type="image/png" href="../icons/fav.png">
+    <script src="../scripts/main-script.js"></script>
 </head>
 
 <body>
+    <div class="navbar text-scroll">
+            <p><span>SPECIAL DISCOUNT CODE: "50%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>EARLY BIRD CUSTOMERS ONLY: "FREE-DRINK"</span></p>
+    </div>
+  
+    <div class="mobile">
+             
+        <nav id="mobile-right-nav" class="mobile-right-nav">
+<!--                <nav class="menu-nav menu">-->
 
-       <nav class="middle menu">
-          <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
-           <ul id="middle-nav">
+                    <ul id="menu-nav-items">
+                       <li id="tab-about"  >
+                           <a href="../pages/about.html">About</a>
+                        </li>
+
+                       <li id="tab-menu">
+                           <a href="../pages/menu.html">Menu</a>
+                       </li>
+
+                       <li id="tab-gallery"><a href="../pages/gallery.html">Gallery</a></li>
+
+                       <li id="tab-blog"><a href="../pages/blog.html">Blog</a></li>
+
+                       <li id="tab-contact"><a href="../pages/contact.html">Contact</a></li>
+
+                       <li><a href="../pages/cart.html">Cart</a></li>
+                       <li><a href="../pages/my-account.html">My Account</a></li>
+                    </ul>
+
+<!--               </nav>-->
+           </nav>
+            <!--menu Right Nav ends-->
+
+        <div class="grid-container">
+
+            <header class="mobile-header">
+                <a  href="index.html"><img id="mobile-logo" src="../images/logo.png" alt="logo"></a>
+                <ul>
+                    <li>&nbsp; Menu &nbsp;</li>
+                    <li>&nbsp; Find Yours &nbsp;</li>
+                </ul>
+            </header>
+            <!--Header ends-->
+
+            <div class="mobile-left-nav" onclick="clickedOn('mobile-right-nav','.mobile-nav-icon');">
+                <div class="mobile-nav-icon " >
+                    <div></div>
+                </div>
+            </div>
+            <!--about Left Nav ends-->
+
+            <main class="mobile-main">
+
+               <div class="col-1">
+                    <h2>Your Cart Order</h2>
+                    <p> <strong>Don't forget</strong> to apply your coupon code.</p>
+
+                </div>
+                <!--about intro Container ends-->
+                
+                <div class="divider"></div>
+
+               <div class="col-2">
+                    <p>There are no items in Your Cart!</p>
+                    <p>Please comeback after more items are added</p>
+                </div>
+                
+
+            </main>
+             <!--about Main ends-->
+
+            <footer >
+               <p>Hai Nguyen, 2020<br>
+
+                <a href="http://validator.w3.org/check?uri=https://harryng.github.io/allykitchen/pages/cart.html">
+                 <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1"/></a>
+
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://harryng.github.io/allykitchen/pages/cart.html">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                </a>
+
+                </p>
+           </footer>
+            <!-- Footer ends-->
+
+        </div>
+         <!--Grid Container ends-->
+    </div>
+  
+     
+    <div class="desktop">
+        <section class="col-left">
+
+            <div id="cart-intro" class="descriptions ">
+                <h2>Your Cart Order</h2>
+                <p> <strong>Don't forget</strong> to apply your coupon code.</p>
+
+            </div>
+
+
+        </section>
+
+        <nav class="middle menu">
+            <a href="../index.html">
+                <img id='logo' src="../images/logo.png" alt="logo">
+            </a>
+            <ul id="middle-nav">
                <li><a href="../pages/about.html">About</a></li>
                <li><a href="../pages/menu.html">Menu</a></li>
                <li><a href="../pages/gallery.html">Gallery</a></li>
@@ -28,46 +135,30 @@
                <li><a href="../pages/cart.html">Cart</a></li>
                <li><a href="../pages/my-account.html">My Account</a></li>
            </ul>
-            
             <ul id="bottom-nav">
-               <li>Follow Us!</li>
-               <span><a href="https://instagram.com"><img src="../../images/instagram.png" alt="instagram-icon"></a></span>
-               <span><a href="https://facebook.com"><img src="../../images/fb.png" alt="facebook-icon"></a></span>
-               <span><a href="https://youtube.com"><img src="../../images/youtube.png" alt="youtube-icon"></a></span>
+                <li>Follow Us!</li>
+                <li><a href="https://instagram.com"> <span><img src="../../images/instagram.png" alt="instagram-icon"></span></a>
+
+                <a href="https://facebook.com"><span><img src="../../images/fb.png" alt="facebook-icon"></span></a>
+
+                <a href="https://youtube.com"><span><img src="../../images/youtube.png" alt="youtube-icon"></span></a></li>
            </ul>
-       </nav>
-        <div class="navbar text-scroll">
-            <p><span>SPECIAL DISCOUNT CODE: "50%OFF"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>EARLY BIRD CUSTOMERS ONLY: "FREE-DRINK"</span></p>
+           <footer class="menu-footer">
+                <a href="http://validator.w3.org/check?uri=https://harryng.github.io/allykitchen/pages/cart.html">
+                     <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" />
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://validator.w3.org/check?uri=https://harryng.github.io/allykitchen/cart.html">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                </a>
+           </footer>
+        </nav>
+        
+        <div class="col-right">
+            <div class="cart-main">
+                <p>There are no items in Your Cart!</p>
+                <p>Please comeback after more items are added</p>
+            </div>
+                     
         </div>
-
-        <main class="col-left">  
-
-                <iframe src="https://player.vimeo.com/video/315527225?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0&controls=0&muted=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-
-                </iframe>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-
-        </main>
-
-        <main class="col-right">
-            <div class="product">1</div>
-            <div class="product">2</div>
-            <div class="product">3</div>
-            <div class="product">4</div>
-            <div class="product">5</div>
-            <div class="product">6</div>
-            <div class="product">7</div>
-            <div class="product">8</div>
-            <div class="product">9</div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-        </main>
-
+        </div>
 </body>
