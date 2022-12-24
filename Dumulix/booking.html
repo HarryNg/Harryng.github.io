@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dumulix - Booking</title>
+</head>
+<body>
+    <div class="halfpage">
+        <section id="booking-left">
+            <a href="index.html"><img class="left-logo" src="img/logo (1).png" alt="Dumulix-logo"></a>
+            <div id="bkk-left-head">Order services in minutes!</div>
+            <div id="bkk-b0" class="booking-tab">
+                <button id="bkk-b0-btn"  onclick="checkActivBkk('bkk-b0-btn','bkk-b0-tp',0)">1</button>
+                <div id="bkk-b0-tp" class=" bkk-normal">Pick a service</div> 
+                <div id="result0"><div><select id="bkk-service" name="bkk-service">
+                    <option value="moving">Moving</option>
+                    <option value="storage">Storage</option>
+                    <option value="import">Import-Export</option>
+                    <option value="consult">Consulting</option>
+                  </select></div></div>
+            </div>
+            <div id="bkk-b1" class="booking-tab">
+                <button  id="bkk-b1-btn" onclick="checkActivBkk('bkk-b1-btn','bkk-b1-tp',1)">2</button>
+                <div id="bkk-b1-tp" class="bkk-normal">Tell us the details</div> 
+                <div id="result1"></div>
+            </div>
+            <div id="bkk-b2" class="booking-tab">
+                <button id="bkk-b2-btn" onclick="checkActivBkk('bkk-b2-btn','bkk-b2-tp',2)">3</button>
+                <div id="bkk-b2-tp" class="bkk-normal">Review order</div>
+                <div id="result2"></div>
+            </div>
+            <div id="bkk-b3" class="booking-tab">
+                <button id="bkk-b3-btn" onclick="checkActivBkk('bkk-b3-btn','bkk-b3-tp',3)">4</button>
+                <div id="bkk-b3-tp" class="bkk-normal">Place order</div>
+                <div id="result3"></div>
+            </div>
+            <button id="booking-book">BOOK NOW</button>
+        </section>
+        <section id="booking-right">
+            <div id="booking-right-head">
+                <h2>How Can We Help?</h2>
+                <p>To get started, tell us which service you are looking for, and where you are located.</p>
+            </div>
+            <div id="booking-right-content">
+                <div class="booking-card">
+                    <img src="img/pexels-artem-podrez-5025635.jpg" alt="Moving">
+                    <div class="booking-topic">Moving</div>
+                </div>
+                <div class="booking-card">
+                    <img src="img/pexels-rodnae-productions-7464701.jpg" alt="Storage">
+                    <div class="booking-topic">Storage</div>
+                </div>
+                <div class="booking-card">
+                    <img src="img/pexels-tom-fisk-1427107.jpg" alt="Import">
+                    <div class="booking-topic">Import</div>
+                </div>
+                <div class="booking-card">
+                    <img src="img/pexels-david-dibert-1117210.jpg" alt="Export">
+                    <div class="booking-topic">Export</div>
+                </div>
+
+                <div class="booking-card">
+                    <img src="img/pexels-ketut-subiyanto-4353605.jpg" alt="Consult">
+                    <div class="booking-topic">Consult</div>
+                </div>
+            </div>
+            
+        </section>
+            
+        <footer class="footer" id="booking-footer">
+            <section class="one-third">
+                <a href="index.html"><img class="logo" src="img/logo (1).png" alt="Dumulix-logo"></a>
+                <p>DUMULIX Oy, 20XX</p>
+                <p>Y-tunnus: 3385499-1</p>
+            </section>
+            <section class="two-third">
+                <span>Contact Information</span>
+                <p>Address: Jyväskylä 40140 <br>
+                Email: info@profutis.com <br>
+                Phone: +358 1234 5678</p>
+                <img class="foot-icon" src="img/facebook-app.png" alt="dumulix-facebook-icon">
+                <img class="foot-icon" src="img/ig-instagram.png" alt="dumulix-instagram-icon">
+                <img class="foot-icon" src="img/youtube-app.png" alt="dumulix-youtube-icon">
+            </section>
+            <section class="three-third">
+                <span>Trading Hours</span>
+                <p>Mon - Fri: 8.00 - 16.00 pm <br>
+                Sa - Sun: Closed</p>
+
+            </section>
+            <span id="foot-bottom">@2022 Dumulix Oy   | Terms | Privacy</span>
+        </footer>
+    </div>
+    
+    <script src="booking.js"></script>
+</body>
+</html>
