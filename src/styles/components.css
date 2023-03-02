@@ -1,0 +1,60 @@
+/* WelcomeSection fade in effect */
+.fade-in {
+    animation: fade-in 2s ease-in-out forwards;
+    opacity: 0;
+    color: black;
+  }
+  
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        color: rgb(233, 84, 19);
+    }
+}
+
+.present {
+    
+    color: rgb(80, 63, 230);
+}
+
+.p-icon {
+    color: rgb(145,99,57);
+}
+
+.fit-img{
+    width: 53%;
+    height: 53%;
+}
+
+.card-img-icons {
+    position: relative;
+    height: 2.69rem;
+  }
+  
+  .top-left-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+  }
+  
+  .top-right-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+  }
+
+.fit-body{
+    height: 12rem;
+}

@@ -1,7 +1,7 @@
 {
-  "name": "my-portfolio",
+  "name": "github-pages",
   "version": "0.1.0",
-  "homepage": "https://harryng.github.io/my-portfolio",
+  "homepage": "https://harryng.github.io/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
