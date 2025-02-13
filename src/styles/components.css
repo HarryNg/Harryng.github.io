@@ -58,3 +58,32 @@
 .fit-body{
     height: 12rem;
 }
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+  pointer-events: auto !important;
+}
+
+.navbar .nav-link {
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar .nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Add smooth scrolling to the whole page */
+html {
+  scroll-behavior: smooth;
+}
