@@ -9,7 +9,6 @@ import './App.css';
 import TopNavbar from './components/TopNavbar';
 import Footer from './components/Footer';
 import WelcomeSection from './components/WelcomeSection';
-import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 
@@ -28,7 +27,6 @@ function App() {
         <TopNavbar />
         <main>
           <WelcomeSection />
-          <AboutSection />
           <SkillsSection />
           <ContactSection />
         </main>
