@@ -7,7 +7,15 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { platform: 'github', url: 'https://github.com/harryng', icon: 'faGithub' },
-  { platform: 'linkedin', url: 'https://linkedin.com/in/hainnp', icon: 'faLinkedin' }
+  {
+    platform: 'github',
+    url: 'https://github.com/harryng',
+    icon: 'faGithub'
+  },
+  {
+    platform: 'linkedin',
+    url: 'https://linkedin.com/in/hainnp',
+    icon: 'faLinkedin'
+  }
 ];
 
