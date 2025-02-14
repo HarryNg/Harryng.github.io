@@ -1,17 +1,19 @@
-export const getDesignTokens = (mode) => ({
+import { createTheme } from '@mui/material/styles';
+
+const getDesignTokens = (mode) => ({
   palette: {
     mode,
     primary: {
-      main: '#61dafb', // React blue from your CSS
+      main: '#61dafb', // React blue 
       light: '#82e2fc',
       dark: '#4dabcb',
       contrastText: '#fff'
     },
     secondary: {
-      main: '#503fe6', // Purple from your .present class
+      main: '#503fe6', 
       light: '#7b6eeb',
       dark: '#3c2eb0',
-      contrastText: '#fff'
+      contrastText: '#fff'// Purple 
     },
     background: {
       default: mode === 'light' ? '#f5f5f5' : '#0a1929', // Light gray in light mode
@@ -20,14 +22,14 @@ export const getDesignTokens = (mode) => ({
     },
     text: {
       primary: mode === 'light' ? '#1a1a1a' : '#ffffff',
-      secondary: mode === 'light' ? '#8b8b8b' : '#d4d4d4', // From your greeting class
+      secondary: mode === 'light' ? '#ff0000' : '#d4d4d4', // From greeting class
       navbar: '#ffcddf', // New color for navbar text
       logo: '#ba68c8', // Light purple for logo
     },
     custom: {
       highlight: '#61dafb', // For highlighted text
-      orange: 'rgb(233, 84, 19)', // From your fade-in animation
-      brown: 'rgb(145,99,57)', // From your p-icon class
+      orange: 'rgb(233, 84, 19)', // fade-in animation
+      brown: 'rgb(145,99,57)', //  p-icon class
     }
   },
   components: {
@@ -56,4 +58,7 @@ export const getDesignTokens = (mode) => ({
       },
     },
   },
-}); 
+});
+
+// Create a theme using the design tokens
+export const createCustomTheme = (mode) => createTheme(getDesignTokens(mode)); 

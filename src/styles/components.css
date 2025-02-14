@@ -88,11 +88,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.typing-text {
-  position: relative;
-  color: var(--bs-primary);
-  font-weight: bold;
-}
 
 .cursor {
   display: inline-block;
@@ -136,7 +131,6 @@ h1 {
 }
 
 .greeting {
-  color: #8b8b8b;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -147,7 +141,6 @@ h1 {
 }
 
 .typing-text {
-  color: #61dafb; /* React blue color */
   position: relative;
   font-weight: bold;
 }

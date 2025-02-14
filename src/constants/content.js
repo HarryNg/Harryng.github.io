@@ -1,8 +1,7 @@
 export const NAVIGATION_LINKS = [
-  { href: "#welcome", label: "Welcome" },
-  { href: "#about", label: "About Me" },
+  { href: "#welcome", label: "About Me" },
   { href: "#skills", label: "Skills" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#portfolio", label: "Project" },
   { href: "#contact", label: "Contact" }
 ];
 

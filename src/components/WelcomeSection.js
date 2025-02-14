@@ -6,9 +6,10 @@ import '.././styles/components.css';
 
 const StyledSection = styled('section')(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
-  color: theme.palette.text.primary,
+  color: theme.palette.text.secondary,
   minHeight: '100vh',
   padding: '2rem 0',
+  marginBottom: '40vh',
 
   '& .greeting': {
     color: theme.palette.text.secondary,
@@ -17,9 +18,13 @@ const StyledSection = styled('section')(({ theme }) => ({
   },
 
   '& .typing-text': {
-    color: theme.palette.primary.main,
+    color: theme.palette.text.secondary,
     position: 'relative',
     fontWeight: 'bold',
+  },
+  '& .description':{
+    color: theme.palette.text.primary
+
   },
 
   '& .cursor': {
@@ -54,10 +59,18 @@ const StyledSection = styled('section')(({ theme }) => ({
       boxShadow: `0 5px 25px ${theme.palette.primary.main}4D`,
     },
   },
+
+  '& .section-title': {
+    fontFamily: 'DunkinSans',
+    fontWeight: 'bolder',
+    fontSize: '5vh',
+    color: '#FFD700',
+    textAlign: 'center',
+  },
 }));
 
 const WelcomeSection = () => {
-  const words = ["Hai Nguyen", "Full-Stack Developer"];
+  const words = ["Hai Nguyen", "a Full-Stack Developer"];
   const [displayText, setDisplayText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -98,7 +111,12 @@ const WelcomeSection = () => {
     <StyledSection id="welcome" className="welcome-section">
       <Container>
         <Row className="justify-content-center align-items-center vh-100">
-          <Col xs={6} sm={7} lg={6} className="text-start welcome-content">
+          <Box mt={20} mb={7}>
+            <h2 className="section-title">
+              About me
+            </h2>
+          </Box>
+          <Col xs={6} sm={7} lg={7} className="text-start welcome-content">
             <div className="greeting-text">
               <h1>
                 <div className="greeting">Hey there,</div>
@@ -113,7 +131,7 @@ const WelcomeSection = () => {
             </div>
             <div className="description">
               <p>
-                I'm a Finland-based full-stack developer with experience in{' '}
+                Full-stack developer with experience in{' '}
                 <span className="highlight">React</span>,{' '}
                 <span className="highlight">Java</span>,{' '}
                 <span className="highlight">Node.js</span>,{' '}
@@ -121,8 +139,6 @@ const WelcomeSection = () => {
                 <span className="highlight">Redux</span>,{' '}
                 <span className="highlight">MySQL</span>, and{' '}
                 <span className="highlight">PostgreSQL</span>.
-              </p>
-              <p>
                 I enjoy building efficient, scalable applications and always look for 
                 new challenges to improve my skills.
               </p>
@@ -134,12 +150,15 @@ const WelcomeSection = () => {
               </p>
             </div>
           </Col>
-          <Col xs={6} sm={5} lg={6} className="profile-image-container">
-            <img 
-              src={process.env.PUBLIC_URL + '/profile002.jpg'}  
-              alt="profile-img" 
-              className="img-fluid profile-image" 
-            />
+          <Col xs={6} sm={5} lg={4} className="profile-image-container">
+            <Box sx={{ width: '100%', height: 'auto' }}>
+              <img 
+                src={process.env.PUBLIC_URL + '/profile002.jpg'}  
+                alt="profile-img" 
+                className="img-fluid profile-image" 
+                style={{ maxWidth: '70%', height: 'auto' }}
+              />
+            </Box>
           </Col>
         </Row>
       </Container>
