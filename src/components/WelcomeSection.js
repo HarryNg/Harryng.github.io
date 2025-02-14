@@ -77,32 +77,33 @@ const WelcomeSection = () => {
 
   useEffect(() => {
     let timeoutId;
-    
+
     const type = () => {
       const currentWord = words[wordIndex];
       const shouldDelete = isDeleting;
-      
+
       setDisplayText(prev => 
         shouldDelete 
           ? currentWord.substring(0, prev.length - 1)
           : currentWord.substring(0, prev.length + 1)
       );
 
-      let typeSpeed = isDeleting ? 50 : 100;
+      let typeSpeed = isDeleting ? 50 : 1000; // Typing speed for delete and type
 
+      // Check if the current word is fully displayed
       if (!isDeleting && displayText === currentWord) {
-        typeSpeed = 1500;
+        typeSpeed = 10000; // Pause for 2 seconds before starting to delete
         setIsDeleting(true);
       } else if (isDeleting && displayText === '') {
         setIsDeleting(false);
         setWordIndex((prev) => (prev + 1) % words.length);
-        typeSpeed = 500;
+        typeSpeed = 80000; // Speed for moving to the next word
       }
 
       timeoutId = setTimeout(type, typeSpeed);
     };
 
-    timeoutId = setTimeout(type, 100);
+    timeoutId = setTimeout(type, 100); // Initial delay
 
     return () => clearTimeout(timeoutId);
   }, [displayText, isDeleting, wordIndex, words]);
