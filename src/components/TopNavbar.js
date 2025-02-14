@@ -10,22 +10,22 @@ const TopNavbar = () => {
   return (
     <Navbar 
       fixed="top" 
-      bg={scrolled ? 'light' : 'dark'}
-      variant={scrolled ? 'light' : 'dark'} 
       expand="lg"
       className={`transition-all ${scrolled ? 'shadow-sm' : ''}`}
-      style={{ zIndex: 1000 }}
+      style={{ 
+        zIndex: 1000,
+        backgroundColor: '#ff607e', // Pink background
+      }}
     >
       <Container>
         <Navbar.Brand href="#home" className="pointer">
-          {/* logo  */}
-          <span className={scrolled ? 'text-dark' : 'text-light'}>
-            Your Name
+          <span style={{ color: '#ba68c8' }}> {/* Light purple for logo */}
+            My Portfolio
           </span>
         </Navbar.Brand>
         <Navbar.Toggle 
           aria-controls="basic-navbar-nav"
-          className={scrolled ? '' : 'navbar-dark'}
+          style={{ borderColor: '#ffcddf' }}
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
@@ -33,7 +33,13 @@ const TopNavbar = () => {
               <Nav.Link 
                 key={href} 
                 href={href}
-                className={`nav-link pointer ${scrolled ? 'text-dark' : 'text-light'}`}
+                className="nav-link pointer"
+                style={{ 
+                  color: '#ffcddf', // Light pink for text
+                  '&:hover': {
+                    color: '#ffffff',
+                  }
+                }}
               >
                 {label}
               </Nav.Link>

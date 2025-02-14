@@ -1,22 +1,26 @@
 import React from 'react';
-import './App.css';
+import { Box } from '@mui/material';
 import TopNavbar from './components/TopNavbar';
+import Footer from './components/Footer';
 import WelcomeSection from './components/WelcomeSection';
-import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 
 function App() {
   return (
-    <div className="App">
-      <TopNavbar />
-      <main>
-        <WelcomeSection />
-        <AboutSection />
-        <SkillsSection />
-        <ContactSection />
-      </main>
-    </div>
+      <Box sx={{ 
+        bgcolor: 'background.default',
+        minHeight: '100vh',
+        color: 'text.primary'
+      }}>
+        <TopNavbar />
+        <main>
+          <WelcomeSection />
+          <SkillsSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </Box>
   );
 }
 

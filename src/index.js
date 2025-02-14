@@ -1,15 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import { createCustomTheme } from './theme/theme'; 
 import App from './App';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+const mode = 'light'; // or 'dark'
+const theme = createCustomTheme(mode); // Create the theme
+
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
     <App />
-  </React.StrictMode>
+  </ThemeProvider>,
+  document.getElementById('root')
 );
 
 
