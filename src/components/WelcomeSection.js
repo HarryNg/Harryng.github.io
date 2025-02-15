@@ -7,9 +7,7 @@ import '.././styles/components.css';
 const StyledSection = styled('section')(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
   color: theme.palette.text.secondary,
-  minHeight: '100vh',
   padding: '2rem 0',
-  marginBottom: '40vh',
 
   '& .greeting': {
     color: theme.palette.text.secondary,
@@ -60,13 +58,6 @@ const StyledSection = styled('section')(({ theme }) => ({
     },
   },
 
-  '& .section-title': {
-    fontFamily: 'DunkinSans',
-    fontWeight: 'bolder',
-    fontSize: '5vh',
-    color: '#FFD700',
-    textAlign: 'center',
-  },
 }));
 
 const WelcomeSection = () => {
@@ -109,9 +100,9 @@ const WelcomeSection = () => {
   }, [displayText, isDeleting, wordIndex, words]);
 
   return (
-    <StyledSection id="welcome" className="welcome-section">
+    <StyledSection id="welcome" className="welcome-section section-wrapper">
       <Container>
-        <Row className="justify-content-center align-items-center vh-100">
+        <Row className="justify-content-center align-items-center vh-50">
           <Box mt={20} mb={7}>
             <h2 className="section-title">
               About me

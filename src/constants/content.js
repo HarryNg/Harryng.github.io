@@ -18,3 +18,14 @@ export const SOCIAL_LINKS = [
   }
 ];
 
+export const skillsData = [
+  { logo: "/Python_Icon.png", name: "Python" },
+  { logo: "/Javascript_Icon.png", name: "JavaScript" },
+  { logo: "/React_Icon.png", name: "React" },
+  { logo: "/Java_Icon.png", name: "Java" },
+  { logo: "/Docker_Icon.png", name: "Docker" },
+  { logo: "/Postgres_Icon.png", name: "Postgres" },
+  { logo: "/Git_Icon.png", name: "Git" },
+  { logo: "/Agile_Icon.png", name: "Agile" },
+]; 
+

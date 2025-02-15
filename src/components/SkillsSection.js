@@ -1,74 +1,26 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { skillsData } from '../constants/content';
+import '.././styles/components.css';
 
 const SkillsSection = () => {
-  const skills = [
-    {
-      logo: "/Python_Icon.png",
-      name: "Python",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "/Javascript_Icon.png",
-      name: "Javascript",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "/logo192.png",
-      name: "React",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "/Csharp_Icon.png",
-      name: "C#",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "/Linux_Icon.png",
-      name: "Linux",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "/Git_Icon.png",
-      name: "Git",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "Azure_Icon.png",
-      name: "Azure",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-    {
-      logo: "/Agile_Icon.png",
-      name: "Agile",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris velit.",
-    },
-  ];
-
   return (
-    <section id="skills" className="mb-5">
+    <section id="skills" className="skills-section" style={{ padding: '4rem 0' }}>
       <Container>
-        <Row className="justify-content-center mb-2">
+        <Row className="justify-content-center mb-4">
           <Col lg={8} className="text-center">
-            <h2>Skills</h2>
-            
+            <h2 className="section-title">My Skills</h2>
           </Col>
         </Row>
         <Row className="justify-content-center">
-          {skills.map((skill, index) => (
-            <Col xs={6} md={3} key={index} className="card border-light mb-3">
-              <Image src={skill.logo} fluid thumbnail className="border-0 fit-img mx-auto my-auto" />
-              <h4>{skill.name}</h4>
-              {/* <p>{skill.description}</p> */}
-              
+          {skillsData.map((skill) => (
+            <Col xs={6} sm={4} md={3} key={skill.name} className="mb-4">
+              <Card className="skill-card">
+                <Card.Body className="text-center">
+                  <img src={skill.logo} alt={skill.name} className="skill-icon" />
+                  <Card.Title>{skill.name}</Card.Title>
+                </Card.Body>
+              </Card>
             </Col>
           ))}
         </Row>
