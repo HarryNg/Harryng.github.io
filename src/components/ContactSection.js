@@ -19,12 +19,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="mb-5">
+    <section id="contact" className="mb-5 section-wrapper">
       <Container>
         <Row className="justify-content-center">
           <Col lg={8} className="text-center">
-            <h2>Want to get in touch?</h2>
-            <h3>Drop me a line</h3>
+            <h2 className="section-title">Let's Chat</h2>
           </Col>
         </Row>
         <Row className="justify-content-center ">

@@ -1,218 +1,275 @@
-/* WelcomeSection fade in effect */
-.fade-in {
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+   html {
+    scroll-behavior: smooth;
+  }
+  
+  .section-wrapper {
+    margin: 8vh 0;
+    min-height: 100vh;
+  }
+  .section-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5vh;
+    color: #FFD700;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .section-title:hover {
+    color: #ffcc00;
+  }
+  
+  /* ==========================================================================
+     Typography & Colors
+     ========================================================================== */
+  
+  .present {
+    color: rgb(80, 63, 230);
+  }
+  
+  .p-icon {
+    color: rgb(145, 99, 57);
+  }
+  
+  .highlight {
+    color: #61dafb;
+    font-weight: 500;
+  }
+  
+  /* ==========================================================================
+     Layout Components
+     ========================================================================== */
+  
+  /* Navigation */
+  .navbar {
+    transition: all 0.3s ease-in-out;
+    pointer-events: auto !important;
+  }
+  
+  .navbar .nav-link {
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .navbar .nav-link:hover {
+    color: var(--bs-primary) !important;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .welcome-content {
+    padding: 2rem;
+  }
+  
+  
+  /* Skills Section */
+  .skills {
+    padding-top: 10vh;
+  }
+  
+  /* ==========================================================================
+     Components
+     ========================================================================== */
+  
+  /* Card Components */
+  .card-img-icons {
+    position: relative;
+    height: 2.69rem;
+  }
+  
+  .top-left-icon,
+  .top-right-icon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+  }
+  
+  .top-left-icon {
+    top: 0;
+    left: 0;
+  }
+  
+  .top-right-icon {
+    top: 0;
+    right: 0;
+  }
+  
+  .fit-img {
+    width: 53%;
+    height: 53%;
+  }
+  
+  .fit-body {
+    height: 12rem;
+  }
+  
+  /* Profile Image */
+  .profile-image-container {
+    padding: 2rem;
+  }
+  
+  .profile-image {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(97, 218, 251, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(97, 218, 251, 0.3);
+  }
+  
+  /* ==========================================================================
+     Typography Components
+     ========================================================================== */
+  
+  .greeting-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    min-height: 2.5em;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .introduction {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 2rem 0;
+    color: #d4d4d4;
+  }
+  
+  /* Links */
+  .email-link {
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .email-link:hover {
+    color: #ffffff;
+  }
+  
+  /* ==========================================================================
+     Animations
+     ========================================================================== */
+  
+  /* Fade In Animation */
+  .fade-in {
     animation: fade-in 2s ease-in-out forwards;
     opacity: 0;
     color: black;
   }
   
-@keyframes fade-in {
+  @keyframes fade-in {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 1;
+      opacity: 1;
     }
     100% {
-        opacity: 0.5;
-        color: rgb(233, 84, 19);
+      opacity: 0.5;
+      color: rgb(233, 84, 19);
     }
-}
-
-.present {
-    
-    color: rgb(80, 63, 230);
-}
-
-.p-icon {
-    color: rgb(145,99,57);
-}
-
-.fit-img{
-    width: 53%;
-    height: 53%;
-}
-
-.card-img-icons {
+  }
+  
+  /* Cursor Blink Animation */
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: #61dafb;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* ==========================================================================
+     Utility Classes
+     ========================================================================== */
+  
+  .transition-all {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .typing-text {
     position: relative;
-    height: 2.69rem;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
   }
   
-  .top-left-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    margin: 8px;
-  }
+  /* ==========================================================================
+     Media Queries
+     ========================================================================== */
   
-  .top-right-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    margin: 8px;
+  @media (max-width: 768px) {
+    .greeting-text h1 {
+      font-size: 2rem;
+    }
+    
+    .greeting {
+      font-size: 1.5rem;
+    }
+    
+    .introduction {
+      font-size: 2rem;
+    }
+    
+    .description {
+      font-size: 1rem;
+    }
   }
 
-.fit-body{
-    height: 12rem;
+/* =========================
+   Skills Section Styles
+   ========================= */
+.skills-section {
+    padding: 4rem 0;
 }
 
-.navbar {
-  transition: all 0.3s ease-in-out;
-  pointer-events: auto !important;
+.skill-card {
+    border: none; /* Remove default card border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
-.navbar .nav-link {
-  margin: 0 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
+.skill-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
-.navbar .nav-link:hover {
-  color: var(--bs-primary) !important;
-}
-
-.transition-all {
-  transition: all 0.3s ease-in-out;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-/* Add smooth scrolling to the whole page */
-html {
-  scroll-behavior: smooth;
-}
-
-
-.cursor {
-  display: inline-block;
-  width: 2px;
-  height: 1em;
-  background-color: currentColor;
-  margin-left: 2px;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Optional: Add a transition for smoother text changes */
-.typing-text {
-  transition: all 0.1s ease-in-out;
-}
-
-/* Make sure the text container maintains its height */
-h1 {
-  min-height: 2.5em;
-}
-
-.welcome-section {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  min-height: 100vh;
-  padding: 2rem 0;
-}
-
-.welcome-content {
-  padding: 2rem;
-}
-
-.greeting-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.greeting {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.introduction {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.typing-text {
-  position: relative;
-  font-weight: bold;
-}
-
-.cursor {
-  display: inline-block;
-  width: 3px;
-  height: 1em;
-  background-color: #61dafb;
-  margin-left: 4px;
-  animation: blink 0.7s infinite;
-}
-
-.description {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 2rem 0;
-  color: #d4d4d4;
-}
-
-.highlight {
-  color: #61dafb;
-  font-weight: 500;
-}
-
-
-.email-link {
-  color: #61dafb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.email-link:hover {
-  color: #ffffff;
-}
-
-.profile-image-container {
-  padding: 2rem;
-}
-
-.profile-image {
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(97, 218, 251, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-image:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 25px rgba(97, 218, 251, 0.3);
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .greeting-text h1 {
-    font-size: 2rem;
-  }
-  
-  .greeting {
-    font-size: 1.5rem;
-  }
-  
-  .introduction {
-    font-size: 2rem;
-  }
-  
-  .description {
-    font-size: 1rem;
-  }
+.skill-icon {
+    width: 60px; 
+    height: 60px; 
+    object-fit: contain; /* Maintain aspect ratio and fit within the specified dimensions */
+    margin-bottom: 1rem; 
 }
