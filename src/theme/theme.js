@@ -58,6 +58,14 @@ const getDesignTokens = (mode) => ({
       },
     },
   },
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif', 
+    fontStyle: 'normal',
+    
+    allVariants: {
+      fontStyle: 'normal'
+    },
+  },
 });
 
 // Create a theme using the design tokens

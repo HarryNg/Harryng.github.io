@@ -5,7 +5,6 @@
    html {
     scroll-behavior: smooth;
   }
-  
   .section-wrapper {
     margin: 8vh 0;
     min-height: 100vh;
@@ -257,9 +256,9 @@
 }
 
 .skill-card {
-    border: none; /* Remove default card border */
+    border: none; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer; 
 }
 
 .skill-card:hover {
@@ -272,4 +271,69 @@
     height: 60px; 
     object-fit: contain; /* Maintain aspect ratio and fit within the specified dimensions */
     margin-bottom: 1rem; 
+}
+
+/* =========================
+   Projects Section Styles
+   ========================= */
+.projects-section {
+    padding: 4rem 0; 
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-details {
+    margin-top: 20px; 
+}
+
+.tech-stack {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.tech-item {
+    display: flex; 
+    align-items: center; 
+    margin-right: 15px;
+    margin-bottom: 10px; 
+}
+
+.tech-icon {
+    width: 20px; 
+    height: auto; 
+    margin-right: 5px; 
+}
+
+.navigation-arrows {
+    margin-top: 1vh; 
+    display: flex;
+}
+
+.nav-button {
+    background-color: #FFA500; 
+    color: black; 
+    border: none; 
+    border-radius: 50%; 
+    padding: 5px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    margin: 0 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.nav-button:hover {
+    background-color: #FF8C00;
 }

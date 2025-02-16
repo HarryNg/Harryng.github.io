@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import WelcomeSection from './components/WelcomeSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
+import ProjectsSection from './components/ProjectsSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <main>
           <WelcomeSection />
           <SkillsSection />
+          <ProjectsSection />
           <ContactSection />
         </main>
         <Footer />
